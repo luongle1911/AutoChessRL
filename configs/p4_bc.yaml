@@ -1,0 +1,31 @@
+# Luật bản 4, bước 1: học bắt chước bot luật trong sảnh 8 người (không qua giai đoạn 1 đấu 1).
+#   Mỗi ván 8 ghế bốc ngẫu nhiên trong 3 bot mạnh nhất ở luật bản 4 (tempo, bank, tank); mạng học theo hành
+#   động của cả ba (một chính sách "trộn" ba lối chơi), làm điểm xuất phát cho PPO.
+#   Mạng: EntityNetV2 tự chuyển sang quan sát bản 4 (chỉ số tướng, chỉ số đội, bảng hiệu ứng tộc hệ).
+#   Không nạp trọng số từ agent cũ (luật khác hẳn).
+#
+#   python3 -u -m autochess.rl.bc --config configs/p4_bc.yaml
+name: p4_bc
+num_players: 8
+catalog: autochess/data/catalog_v4.json
+
+env:
+  num_games: 128                 # 128 ván x 8 ghế: ~800 mẫu mỗi bước
+
+net:
+  mixer: none                    # đổi thành attn để thử attention (chậm hơn ~1,6 lần khi học)
+
+bc:
+  samples: 3000000
+  steps: 32                      # mỗi vòng lặp: 32 bước x 128 ván ~ 25 nghìn mẫu, học 2 lượt rồi bỏ
+  epochs: 2
+  lr: 1.0e-3
+  eval_every: 20
+  eval_games: 64
+  bots: [tempo, bank, tank]
+  export: runs/bc_v4.pt          # chép checkpoint cuối ra đây (configs/p4_league.yaml đọc đường dẫn này)
+
+eval:
+  lobbies:
+    A: [tempo, bank, tank, fast9, roll7, hyper, bank]
+  lobby_B: 64

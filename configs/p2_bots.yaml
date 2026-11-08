@@ -1,0 +1,14 @@
+# Giai đoạn 1: 1 đấu 1 với bốn bot luật, ưu tiên bot agent còn thua (trọng số (1 - tỷ lệ thắng)^2).
+# Chuyển sang giai đoạn 2 khi đạt mốc 3 (thắng trên 60% trước cả bốn bot).
+name: p2_bots
+num_players: 2
+total_decisions: 20000000
+opponents:
+  names: [tempo, hyper, roll7, fast9]
+  prioritize: true
+  power: 2.0
+  floor: 0.05
+reward:
+  gamma_round: 0.995
+  lam: 0.95
+  beta: 0.1

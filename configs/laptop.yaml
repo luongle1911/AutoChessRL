@@ -1,0 +1,12 @@
+# Ghi đè cho laptop (CPU 2 nhân, không GPU): ít ván song song hơn, đánh giá ít ván hơn.
+device: cpu
+threads: 2
+env:
+  num_games: 256
+  steps: 128
+ppo:
+  minibatch_size: 8192
+eval:
+  games: 400
+  B: 128
+  matrix_games: 200

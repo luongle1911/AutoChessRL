@@ -1,0 +1,44 @@
+# Giai đoạn 2: tự đấu có kho phiên bản, 1 đấu 1.
+#   50% ván tự đấu (agent ngồi cả hai ghế), phần còn lại: 70% bản cũ trong kho, 30% bot luật
+#   -> tổng thể 50 / 35 / 15 như tài liệu thiết kế.
+# Bắt đầu từ bản 2 tốt nhất của giai đoạn 1 (lần 250) và bật sẵn phần chống thao tác thừa.
+# Đường dẫn checkpoint dưới đây là của máy laptop; đổi nếu chạy ở máy khác.
+name: p2_selfplay
+num_players: 2
+total_decisions: 20000000
+init: runs/p2_bots_v2_20261103_191704/checkpoints/update_00250.pt
+
+opponents:
+  names: [tempo, hyper, roll7, fast9, bank]   # bank = "tích vàng rồi xả" (lối chơi đã thắng agent)
+  prioritize: true
+  power: 2.0
+  floor: 0.05
+  selfplay_prob: 0.5
+
+league:
+  seeds:                         # bản neo trong kho đối thủ, không bao giờ bị bỏ
+    v2_250: runs/p2_bots_v2_20261103_191704/checkpoints/update_00250.pt
+    v1_550: runs/p2_bots_20261103_000344/checkpoints/update_00550.pt
+  snapshot_every: 25             # chụp agent vào kho mỗi 25 lần cập nhật (~0,6 triệu quyết định)
+  max_snapshots: 10
+  group_weights: {bot: 0.3, policy: 0.7}
+
+reward:
+  gamma_round: 0.995
+  lam: 0.95
+  beta: 0.1
+  churn_cost: 0.002              # chống thao tác thừa: trừ 0,002 cho mỗi lần bán / chuyển quân
+
+ppo:
+  lr: 2.0e-4
+  value_warmup: 5                # critic học lại vài lần đầu (đối thủ và phần thưởng đã đổi)
+  lr_warmup: 10
+  ent_coef: 0.005                # chống thao tác thừa: entropy thấp hơn và giảm dần
+  ent_coef_final: 0.001
+
+eval:
+  every: 50
+  opponents: [tempo, hyper, roll7, fast9, bank, random]
+  anchors:                       # bộ neo cố định để đo tiến bộ (tự đấu thì tỷ lệ thắng luôn ~50%)
+    v2_250: runs/p2_bots_v2_20261103_191704/checkpoints/update_00250.pt
+    v1_550: runs/p2_bots_20261103_000344/checkpoints/update_00550.pt

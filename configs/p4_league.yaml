@@ -1,0 +1,69 @@
+# Luật bản 4, bước 2: PPO thẳng trong sảnh 8 người (25% số ván là sảnh 4 người), bắt đầu từ mạng học bắt chước
+#   (runs/bc_v4.pt, do configs/p4_bc.yaml chép ra).
+#   Mỗi sảnh: 40% toàn agent hiện tại (tự đấu, mỗi ván cho 8 chuỗi dữ liệu); 60% agent ngồi 1-2 ghế, các ghế
+#   khác bốc từ kho: 50% bot luật, 50% bản chụp của agent + bản học bắt chước (bc), ưu tiên đối thủ khó.
+#
+#   python3 -u -m autochess.rl.train --config configs/p4_league.yaml
+#
+# Đánh giá mỗi 50 lần cập nhật (không còn 1 đấu 1):
+#   sảnh A = agent + 7 bot luật; sảnh B = agent + 7 bản chụp mới nhất của chính nó ("recent": thước đo tiến bộ so
+#   với bản thân gần đây, > 4,5 là đang tiến); sảnh C = agent + 3 bản bc + 4 bot. Elo sảnh lấy bc = 1500.
+#   Hành vi cuối ván: số quân 3 sao, tộc hệ kích hoạt, lối chơi chính và độ đa dạng lối chơi.
+name: p4_league
+num_players: 8
+catalog: autochess/data/catalog_v4.json
+total_decisions: 12000000
+init: runs/bc_v4.pt
+
+env:
+  num_games: 128
+  steps: 128
+  mix: {4: 0.25}
+  skip_waiting: true
+
+net:
+  mixer: none                    # attn: bật attention giữa các thực thể (phải giống lúc học bắt chước)
+
+opponents:
+  names: [tempo, bank, tank, fast9, roll7, hyper]
+  prioritize: true
+  power: 2.0
+  floor: 0.05
+  selfplay_prob: 0.4
+  agent_seats: [1, 2]
+
+league:
+  seeds:
+    bc: runs/bc_v4.pt
+  snapshot_every: 25
+  max_snapshots: 10
+  group_weights: {bot: 0.5, policy: 0.5}
+
+reward:
+  gamma_round: 0.995
+  lam: 0.95
+  beta: 0.1
+  churn_cost: 0.002
+
+ppo:
+  lr: 3.0e-4
+  update_epochs: 2               # 8 người: cập nhật là nút thắt trên CPU 2 nhân
+  value_warmup: 10               # critic của mạng bắt chước chưa học gì
+  lr_warmup: 10
+  ent_coef: 0.01
+  ent_coef_final: 0.002
+
+eval:
+  every: 50
+  games: 0                       # không đánh giá 1 đấu 1
+  matrix: false
+  anchors:
+    bc: runs/bc_v4.pt
+  lobbies:
+    A: [tempo, bank, tank, fast9, roll7, hyper, bank]
+    B: [recent, recent, recent, recent, recent, recent, recent]
+    C: [bc, bc, bc, tempo, bank, tank, fast9]
+  lobby_games: 96                # 3 sảnh x 96 ván ~ 5 phút trên laptop (mỗi 50 lần cập nhật ~ 25-30 phút)
+  lobby_B: 96
+  lobby_elo_anchor: bc
+  m5_lobby: A                    # mốc 5: top 4 trên 60% trong sảnh A (toàn bot luật)

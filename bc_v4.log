@@ -1,0 +1,290 @@
+học bắt chước: runs/bc_20261108_004414 · bot ['tempo', 'bank', 'tank'] · mục tiêu 3,000,000 mẫu
+[   1]     21,584 mẫu · loss 2.267 · trùng hành động bot 24.4% · thu thập 11.59s, học 34.33s
+[   2]     34,209 mẫu · loss 2.253 · trùng hành động bot 32.0% · thu thập 10.94s, học 21.64s
+[   3]     50,853 mẫu · loss 2.028 · trùng hành động bot 38.1% · thu thập 12.81s, học 25.48s
+[   4]     68,046 mẫu · loss 1.873 · trùng hành động bot 47.8% · thu thập 11.31s, học 26.34s
+[   5]     82,524 mẫu · loss 1.582 · trùng hành động bot 53.6% · thu thập 11.4s, học 21.37s
+[   6]     93,723 mẫu · loss 1.740 · trùng hành động bot 48.5% · thu thập 10.64s, học 15.98s
+[   7]    104,735 mẫu · loss 1.619 · trùng hành động bot 53.1% · thu thập 10.71s, học 15.93s
+[   8]    115,734 mẫu · loss 1.470 · trùng hành động bot 57.7% · thu thập 10.77s, học 16.12s
+[   9]    126,783 mẫu · loss 1.439 · trùng hành động bot 60.3% · thu thập 10.94s, học 16.59s
+[  10]    138,577 mẫu · loss 1.379 · trùng hành động bot 61.9% · thu thập 11.09s, học 16.95s
+[  11]    152,419 mẫu · loss 1.227 · trùng hành động bot 62.6% · thu thập 10.9s, học 20.84s
+[  12]    167,160 mẫu · loss 1.077 · trùng hành động bot 67.2% · thu thập 10.77s, học 21.45s
+[  13]    182,707 mẫu · loss 0.997 · trùng hành động bot 68.2% · thu thập 10.68s, học 21.99s
+[  14]    198,581 mẫu · loss 0.984 · trùng hành động bot 68.4% · thu thập 10.58s, học 22.25s
+[  15]    213,935 mẫu · loss 0.913 · trùng hành động bot 71.7% · thu thập 10.61s, học 21.59s
+[  16]    227,349 mẫu · loss 0.883 · trùng hành động bot 74.8% · thu thập 10.64s, học 18.46s
+[  17]    239,194 mẫu · loss 0.889 · trùng hành động bot 73.4% · thu thập 10.73s, học 16.4s
+[  18]    250,850 mẫu · loss 0.875 · trùng hành động bot 73.6% · thu thập 10.8s, học 16.44s
+[  19]    261,861 mẫu · loss 0.893 · trùng hành động bot 72.3% · thu thập 10.86s, học 15.55s
+[  20]    273,592 mẫu · loss 0.823 · trùng hành động bot 73.9% · thu thập 11.07s, học 17.31s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 5.36 ± 0.30, top 4 38%, nhất 6%, chót 30%
+  Elo sảnh: bank 1606, tempo 1583, tank 1525, roll7 1506, hyper 1445, agent 1440, fast9 1394
+  hành vi (sảnh): roll/vòng 0.27, XP/vòng 0.99, mua/vòng 1.18, vàng khi kết thúc lượt 21.3, cấp theo vòng {5: 4.28, 10: 5.67, 15: 6.97, 20: 7.65}
+  cuối ván (vòng 20+): quân 3 sao 0.00, 2 sao 3.58, tộc hệ kích hoạt 3.49; lối chính: Đấu sĩ 42%, Hộ vệ 12%, Pháp sư 11%, Lưỡng Hà 11%, Sát thủ 9%, Quái thú 6% (độ đa dạng 6.4)
+[  21]    286,812 mẫu · loss 0.762 · trùng hành động bot 74.8% · thu thập 10.93s, học 19.6s
+[  22]    300,794 mẫu · loss 0.718 · trùng hành động bot 75.5% · thu thập 10.82s, học 20.86s
+[  23]    315,831 mẫu · loss 0.693 · trùng hành động bot 75.7% · thu thập 10.74s, học 21.21s
+[  24]    331,000 mẫu · loss 0.687 · trùng hành động bot 76.3% · thu thập 10.7s, học 20.84s
+[  25]    345,697 mẫu · loss 0.671 · trùng hành động bot 77.5% · thu thập 10.67s, học 21.42s
+[  26]    359,527 mẫu · loss 0.662 · trùng hành động bot 78.3% · thu thập 10.65s, học 20.72s
+[  27]    371,725 mẫu · loss 0.633 · trùng hành động bot 79.5% · thu thập 10.74s, học 17.73s
+[  28]    383,282 mẫu · loss 0.644 · trùng hành động bot 78.9% · thu thập 10.91s, học 17.15s
+[  29]    394,542 mẫu · loss 0.628 · trùng hành động bot 79.2% · thu thập 10.93s, học 17.25s
+[  30]    406,952 mẫu · loss 0.631 · trùng hành động bot 78.3% · thu thập 10.93s, học 18.39s
+[  31]    420,138 mẫu · loss 0.642 · trùng hành động bot 78.4% · thu thập 10.97s, học 19.52s
+[  32]    433,316 mẫu · loss 0.587 · trùng hành động bot 79.4% · thu thập 10.85s, học 19.23s
+[  33]    447,859 mẫu · loss 0.574 · trùng hành động bot 79.6% · thu thập 10.84s, học 22.91s
+[  34]    462,908 mẫu · loss 0.534 · trùng hành động bot 81.2% · thu thập 10.72s, học 22.5s
+[  35]    477,804 mẫu · loss 0.541 · trùng hành động bot 81.6% · thu thập 10.76s, học 22.18s
+[  36]    491,609 mẫu · loss 0.531 · trùng hành động bot 82.2% · thu thập 10.69s, học 20.71s
+[  37]    504,773 mẫu · loss 0.526 · trùng hành động bot 83.0% · thu thập 10.76s, học 19.32s
+[  38]    516,781 mẫu · loss 0.574 · trùng hành động bot 80.8% · thu thập 10.79s, học 17.3s
+[  39]    528,341 mẫu · loss 0.549 · trùng hành động bot 82.0% · thu thập 10.86s, học 17.06s
+[  40]    540,323 mẫu · loss 0.554 · trùng hành động bot 81.4% · thu thập 10.88s, học 18.2s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.44 ± 0.30, top 4 50%, nhất 14%, chót 14%
+  Elo sảnh: tempo 1583, bank 1581, tank 1516, agent 1514, roll7 1446, hyper 1435, fast9 1425
+  hành vi (sảnh): roll/vòng 0.24, XP/vòng 1.00, mua/vòng 1.25, vàng khi kết thúc lượt 17.7, cấp theo vòng {5: 4.41, 10: 5.65, 15: 7.06, 20: 7.59}
+  cuối ván (vòng 20+): quân 3 sao 0.03, 2 sao 3.77, tộc hệ kích hoạt 3.36; lối chính: Đấu sĩ 36%, Sát thủ 18%, Hộ vệ 11%, Lưỡng Hà 7%, Celt 5%, Quái thú 5% (độ đa dạng 8.0)
+[  41]    553,040 mẫu · loss 0.501 · trùng hành động bot 82.7% · thu thập 10.93s, học 19.57s
+[  42]    566,142 mẫu · loss 0.521 · trùng hành động bot 82.1% · thu thập 10.9s, học 19.54s
+[  43]    579,885 mẫu · loss 0.462 · trùng hành động bot 84.0% · thu thập 10.88s, học 18.76s
+[  44]    593,822 mẫu · loss 0.446 · trùng hành động bot 84.8% · thu thập 10.79s, học 19.25s
+[  45]    608,251 mẫu · loss 0.473 · trùng hành động bot 83.9% · thu thập 10.79s, học 22.17s
+[  46]    622,119 mẫu · loss 0.436 · trùng hành động bot 85.2% · thu thập 10.77s, học 20.91s
+[  47]    635,514 mẫu · loss 0.438 · trùng hành động bot 85.2% · thu thập 10.78s, học 19.84s
+[  48]    648,245 mẫu · loss 0.437 · trùng hành động bot 85.3% · thu thập 10.81s, học 20.06s
+[  49]    660,685 mẫu · loss 0.448 · trùng hành động bot 84.7% · thu thập 10.82s, học 18.7s
+[  50]    672,574 mẫu · loss 0.438 · trùng hành động bot 85.3% · thu thập 10.88s, học 17.09s
+[  51]    685,278 mẫu · loss 0.464 · trùng hành động bot 83.9% · thu thập 10.91s, học 19.87s
+[  52]    698,295 mẫu · loss 0.426 · trùng hành động bot 85.7% · thu thập 10.85s, học 20.04s
+[  53]    712,568 mẫu · loss 0.455 · trùng hành động bot 84.1% · thu thập 10.87s, học 21.63s
+[  54]    726,496 mẫu · loss 0.407 · trùng hành động bot 86.1% · thu thập 10.88s, học 22.18s
+[  55]    740,559 mẫu · loss 0.402 · trùng hành động bot 86.3% · thu thập 10.8s, học 21.68s
+[  56]    754,292 mẫu · loss 0.403 · trùng hành động bot 86.3% · thu thập 10.7s, học 20.49s
+[  57]    767,889 mẫu · loss 0.393 · trùng hành động bot 87.0% · thu thập 10.77s, học 19.04s
+[  58]    781,442 mẫu · loss 0.403 · trùng hành động bot 86.6% · thu thập 10.84s, học 20.58s
+[  59]    794,749 mẫu · loss 0.413 · trùng hành động bot 86.4% · thu thập 10.78s, học 18.91s
+[  60]    806,725 mẫu · loss 0.402 · trùng hành động bot 86.9% · thu thập 10.87s, học 18.57s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.06 ± 0.29, top 4 62%, nhất 11%, chót 9%
+  Elo sảnh: bank 1576, tempo 1564, agent 1545, tank 1528, roll7 1443, hyper 1436, fast9 1408
+  hành vi (sảnh): roll/vòng 0.42, XP/vòng 0.88, mua/vòng 1.25, vàng khi kết thúc lượt 15.2, cấp theo vòng {5: 4.29, 10: 5.51, 15: 6.9, 20: 7.43}
+  cuối ván (vòng 20+): quân 3 sao 0.08, 2 sao 4.40, tộc hệ kích hoạt 3.28; lối chính: Đấu sĩ 38%, Quái thú 12%, Celt 10%, Sát thủ 9%, Lưỡng Hà 9%, Hộ vệ 7% (độ đa dạng 7.5)
+[  61]    818,826 mẫu · loss 0.400 · trùng hành động bot 86.8% · thu thập 10.86s, học 17.34s
+[  62]    832,423 mẫu · loss 0.409 · trùng hành động bot 85.9% · thu thập 10.86s, học 19.59s
+[  63]    845,921 mẫu · loss 0.411 · trùng hành động bot 86.0% · thu thập 10.95s, học 19.8s
+[  64]    859,684 mẫu · loss 0.396 · trùng hành động bot 86.6% · thu thập 10.85s, học 21.6s
+[  65]    873,305 mẫu · loss 0.391 · trùng hành động bot 86.5% · thu thập 10.8s, học 19.85s
+[  66]    886,945 mẫu · loss 0.367 · trùng hành động bot 87.9% · thu thập 10.81s, học 19.98s
+[  67]    900,745 mẫu · loss 0.368 · trùng hành động bot 87.9% · thu thập 10.74s, học 20.7s
+[  68]    914,592 mẫu · loss 0.372 · trùng hành động bot 87.2% · thu thập 10.83s, học 21.17s
+[  69]    927,285 mẫu · loss 0.390 · trùng hành động bot 86.8% · thu thập 10.76s, học 18.71s
+[  70]    939,826 mẫu · loss 0.385 · trùng hành động bot 87.1% · thu thập 10.87s, học 18.4s
+[  71]    952,394 mẫu · loss 0.385 · trùng hành động bot 87.0% · thu thập 10.83s, học 19.3s
+[  72]    965,079 mẫu · loss 0.384 · trùng hành động bot 87.4% · thu thập 10.88s, học 19.32s
+[  73]    978,049 mẫu · loss 0.360 · trùng hành động bot 87.9% · thu thập 11.08s, học 20.24s
+[  74]    991,338 mẫu · loss 0.366 · trùng hành động bot 87.4% · thu thập 10.83s, học 19.95s
+[  75]  1,004,219 mẫu · loss 0.351 · trùng hành động bot 88.0% · thu thập 10.86s, học 19.8s
+[  76]  1,018,269 mẫu · loss 0.353 · trùng hành động bot 88.1% · thu thập 10.86s, học 20.01s
+[  77]  1,031,601 mẫu · loss 0.357 · trùng hành động bot 87.9% · thu thập 10.83s, học 18.44s
+[  78]  1,044,831 mẫu · loss 0.350 · trùng hành động bot 88.0% · thu thập 10.74s, học 18.07s
+[  79]  1,057,579 mẫu · loss 0.319 · trùng hành động bot 89.0% · thu thập 10.83s, học 17.51s
+[  80]  1,070,844 mẫu · loss 0.355 · trùng hành động bot 88.0% · thu thập 10.78s, học 19.4s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.62 ± 0.29, top 4 48%, nhất 11%, chót 16%
+  Elo sảnh: tempo 1571, bank 1571, tank 1518, agent 1498, roll7 1478, hyper 1448, fast9 1416
+  hành vi (sảnh): roll/vòng 0.25, XP/vòng 1.02, mua/vòng 1.19, vàng khi kết thúc lượt 18.1, cấp theo vòng {5: 4.35, 10: 5.74, 15: 7.22, 20: 7.53}
+  cuối ván (vòng 20+): quân 3 sao 0.05, 2 sao 3.98, tộc hệ kích hoạt 3.17; lối chính: Đấu sĩ 34%, Hộ vệ 15%, Pháp sư 12%, Sát thủ 11%, Quái thú 8%, Celt 5% (độ đa dạng 7.6)
+[  81]  1,083,499 mẫu · loss 0.355 · trùng hành động bot 88.1% · thu thập 11.03s, học 19.78s
+[  82]  1,096,358 mẫu · loss 0.348 · trùng hành động bot 88.0% · thu thập 10.89s, học 19.53s
+[  83]  1,109,560 mẫu · loss 0.354 · trùng hành động bot 87.9% · thu thập 10.83s, học 20.63s
+[  84]  1,122,094 mẫu · loss 0.356 · trùng hành động bot 88.0% · thu thập 10.84s, học 19.22s
+[  85]  1,135,126 mẫu · loss 0.327 · trùng hành động bot 89.1% · thu thập 10.84s, học 19.28s
+[  86]  1,148,787 mẫu · loss 0.330 · trùng hành động bot 89.1% · thu thập 10.81s, học 20.3s
+[  87]  1,161,658 mẫu · loss 0.328 · trùng hành động bot 88.7% · thu thập 10.85s, học 18.47s
+[  88]  1,174,710 mẫu · loss 0.313 · trùng hành động bot 89.4% · thu thập 10.88s, học 19.9s
+[  89]  1,188,490 mẫu · loss 0.338 · trùng hành động bot 88.5% · thu thập 10.81s, học 21.04s
+[  90]  1,202,414 mẫu · loss 0.316 · trùng hành động bot 89.2% · thu thập 10.82s, học 21.77s
+[  91]  1,215,076 mẫu · loss 0.324 · trùng hành động bot 89.6% · thu thập 10.8s, học 19.13s
+[  92]  1,228,190 mẫu · loss 0.344 · trùng hành động bot 88.9% · thu thập 10.88s, học 20.54s
+[  93]  1,241,337 mẫu · loss 0.308 · trùng hành động bot 89.8% · thu thập 10.81s, học 20.0s
+[  94]  1,254,487 mẫu · loss 0.331 · trùng hành động bot 89.3% · thu thập 10.87s, học 20.11s
+[  95]  1,266,917 mẫu · loss 0.330 · trùng hành động bot 89.0% · thu thập 10.82s, học 19.47s
+[  96]  1,280,505 mẫu · loss 0.320 · trùng hành động bot 89.2% · thu thập 10.9s, học 19.78s
+[  97]  1,294,371 mẫu · loss 0.315 · trùng hành động bot 89.3% · thu thập 10.83s, học 19.45s
+[  98]  1,307,517 mẫu · loss 0.315 · trùng hành động bot 89.2% · thu thập 10.89s, học 18.97s
+[  99]  1,321,194 mẫu · loss 0.298 · trùng hành động bot 90.0% · thu thập 10.78s, học 20.26s
+[ 100]  1,334,955 mẫu · loss 0.283 · trùng hành động bot 90.4% · thu thập 10.82s, học 21.01s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.84 ± 0.29, top 4 45%, nhất 9%, chót 20%
+  Elo sảnh: bank 1592, tempo 1564, tank 1544, agent 1482, roll7 1463, hyper 1440, fast9 1415
+  hành vi (sảnh): roll/vòng 0.17, XP/vòng 0.98, mua/vòng 1.13, vàng khi kết thúc lượt 20.8, cấp theo vòng {5: 4.19, 10: 5.74, 15: 7.4, 20: 7.67}
+  cuối ván (vòng 20+): quân 3 sao 0.00, 2 sao 3.70, tộc hệ kích hoạt 3.32; lối chính: Đấu sĩ 33%, Sát thủ 16%, Hộ vệ 13%, Pháp sư 10%, Celt 6%, Xạ thủ 4% (độ đa dạng 7.9)
+[ 101]  1,348,041 mẫu · loss 0.285 · trùng hành động bot 90.5% · thu thập 10.79s, học 19.26s
+[ 102]  1,361,153 mẫu · loss 0.296 · trùng hành động bot 89.9% · thu thập 10.8s, học 18.49s
+[ 103]  1,374,526 mẫu · loss 0.295 · trùng hành động bot 90.3% · thu thập 10.85s, học 19.76s
+[ 104]  1,387,164 mẫu · loss 0.335 · trùng hành động bot 89.1% · thu thập 10.85s, học 18.97s
+[ 105]  1,399,902 mẫu · loss 0.326 · trùng hành động bot 89.4% · thu thập 10.84s, học 18.94s
+[ 106]  1,412,975 mẫu · loss 0.300 · trùng hành động bot 89.5% · thu thập 10.83s, học 18.65s
+[ 107]  1,426,985 mẫu · loss 0.300 · trùng hành động bot 90.1% · thu thập 10.82s, học 21.03s
+[ 108]  1,440,588 mẫu · loss 0.297 · trùng hành động bot 90.0% · thu thập 10.87s, học 20.77s
+[ 109]  1,453,946 mẫu · loss 0.301 · trùng hành động bot 90.0% · thu thập 10.83s, học 20.02s
+[ 110]  1,467,569 mẫu · loss 0.292 · trùng hành động bot 90.1% · thu thập 10.83s, học 20.12s
+[ 111]  1,481,184 mẫu · loss 0.271 · trùng hành động bot 90.8% · thu thập 10.81s, học 21.12s
+[ 112]  1,493,950 mẫu · loss 0.301 · trùng hành động bot 90.1% · thu thập 10.79s, học 18.95s
+[ 113]  1,506,427 mẫu · loss 0.295 · trùng hành động bot 90.3% · thu thập 10.83s, học 19.53s
+[ 114]  1,519,682 mẫu · loss 0.304 · trùng hành động bot 89.8% · thu thập 10.96s, học 20.44s
+[ 115]  1,532,394 mẫu · loss 0.289 · trùng hành động bot 90.4% · thu thập 10.84s, học 19.2s
+[ 116]  1,545,537 mẫu · loss 0.298 · trùng hành động bot 89.9% · thu thập 10.85s, học 20.17s
+[ 117]  1,559,416 mẫu · loss 0.280 · trùng hành động bot 90.2% · thu thập 10.82s, học 20.66s
+[ 118]  1,572,859 mẫu · loss 0.258 · trùng hành động bot 91.4% · thu thập 11.03s, học 19.71s
+[ 119]  1,586,406 mẫu · loss 0.271 · trùng hành động bot 90.7% · thu thập 10.87s, học 20.21s
+[ 120]  1,600,561 mẫu · loss 0.274 · trùng hành động bot 90.9% · thu thập 10.87s, học 21.22s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.08 ± 0.28, top 4 56%, nhất 16%, chót 6%
+  Elo sảnh: bank 1586, tempo 1573, agent 1546, tank 1526, roll7 1464, hyper 1436, fast9 1369
+  hành vi (sảnh): roll/vòng 0.41, XP/vòng 0.96, mua/vòng 1.20, vàng khi kết thúc lượt 23.2, cấp theo vòng {5: 4.23, 10: 5.51, 15: 6.79, 20: 7.56}
+  cuối ván (vòng 20+): quân 3 sao 0.03, 2 sao 4.39, tộc hệ kích hoạt 3.13; lối chính: Đấu sĩ 32%, Sát thủ 14%, Hộ vệ 13%, Pháp sư 12%, Xạ thủ 6%, Quái thú 5% (độ đa dạng 8.2)
+[ 121]  1,613,960 mẫu · loss 0.269 · trùng hành động bot 90.9% · thu thập 10.8s, học 20.37s
+[ 122]  1,626,619 mẫu · loss 0.286 · trùng hành động bot 90.5% · thu thập 10.81s, học 19.53s
+[ 123]  1,639,874 mẫu · loss 0.273 · trùng hành động bot 90.9% · thu thập 10.82s, học 19.42s
+[ 124]  1,652,989 mẫu · loss 0.292 · trùng hành động bot 90.2% · thu thập 10.8s, học 19.78s
+[ 125]  1,666,539 mẫu · loss 0.273 · trùng hành động bot 90.9% · thu thập 10.87s, học 20.69s
+[ 126]  1,679,462 mẫu · loss 0.298 · trùng hành động bot 90.2% · thu thập 10.87s, học 18.91s
+[ 127]  1,692,759 mẫu · loss 0.280 · trùng hành động bot 90.9% · thu thập 10.87s, học 20.15s
+[ 128]  1,705,706 mẫu · loss 0.285 · trùng hành động bot 90.7% · thu thập 10.85s, học 19.82s
+[ 129]  1,718,978 mẫu · loss 0.271 · trùng hành động bot 91.0% · thu thập 10.9s, học 20.31s
+[ 130]  1,732,723 mẫu · loss 0.271 · trùng hành động bot 91.0% · thu thập 10.88s, học 20.57s
+[ 131]  1,745,948 mẫu · loss 0.272 · trùng hành động bot 91.4% · thu thập 10.83s, học 19.23s
+[ 132]  1,759,263 mẫu · loss 0.258 · trùng hành động bot 91.2% · thu thập 10.82s, học 20.58s
+[ 133]  1,772,768 mẫu · loss 0.265 · trùng hành động bot 91.2% · thu thập 10.8s, học 21.13s
+[ 134]  1,785,565 mẫu · loss 0.257 · trùng hành động bot 91.6% · thu thập 10.85s, học 20.24s
+[ 135]  1,798,414 mẫu · loss 0.271 · trùng hành động bot 90.6% · thu thập 11.03s, học 19.66s
+[ 136]  1,811,956 mẫu · loss 0.290 · trùng hành động bot 90.1% · thu thập 10.87s, học 19.0s
+[ 137]  1,824,508 mẫu · loss 0.282 · trùng hành động bot 90.5% · thu thập 10.86s, học 18.82s
+[ 138]  1,837,723 mẫu · loss 0.263 · trùng hành động bot 91.3% · thu thập 10.87s, học 20.07s
+[ 139]  1,851,862 mẫu · loss 0.265 · trùng hành động bot 91.1% · thu thập 10.81s, học 23.1s
+[ 140]  1,865,461 mẫu · loss 0.260 · trùng hành động bot 91.1% · thu thập 10.84s, học 21.09s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 3.97 ± 0.27, top 4 58%, nhất 14%, chót 6%
+  Elo sảnh: bank 1596, agent 1556, tempo 1556, tank 1532, roll7 1439, hyper 1434, fast9 1388
+  hành vi (sảnh): roll/vòng 0.13, XP/vòng 1.02, mua/vòng 1.30, vàng khi kết thúc lượt 13.7, cấp theo vòng {5: 4.53, 10: 5.94, 15: 7.28, 20: 7.56}
+  cuối ván (vòng 20+): quân 3 sao 0.04, 2 sao 4.04, tộc hệ kích hoạt 3.14; lối chính: Đấu sĩ 35%, Pháp sư 15%, Sát thủ 13%, Hộ vệ 10%, Lưỡng Hà 10%, Quái thú 4% (độ đa dạng 7.6)
+[ 141]  1,878,555 mẫu · loss 0.270 · trùng hành động bot 91.1% · thu thập 10.82s, học 20.57s
+[ 142]  1,891,777 mẫu · loss 0.260 · trùng hành động bot 91.0% · thu thập 10.8s, học 20.52s
+[ 143]  1,904,966 mẫu · loss 0.249 · trùng hành động bot 91.8% · thu thập 10.8s, học 20.54s
+[ 144]  1,917,970 mẫu · loss 0.268 · trùng hành động bot 91.5% · thu thập 10.86s, học 18.93s
+[ 145]  1,931,013 mẫu · loss 0.274 · trùng hành động bot 91.4% · thu thập 10.85s, học 19.98s
+[ 146]  1,943,578 mẫu · loss 0.268 · trùng hành động bot 91.2% · thu thập 10.83s, học 18.94s
+[ 147]  1,957,091 mẫu · loss 0.258 · trùng hành động bot 91.2% · thu thập 10.88s, học 19.43s
+[ 148]  1,970,783 mẫu · loss 0.277 · trùng hành động bot 90.9% · thu thập 10.87s, học 20.97s
+[ 149]  1,983,596 mẫu · loss 0.269 · trùng hành động bot 91.0% · thu thập 10.87s, học 19.69s
+[ 150]  1,996,831 mẫu · loss 0.264 · trùng hành động bot 90.7% · thu thập 10.81s, học 20.79s
+[ 151]  2,010,694 mẫu · loss 0.248 · trùng hành động bot 91.5% · thu thập 10.79s, học 22.23s
+[ 152]  2,024,445 mẫu · loss 0.246 · trùng hành động bot 91.8% · thu thập 10.76s, học 21.14s
+[ 153]  2,037,335 mẫu · loss 0.225 · trùng hành động bot 92.9% · thu thập 10.82s, học 20.76s
+[ 154]  2,050,680 mẫu · loss 0.252 · trùng hành động bot 91.5% · thu thập 10.86s, học 21.03s
+[ 155]  2,063,481 mẫu · loss 0.268 · trùng hành động bot 90.8% · thu thập 10.84s, học 19.51s
+[ 156]  2,076,086 mẫu · loss 0.252 · trùng hành động bot 92.1% · thu thập 10.84s, học 19.09s
+[ 157]  2,088,394 mẫu · loss 0.309 · trùng hành động bot 90.3% · thu thập 10.9s, học 18.79s
+[ 158]  2,101,633 mẫu · loss 0.250 · trùng hành động bot 91.8% · thu thập 10.93s, học 20.74s
+[ 159]  2,114,225 mẫu · loss 0.250 · trùng hành động bot 91.8% · thu thập 10.9s, học 19.71s
+[ 160]  2,127,242 mẫu · loss 0.262 · trùng hành động bot 91.7% · thu thập 10.86s, học 20.34s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.11 ± 0.27, top 4 58%, nhất 16%, chót 5%
+  Elo sảnh: bank 1591, tempo 1565, agent 1543, tank 1518, roll7 1446, hyper 1423, fast9 1414
+  hành vi (sảnh): roll/vòng 0.19, XP/vòng 0.96, mua/vòng 1.19, vàng khi kết thúc lượt 15.3, cấp theo vòng {5: 4.4, 10: 5.85, 15: 7.31, 20: 7.56}
+  cuối ván (vòng 20+): quân 3 sao 0.02, 2 sao 3.99, tộc hệ kích hoạt 3.18; lối chính: Đấu sĩ 25%, Sát thủ 17%, Pháp sư 13%, Hộ vệ 11%, Lưỡng Hà 9%, Quái thú 8% (độ đa dạng 8.2)
+[ 161]  2,141,127 mẫu · loss 0.265 · trùng hành động bot 91.1% · thu thập 10.86s, học 22.21s
+[ 162]  2,154,426 mẫu · loss 0.245 · trùng hành động bot 91.8% · thu thập 10.85s, học 21.63s
+[ 163]  2,167,630 mẫu · loss 0.242 · trùng hành động bot 91.8% · thu thập 10.82s, học 21.61s
+[ 164]  2,180,819 mẫu · loss 0.248 · trùng hành động bot 91.8% · thu thập 10.82s, học 21.1s
+[ 165]  2,193,877 mẫu · loss 0.248 · trùng hành động bot 92.2% · thu thập 10.85s, học 20.48s
+[ 166]  2,206,868 mẫu · loss 0.255 · trùng hành động bot 91.8% · thu thập 10.88s, học 20.44s
+[ 167]  2,219,313 mẫu · loss 0.246 · trùng hành động bot 92.0% · thu thập 10.95s, học 19.92s
+[ 168]  2,232,384 mẫu · loss 0.241 · trùng hành động bot 92.3% · thu thập 10.86s, học 20.72s
+[ 169]  2,245,507 mẫu · loss 0.259 · trùng hành động bot 91.7% · thu thập 10.85s, học 20.56s
+[ 170]  2,258,996 mẫu · loss 0.245 · trùng hành động bot 92.2% · thu thập 10.84s, học 22.06s
+[ 171]  2,272,574 mẫu · loss 0.242 · trùng hành động bot 91.9% · thu thập 10.8s, học 21.94s
+[ 172]  2,285,630 mẫu · loss 0.242 · trùng hành động bot 91.9% · thu thập 10.8s, học 19.2s
+[ 173]  2,298,770 mẫu · loss 0.255 · trùng hành động bot 92.1% · thu thập 10.86s, học 20.36s
+[ 174]  2,312,060 mẫu · loss 0.238 · trùng hành động bot 91.9% · thu thập 10.83s, học 21.17s
+[ 175]  2,325,394 mẫu · loss 0.241 · trùng hành động bot 92.1% · thu thập 10.85s, học 21.41s
+[ 176]  2,338,095 mẫu · loss 0.245 · trùng hành động bot 91.9% · thu thập 11.04s, học 20.27s
+[ 177]  2,351,220 mẫu · loss 0.249 · trùng hành động bot 91.8% · thu thập 10.86s, học 21.56s
+[ 178]  2,364,806 mẫu · loss 0.247 · trùng hành động bot 91.8% · thu thập 10.87s, học 21.11s
+[ 179]  2,378,077 mẫu · loss 0.238 · trùng hành động bot 92.1% · thu thập 10.99s, học 22.32s
+[ 180]  2,391,676 mẫu · loss 0.242 · trùng hành động bot 92.4% · thu thập 10.88s, học 22.0s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.45 ± 0.28, top 4 50%, nhất 9%, chót 9%
+  Elo sảnh: bank 1583, tempo 1562, tank 1541, agent 1514, roll7 1492, hyper 1438, fast9 1370
+  hành vi (sảnh): roll/vòng 0.24, XP/vòng 0.94, mua/vòng 1.21, vàng khi kết thúc lượt 16.4, cấp theo vòng {5: 4.35, 10: 5.76, 15: 7.12, 20: 7.59}
+  cuối ván (vòng 20+): quân 3 sao 0.02, 2 sao 3.83, tộc hệ kích hoạt 3.07; lối chính: Đấu sĩ 34%, Pháp sư 17%, Sát thủ 14%, Hộ vệ 9%, Lưỡng Hà 6%, Quái thú 6% (độ đa dạng 7.3)
+[ 181]  2,405,021 mẫu · loss 0.241 · trùng hành động bot 92.4% · thu thập 10.81s, học 21.67s
+[ 182]  2,418,053 mẫu · loss 0.234 · trùng hành động bot 92.5% · thu thập 10.85s, học 20.91s
+[ 183]  2,431,749 mẫu · loss 0.234 · trùng hành động bot 92.3% · thu thập 10.81s, học 22.08s
+[ 184]  2,444,924 mẫu · loss 0.240 · trùng hành động bot 92.7% · thu thập 10.77s, học 21.7s
+[ 185]  2,458,083 mẫu · loss 0.238 · trùng hành động bot 92.5% · thu thập 10.83s, học 20.39s
+[ 186]  2,470,720 mẫu · loss 0.260 · trùng hành động bot 91.7% · thu thập 10.8s, học 18.82s
+[ 187]  2,483,365 mẫu · loss 0.254 · trùng hành động bot 91.4% · thu thập 10.84s, học 19.74s
+[ 188]  2,497,001 mẫu · loss 0.248 · trùng hành động bot 91.5% · thu thập 10.85s, học 21.12s
+[ 189]  2,510,411 mẫu · loss 0.241 · trùng hành động bot 92.2% · thu thập 10.81s, học 20.99s
+[ 190]  2,523,233 mẫu · loss 0.249 · trùng hành động bot 92.2% · thu thập 10.79s, học 20.92s
+[ 191]  2,536,948 mẫu · loss 0.231 · trùng hành động bot 92.5% · thu thập 10.85s, học 20.2s
+[ 192]  2,550,148 mẫu · loss 0.234 · trùng hành động bot 92.6% · thu thập 10.85s, học 21.08s
+[ 193]  2,563,193 mẫu · loss 0.229 · trùng hành động bot 92.6% · thu thập 10.8s, học 20.88s
+[ 194]  2,576,456 mẫu · loss 0.238 · trùng hành động bot 92.2% · thu thập 10.87s, học 19.53s
+[ 195]  2,589,641 mẫu · loss 0.251 · trùng hành động bot 92.0% · thu thập 10.91s, học 19.38s
+[ 196]  2,602,561 mẫu · loss 0.246 · trùng hành động bot 92.3% · thu thập 11.09s, học 18.68s
+[ 197]  2,615,294 mẫu · loss 0.236 · trùng hành động bot 92.2% · thu thập 10.86s, học 18.26s
+[ 198]  2,628,439 mẫu · loss 0.233 · trùng hành động bot 92.6% · thu thập 10.84s, học 19.69s
+[ 199]  2,641,832 mẫu · loss 0.230 · trùng hành động bot 92.7% · thu thập 10.84s, học 21.0s
+[ 200]  2,655,026 mẫu · loss 0.239 · trùng hành động bot 92.3% · thu thập 10.88s, học 21.08s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 3.75 ± 0.27, top 4 62%, nhất 17%, chót 5%
+  Elo sảnh: tempo 1583, bank 1581, agent 1572, tank 1495, roll7 1456, hyper 1431, fast9 1382
+  hành vi (sảnh): roll/vòng 0.26, XP/vòng 0.93, mua/vòng 1.37, vàng khi kết thúc lượt 14.0, cấp theo vòng {5: 4.48, 10: 5.66, 15: 6.92, 20: 7.53}
+  cuối ván (vòng 20+): quân 3 sao 0.01, 2 sao 4.61, tộc hệ kích hoạt 3.09; lối chính: Đấu sĩ 33%, Sát thủ 16%, Hộ vệ 16%, Lưỡng Hà 6%, Quái thú 6%, Việt Nam 6% (độ đa dạng 7.6)
+[ 201]  2,668,615 mẫu · loss 0.245 · trùng hành động bot 91.9% · thu thập 10.83s, học 21.93s
+[ 202]  2,681,430 mẫu · loss 0.248 · trùng hành động bot 91.5% · thu thập 10.8s, học 20.26s
+[ 203]  2,694,731 mẫu · loss 0.238 · trùng hành động bot 92.5% · thu thập 10.8s, học 21.65s
+[ 204]  2,707,990 mẫu · loss 0.233 · trùng hành động bot 92.5% · thu thập 10.83s, học 19.94s
+[ 205]  2,721,147 mẫu · loss 0.224 · trùng hành động bot 92.8% · thu thập 10.79s, học 20.45s
+[ 206]  2,734,104 mẫu · loss 0.231 · trùng hành động bot 92.4% · thu thập 10.86s, học 21.91s
+[ 207]  2,747,261 mẫu · loss 0.241 · trùng hành động bot 92.0% · thu thập 10.81s, học 21.59s
+[ 208]  2,760,380 mẫu · loss 0.238 · trùng hành động bot 92.3% · thu thập 10.81s, học 20.06s
+[ 209]  2,773,208 mẫu · loss 0.244 · trùng hành động bot 92.2% · thu thập 10.87s, học 18.49s
+[ 210]  2,786,055 mẫu · loss 0.250 · trùng hành động bot 92.0% · thu thập 10.88s, học 20.27s
+[ 211]  2,799,836 mẫu · loss 0.233 · trùng hành động bot 92.1% · thu thập 10.88s, học 22.6s
+[ 212]  2,812,650 mẫu · loss 0.221 · trùng hành động bot 92.7% · thu thập 10.82s, học 19.99s
+[ 213]  2,825,976 mẫu · loss 0.232 · trùng hành động bot 92.3% · thu thập 11.16s, học 20.4s
+[ 214]  2,839,096 mẫu · loss 0.232 · trùng hành động bot 92.7% · thu thập 10.84s, học 20.01s
+[ 215]  2,851,926 mẫu · loss 0.223 · trùng hành động bot 92.9% · thu thập 10.89s, học 21.68s
+[ 216]  2,865,430 mẫu · loss 0.236 · trùng hành động bot 92.1% · thu thập 10.93s, học 20.37s
+[ 217]  2,878,895 mẫu · loss 0.229 · trùng hành động bot 92.3% · thu thập 10.87s, học 20.92s
+[ 218]  2,892,311 mẫu · loss 0.217 · trùng hành động bot 93.2% · thu thập 10.88s, học 22.01s
+[ 219]  2,905,352 mẫu · loss 0.244 · trùng hành động bot 92.1% · thu thập 10.86s, học 21.84s
+[ 220]  2,918,775 mẫu · loss 0.226 · trùng hành động bot 92.7% · thu thập 10.9s, học 20.5s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.64 ± 0.28, top 4 47%, nhất 9%, chót 12%
+  Elo sảnh: bank 1602, tempo 1568, tank 1527, agent 1500, roll7 1462, hyper 1448, fast9 1392
+  hành vi (sảnh): roll/vòng 0.29, XP/vòng 0.96, mua/vòng 1.20, vàng khi kết thúc lượt 19.0, cấp theo vòng {5: 4.32, 10: 5.62, 15: 6.94, 20: 7.54}
+  cuối ván (vòng 20+): quân 3 sao 0.02, 2 sao 4.41, tộc hệ kích hoạt 3.12; lối chính: Đấu sĩ 29%, Sát thủ 14%, Celt 12%, Hộ vệ 10%, Pháp sư 8%, Việt Nam 5% (độ đa dạng 9.0)
+[ 221]  2,931,622 mẫu · loss 0.231 · trùng hành động bot 92.6% · thu thập 10.82s, học 20.61s
+[ 222]  2,944,427 mẫu · loss 0.238 · trùng hành động bot 92.4% · thu thập 10.85s, học 19.65s
+[ 223]  2,957,805 mẫu · loss 0.222 · trùng hành động bot 93.3% · thu thập 10.82s, học 20.64s
+[ 224]  2,970,574 mẫu · loss 0.235 · trùng hành động bot 92.7% · thu thập 10.83s, học 18.89s
+[ 225]  2,984,332 mẫu · loss 0.232 · trùng hành động bot 92.5% · thu thập 10.85s, học 21.88s
+[ 226]  2,997,371 mẫu · loss 0.240 · trùng hành động bot 92.2% · thu thập 10.84s, học 21.4s
+[ 227]  3,010,183 mẫu · loss 0.237 · trùng hành động bot 92.4% · thu thập 10.86s, học 20.39s
+  ── đánh giá ──
+  sảnh A (8 người, 64 ván): hạng TB 4.22 ± 0.29, top 4 55%, nhất 17%, chót 9%
+  Elo sảnh: bank 1597, tempo 1549, agent 1535, tank 1513, roll7 1477, hyper 1446, fast9 1384
+  hành vi (sảnh): roll/vòng 0.27, XP/vòng 0.95, mua/vòng 1.30, vàng khi kết thúc lượt 15.7, cấp theo vòng {5: 4.45, 10: 5.72, 15: 7.06, 20: 7.61}
+  cuối ván (vòng 20+): quân 3 sao 0.02, 2 sao 4.37, tộc hệ kích hoạt 3.06; lối chính: Đấu sĩ 33%, Pháp sư 18%, Hộ vệ 13%, Sát thủ 10%, Quái thú 6%, Việt Nam 5% (độ đa dạng 7.2)
+đã chép checkpoint cuối sang runs/bc_v4.pt
+xong: 3,010,183 mẫu. Dùng tiếp với: --set init=runs/bc_20261108_004414/checkpoints/latest.pt ppo.value_warmup=50 ppo.lr_warmup=50

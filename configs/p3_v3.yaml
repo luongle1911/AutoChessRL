@@ -1,0 +1,73 @@
+# Giai đoạn 3, phần 2: như p3_lobby.yaml nhưng trên LUẬT BẢN 3 (catalog_v3: 3 sao tướng 1-2 tiền mạnh hơn,
+#   kho lớn hơn, đầu ván mất ít máu hơn, cuối ván nhiều hơn, nhiệt độ 0,17).
+#   Bắt đầu từ agent giai đoạn 3 lần 400 (luật bản 2). Tốc độ học cao hơn lần 1 (KL lần 1 chỉ ~0,001-0,003).
+#   Mỗi sảnh: 50% toàn agent hiện tại (mỗi ván cho 8 chuỗi dữ liệu); 50% agent ngồi 1-2 ghế, các ghế khác
+#   bốc từ kho: 70% bản cũ / bản neo, 30% bot luật, ưu tiên đối thủ khó.
+# Đường dẫn checkpoint dưới đây là của máy laptop; đổi nếu chạy ở máy khác.
+name: p3_v3
+num_players: 8
+catalog: autochess/data/catalog_v3.json
+total_decisions: 12000000          # ~9-10 giờ trên laptop
+init: runs/p3_lobby_20261105_213955/checkpoints/latest.pt
+
+env:
+  num_games: 128
+  steps: 128
+  mix: {4: 0.25}
+  skip_waiting: true             # bỏ các bước chờ người khác xong lượt (rất nhiều ở 8 người)
+
+net:
+  opp_bench: true                # quan sát bản 3: thấy hàng chờ đối thủ
+
+opponents:
+  names: [tempo, hyper, roll7, fast9, bank]
+  prioritize: true
+  power: 2.0
+  floor: 0.05
+  selfplay_prob: 0.5
+  agent_seats: [1, 2]
+
+league:
+  seeds:
+    v2_250: runs/p2_bots_v2_20261103_191704/checkpoints/update_00250.pt
+    v1_550: runs/p2_bots_20261103_000344/checkpoints/update_00550.pt
+    s2_final: runs/p2_selfplay_20261104_230537/checkpoints/latest.pt
+    r2_final: runs/v2rules_20261105_121403/checkpoints/latest.pt
+    p3_400: runs/p3_lobby_20261105_213955/checkpoints/latest.pt
+  snapshot_every: 25
+  max_snapshots: 10
+  group_weights: {bot: 0.3, policy: 0.7}
+
+reward:
+  gamma_round: 0.995
+  lam: 0.95
+  beta: 0.1
+  churn_cost: 0.002
+
+ppo:
+  lr: 4.0e-4
+  update_epochs: 2               # 8 người: cập nhật là nút thắt trên CPU 2 nhân
+  value_warmup: 5                # critic học lại (luật mới: máu mất theo vòng khác)
+  lr_warmup: 10
+  ent_coef: 0.005
+  ent_coef_final: 0.001
+
+eval:
+  every: 50
+  matrix: false                  # không tính bảng Elo 1 đấu 1 với bot (đã có Elo sảnh)
+  games: 200                     # 1 đấu 1 (kiểm tra agent không quên): mỗi đối thủ 200 ván
+  opponents: [fast9, bank]
+  anchors:
+    v2_250: runs/p2_bots_v2_20261103_191704/checkpoints/update_00250.pt
+    v1_550: runs/p2_bots_20261103_000344/checkpoints/update_00550.pt
+    s2_final: runs/p2_selfplay_20261104_230537/checkpoints/latest.pt
+    r2_final: runs/v2rules_20261105_121403/checkpoints/latest.pt
+    p3_400: runs/p3_lobby_20261105_213955/checkpoints/latest.pt
+  lobbies:
+    A: [tempo, hyper, roll7, fast9, bank, fast9, bank]
+    B: [p3_400, p3_400, p3_400, p3_400, p3_400, p3_400, p3_400]
+    C: [v2_250, v2_250, v2_250, v1_550, v1_550, fast9, bank]
+  lobby_games: 128
+  lobby_B: 64
+  lobby_elo_anchor: p3_400       # Elo sảnh: điểm xuất phát = 1500
+  m5_lobby: B                    # mốc 5: top 4 trên 60% trong sảnh B

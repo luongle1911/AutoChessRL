@@ -1,0 +1,605 @@
+{
+ "version": "catalog-v3.2",
+ "note": "Luật bản 3 (06/11/2026), so với catalog-v2: 3 sao tướng 1 tiền 44 -> 72 (Hỏa Nhi 48 -> 76), tướng 2 tiền 68 -> 98 (Thiết Trụ 76 -> 102); kho chung ván 8 người tướng 1 tiền 29 -> 36, 2 tiền 22 -> 28 (ván 2 người 12 -> 14, 10 -> 12); nhiệt độ giao tranh 0,2 -> 0,17; mất ít máu hơn khi thua và tăng dần chậm hơn: phần theo giai đoạn 1/3/5/7/10/13/17/22 từ vòng 1/6/11/16/21/26/30/34, phần theo số quân nhân 0,5/0,6/0,75/0,9/1 từ vòng 1/11/16/21/26 (ván 8 người dài ~28 vòng thay vì ~23,5, đủ thời gian xả vàng và lên cấp 8-9). Mục đích: giữ vàng và lên 3 sao tướng rẻ thành lối chơi đáng theo. Bản 3.2 (07/11): tối đa 50 hành động mỗi vòng (trước 30) để roll xuống ở cấp cao không bị hết lượt.",
+ "champions": [
+  {
+   "id": 0,
+   "name": "Lê Kiếm",
+   "cost": 1,
+   "traits": [
+    0,
+    2
+   ],
+   "power": [
+    10,
+    18,
+    72
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Mộc Lan",
+   "cost": 1,
+   "traits": [
+    3,
+    4
+   ],
+   "power": [
+    10,
+    18,
+    72
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Hỏa Nhi",
+   "cost": 1,
+   "traits": [
+    1
+   ],
+   "power": [
+    11,
+    20,
+    76
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Thạch Sơn",
+   "cost": 1,
+   "traits": [
+    0,
+    3
+   ],
+   "power": [
+    10,
+    18,
+    72
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Phong Ảnh",
+   "cost": 1,
+   "traits": [
+    2,
+    5
+   ],
+   "power": [
+    10,
+    18,
+    72
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Lam Tuyết",
+   "cost": 2,
+   "traits": [
+    1,
+    5
+   ],
+   "power": [
+    16,
+    29,
+    98
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Thiết Trụ",
+   "cost": 2,
+   "traits": [
+    3
+   ],
+   "power": [
+    18,
+    32,
+    102
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Ưng Nhãn",
+   "cost": 2,
+   "traits": [
+    4,
+    2
+   ],
+   "power": [
+    16,
+    29,
+    98
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Bạch Hổ",
+   "cost": 2,
+   "traits": [
+    0,
+    4
+   ],
+   "power": [
+    16,
+    29,
+    98
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Nguyệt Cơ",
+   "cost": 2,
+   "traits": [
+    1,
+    3
+   ],
+   "power": [
+    16,
+    29,
+    98
+   ]
+  },
+  {
+   "id": 10,
+   "name": "Hắc Phong",
+   "cost": 3,
+   "traits": [
+    2,
+    0
+   ],
+   "power": [
+    24,
+    43,
+    95
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Thanh Long",
+   "cost": 3,
+   "traits": [
+    5,
+    4
+   ],
+   "power": [
+    24,
+    43,
+    95
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Lôi Thần",
+   "cost": 3,
+   "traits": [
+    1,
+    0
+   ],
+   "power": [
+    24,
+    43,
+    95
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Ngân Giáp",
+   "cost": 3,
+   "traits": [
+    3,
+    5
+   ],
+   "power": [
+    24,
+    43,
+    95
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Huyết Ảnh",
+   "cost": 4,
+   "traits": [
+    2,
+    5
+   ],
+   "power": [
+    33,
+    72,
+    128
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Thiên Cung",
+   "cost": 4,
+   "traits": [
+    4,
+    1,
+    3
+   ],
+   "power": [
+    30,
+    65,
+    115
+   ]
+  },
+  {
+   "id": 16,
+   "name": "Cự Thạch",
+   "cost": 4,
+   "traits": [
+    0,
+    3,
+    5
+   ],
+   "power": [
+    30,
+    65,
+    115
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Long Vương",
+   "cost": 5,
+   "traits": [
+    5,
+    0,
+    3
+   ],
+   "power": [
+    40,
+    90,
+    160
+   ]
+  },
+  {
+   "id": 18,
+   "name": "Tử Vi",
+   "cost": 5,
+   "traits": [
+    1,
+    5,
+    2
+   ],
+   "power": [
+    40,
+    90,
+    160
+   ]
+  },
+  {
+   "id": 19,
+   "name": "Thần Tiễn",
+   "cost": 5,
+   "traits": [
+    4,
+    2,
+    1
+   ],
+   "power": [
+    40,
+    90,
+    160
+   ]
+  }
+ ],
+ "traits": [
+  {
+   "id": 0,
+   "name": "Đấu sĩ",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.16,
+    0.4,
+    0.72
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Pháp sư",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.192,
+    0.448,
+    0.8
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Sát thủ",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.16,
+    0.4,
+    0.72
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Hộ vệ",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.128,
+    0.352,
+    0.64
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Xạ thủ",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.16,
+    0.4,
+    0.72
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Thần bí",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "bonus": [
+    0.192,
+    0.448,
+    0.8
+   ]
+  }
+ ],
+ "counter_matrix_note": "Phản đối xứng: counter[i][j] = -counter[j][i]. Dương nghĩa là tộc hàng i khắc tộc cột j. Nhân với mức kích hoạt đã chia về 0..1 (mốc đạt được / 3).",
+ "counter_matrix": [
+  [
+   0.0,
+   0.15,
+   0.0,
+   0.0,
+   0.3,
+   -0.3
+  ],
+  [
+   -0.15,
+   0.0,
+   -0.45,
+   0.45,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.45,
+   0.0,
+   -0.45,
+   0.3,
+   0.0
+  ],
+  [
+   0.0,
+   -0.45,
+   0.45,
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   -0.3,
+   0.0,
+   -0.3,
+   0.0,
+   0.0,
+   0.3
+  ],
+  [
+   0.3,
+   0.0,
+   0.0,
+   0.0,
+   -0.3,
+   0.0
+  ]
+ ],
+ "pool_size_by_cost_note": "Số bản mỗi tướng theo bậc 1..5; số người chơi khác 2 và 8 được nội suy tuyến tính rồi làm tròn.",
+ "pool_size_by_cost": {
+  "2": [
+   14,
+   12,
+   8,
+   6,
+   5
+  ],
+  "8": [
+   36,
+   28,
+   18,
+   12,
+   10
+  ]
+ },
+ "shop_odds_note": "Hàng thứ L-1 là tỷ lệ (%) bậc 1..5 ở cấp L.",
+ "shop_odds": [
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   75,
+   25,
+   0,
+   0,
+   0
+  ],
+  [
+   55,
+   30,
+   15,
+   0,
+   0
+  ],
+  [
+   45,
+   33,
+   20,
+   2,
+   0
+  ],
+  [
+   30,
+   40,
+   25,
+   5,
+   0
+  ],
+  [
+   19,
+   30,
+   35,
+   15,
+   1
+  ],
+  [
+   18,
+   25,
+   32,
+   22,
+   3
+  ],
+  [
+   10,
+   20,
+   25,
+   35,
+   10
+  ]
+ ],
+ "xp_to_next": [
+  2,
+  2,
+  6,
+  10,
+  20,
+  36,
+  48,
+  76
+ ],
+ "economy": {
+  "base_income": 5,
+  "interest_step": 10,
+  "interest_max": 5,
+  "streak_bonus": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   3
+  ],
+  "roll_cost": 2,
+  "xp_cost": 4,
+  "xp_per_buy": 4,
+  "xp_per_round": 2,
+  "start_gold": 10
+ },
+ "rules": {
+  "start_hp": 100,
+  "max_rounds": 50,
+  "max_actions_per_round": 50
+ },
+ "stage_damage_note": "[vòng bắt đầu, sát thương giai đoạn]",
+ "stage_damage": [
+  [
+   1,
+   1
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   11,
+   5
+  ],
+  [
+   16,
+   7
+  ],
+  [
+   21,
+   10
+  ],
+  [
+   26,
+   13
+  ],
+  [
+   30,
+   17
+  ],
+  [
+   34,
+   22
+  ]
+ ],
+ "unit_damage_scale_note": "[vòng bắt đầu, hệ số nhân phần sát thương theo số quân của bên thắng]",
+ "unit_damage_scale": [
+  [
+   1,
+   0.5
+  ],
+  [
+   11,
+   0.6
+  ],
+  [
+   16,
+   0.75
+  ],
+  [
+   21,
+   0.9
+  ],
+  [
+   26,
+   1.0
+  ]
+ ],
+ "combat": {
+  "formula-v1": {
+   "temperature": 0.17
+  }
+ }
+}

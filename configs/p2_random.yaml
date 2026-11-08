@@ -1,0 +1,12 @@
+# Bước 3 của thứ tự triển khai: agent học thắng bot ngẫu nhiên (mốc 1).
+# Mục đích là kiểm tra toàn bộ đường ống PPO chạy đúng, không phải tạo agent mạnh.
+name: p2_random
+num_players: 2
+total_decisions: 3000000
+opponents:
+  names: [random]
+  prioritize: false
+eval:
+  every: 10
+  games: 200
+  opponents: [random, tempo]

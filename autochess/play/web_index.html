@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AutoChess chơi thử</title>
+<style>
+:root {
+  --bg: #12141a; --panel: #1b1e27; --panel2: #232734; --line: #2f3445; --text: #e6e8ef; --dim: #8b92a8;
+  --c1: #9aa3b2; --c2: #3fb26b; --c3: #3b8fe0; --c4: #b05ce6; --c5: #e8b33a;
+  --win: #3fb26b; --lose: #e05555; --accent: #e8b33a;
+  --lv1: #a9714a; --lv2: #b8c2cc; --lv3: #e8b33a; --lv4: #6fe0e8;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.35 system-ui, "Segoe UI", Roboto, sans-serif; }
+button { font: inherit; color: var(--text); background: var(--panel2); border: 1px solid var(--line); border-radius: 6px;
+  padding: 6px 10px; cursor: pointer; }
+button:hover:not(:disabled) { border-color: var(--accent); }
+button:disabled { opacity: .4; cursor: default; }
+.top { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; padding: 8px 14px; background: var(--panel);
+  border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+.top .kv { display: flex; gap: 4px; align-items: baseline; }
+.top .k { color: var(--dim); font-size: 12px; }
+.top .v { font-weight: 600; font-size: 16px; }
+.top .odds span { display: inline-block; min-width: 34px; text-align: center; font-size: 12px; border-radius: 4px; padding: 1px 3px; margin-right: 2px; }
+.top .grow { flex: 1; }
+.layout { display: grid; grid-template-columns: 230px minmax(0, 1fr) 290px; gap: 10px; padding: 10px; }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+.panel h3 { margin: 0 0 8px; font-size: 13px; color: var(--dim); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+.trait { display: flex; align-items: center; gap: 8px; padding: 5px 6px; border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+.trait:hover { border-color: var(--line); background: var(--panel2); }
+.trait .badge { width: 26px; height: 26px; border-radius: 6px; display: grid; place-items: center; font-weight: 700; background: #2a2f3d; color: var(--dim); }
+.trait.l1 .badge { background: var(--lv1); color: #111; } .trait.l2 .badge { background: var(--lv2); color: #111; }
+.trait.l3 .badge { background: var(--lv3); color: #111; } .trait.l4 .badge { background: var(--lv4); color: #111; }
+.trait .bps { font-size: 12px; color: var(--dim); }
+.trait .bps b { color: var(--text); }
+.trait.off { opacity: .55; }
+.row { display: grid; grid-template-columns: repeat(9, minmax(0, 1fr)); gap: 6px; }
+.slot { min-height: 104px; border: 1px dashed var(--line); border-radius: 8px; padding: 4px; cursor: pointer; background: #161922; }
+.slot.sel { outline: 2px solid var(--accent); }
+.unit { border-left: 4px solid var(--c1); padding-left: 5px; height: 100%; }
+.unit .nm { font-weight: 600; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.unit .st { color: var(--accent); font-size: 12px; letter-spacing: -1px; }
+.unit .tr { font-size: 11px; color: var(--dim); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stats { font-size: 11px; color: var(--dim); display: flex; flex-wrap: wrap; gap: 0 6px; margin-top: 2px; }
+.stats span { white-space: nowrap; }
+.stats b { color: var(--text); font-weight: 600; }
+.cost1 { border-color: var(--c1) !important; } .cost2 { border-color: var(--c2) !important; } .cost3 { border-color: var(--c3) !important; }
+.cost4 { border-color: var(--c4) !important; } .cost5 { border-color: var(--c5) !important; }
+.tc1 { color: var(--c1); } .tc2 { color: var(--c2); } .tc3 { color: var(--c3); } .tc4 { color: var(--c4); } .tc5 { color: var(--c5); }
+.label { font-size: 12px; color: var(--dim); margin: 10px 0 4px; display: flex; justify-content: space-between; }
+.shop { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+.card { border: 2px solid var(--c1); border-radius: 8px; padding: 6px 8px; background: var(--panel2); cursor: pointer; min-height: 120px; position: relative; }
+.card:hover { filter: brightness(1.15); }
+.card.no { opacity: .45; cursor: default; }
+.card .price { position: absolute; right: 8px; top: 6px; font-weight: 700; }
+.card .owned { color: var(--accent); font-size: 12px; }
+.chip { display: inline-block; font-size: 11px; padding: 0 5px; border-radius: 4px; background: #2a2f3d; margin: 2px 2px 0 0; }
+.chip.on { background: #3d4a2a; color: #d8f0b0; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; align-items: center; }
+.team { font-size: 12px; color: var(--dim); margin-top: 6px; }
+.team b { color: var(--text); }
+.opp { padding: 6px; border-radius: 6px; cursor: pointer; border: 1px solid transparent; }
+.opp:hover { background: var(--panel2); border-color: var(--line); }
+.opp.dead { opacity: .4; }
+.opp .line1 { display: flex; justify-content: space-between; gap: 6px; }
+.hpbar { height: 5px; background: #2a2f3d; border-radius: 3px; margin: 3px 0; overflow: hidden; }
+.hpbar div { height: 100%; background: var(--win); }
+.small { font-size: 12px; color: var(--dim); }
+.win { color: var(--win); } .lose { color: var(--lose); }
+.events { max-height: 220px; overflow: auto; font-size: 12px; color: var(--dim); }
+.modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.55); display: none; align-items: center; justify-content: center; z-index: 20; }
+.modal { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px; width: min(860px, 94vw); max-height: 88vh; overflow: auto; }
+.modal h2 { margin: 0 0 6px; font-size: 18px; }
+.bp { padding: 4px 8px; border-radius: 6px; margin: 3px 0; background: var(--panel2); }
+.bp.cur { outline: 1px solid var(--accent); }
+.busy { position: fixed; right: 14px; bottom: 14px; background: var(--panel2); border: 1px solid var(--line); padding: 6px 10px; border-radius: 6px; display: none; }
+.err { color: var(--lose); white-space: pre-wrap; font-size: 12px; }
+@media (max-width: 1100px) { .layout { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<div class="top" id="top"></div>
+<div class="layout">
+  <div class="panel"><h3>Tộc hệ</h3><div id="traits"></div></div>
+  <div>
+    <div class="panel">
+      <div class="label"><span>Sân (bàn cờ giao tranh để trống: chưa có agent xếp quân)</span><span id="boardcount"></span></div>
+      <div class="row" id="board"></div>
+      <div class="team" id="team"></div>
+      <div class="label"><span>Hàng chờ</span></div>
+      <div class="row" id="bench"></div>
+      <div class="actions" id="unitactions"></div>
+    </div>
+    <div class="panel" style="margin-top:10px">
+      <div class="label"><span>Shop (bấm để mua)</span><span id="oddsline" class="small"></span></div>
+      <div class="shop" id="shop"></div>
+      <div class="actions">
+        <button id="bRoll">Roll (D) · 2 vàng</button>
+        <button id="bXp">Mua kinh nghiệm (F) · 4 vàng</button>
+        <button id="bEnd">Kết thúc lượt (Space)</button>
+        <span style="flex:1"></span>
+        <button id="bUndo">Hoàn tác (Z)</button>
+        <button id="bNew">Ván mới</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="panel"><h3>Đối thủ (bấm để xem nhà)</h3><div id="opps"></div></div>
+    <div class="panel" style="margin-top:10px"><h3>Giao tranh vừa rồi</h3><div id="rounds"></div></div>
+    <div class="panel" style="margin-top:10px"><h3>Diễn biến của bạn</h3><div class="events" id="events"></div></div>
+  </div>
+</div>
+<div class="modal-bg" id="mbg"><div class="modal" id="modal"></div></div>
+<div class="busy" id="busy">bot đang đi…</div>
+<script>
+const $ = id => document.getElementById(id);
+let CAT = null, S = null, SEL = null;
+const ACT = { BUY0: 0, SELL0: 5, MOVE0: 23, ROLL: 41, XP: 42, END: 43 };
+const STARS = n => "★".repeat(n);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+async function api(path, body) {
+  const opt = body === undefined ? {} : { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) };
+  $("busy").style.display = "block";
+  try { const r = await fetch(path, opt); return await r.json(); }
+  finally { $("busy").style.display = "none"; }
+}
+async function act(a) {
+  if (!S || !S.waiting || !S.legal.includes(a)) return;
+  SEL = null; S = await api("/api/act", { a }); render();
+}
+const legal = a => S && S.waiting && S.legal.includes(a);
+const traitId = name => CAT.traits.findIndex(t => t.name === name);
+
+function statsHtml(st) {
+  if (!st) return "";
+  return `<div class="stats" title="Máu · sát thương vật lý (VL) · sát thương phép · giáp · kháng phép (KP)"><span>Máu <b>${st.hp}</b></span>
+    <span>VL <b>${st.ad}</b></span><span>Phép <b>${st.ap}</b></span><span>Giáp <b>${st.armor}</b></span><span>KP <b>${st.mr}</b></span></div>`;
+}
+function unitHtml(u, final) {
+  if (!u) return "";
+  const st = final && u.final_stats ? u.final_stats : u.stats;
+  return `<div class="unit cost${u.cost}"><div class="nm tc${u.cost}">${esc(u.name)}</div>
+    <div class="st">${STARS(u.star)} <span class="small">${u.cost}v</span></div>
+    <div class="tr">${u.traits.map(esc).join(" · ")}</div>${statsHtml(st)}</div>`;
+}
+
+function renderTop(v) {
+  const me = v.me, lv = me.level, odds = CAT.shop_odds[lv - 1];
+  const streak = me.streak > 0 ? `<span class="win">thắng ${me.streak}</span>` : me.streak < 0 ? `<span class="lose">thua ${-me.streak}</span>` : "—";
+  const kv = (k, val) => `<div class="kv"><span class="k">${k}</span><span class="v">${val}</span></div>`;
+  $("top").innerHTML = [
+    kv("Vòng", v.round), kv("Máu", me.hp), kv("Vàng", `${me.gold} <span class="small">(lãi +${me.interest_next ?? 0})</span>`),
+    kv("Chuỗi", streak), kv("Cấp", `${lv} <span class="small">${me.xp_next ? `${me.xp}/${me.xp_next} KN` : "tối đa"}</span>`),
+    kv("Hành động còn", `${me.actions_left}/${CAT.max_actions}`),
+    v.expected_win != null ? kv("Thắng vòng này", `${Math.round(100 * v.expected_win)}%`) : "",
+    `<div class="odds"><span class="k">Tỷ lệ shop cấp ${lv}: </span>${odds.map((o, i) => `<span class="tc${i + 1}" style="background:#22252f">${o}%</span>`).join("")}</div>`,
+    `<div class="grow"></div><div class="small">${esc(CAT.version)} · ${esc(CAT.combat)} · seed ${S.seed}</div>`,
+  ].join("");
+  $("oddsline").textContent = `bậc 1-5 ở cấp ${lv}: ${odds.join(" / ")}%`;
+}
+
+function renderTraits(v) {
+  const box = $("traits"); box.innerHTML = "";
+  const list = v.me.traits;
+  if (!list.length) box.innerHTML = `<div class="small">Chưa có tướng trên sân.</div>`;
+  for (const t of list) {
+    const ct = CAT.traits[t.id];
+    const el = document.createElement("div");
+    el.className = `trait l${Math.min(t.level, 4)}` + (t.level ? "" : " off");
+    el.innerHTML = `<div class="badge">${t.count}</div><div><div>${esc(t.name)}</div>
+      <div class="bps">${ct.breakpoints.map((b, i) => i < t.level ? `<b>${b}</b>` : b).join(" ▸ ")}</div></div>`;
+    el.onclick = () => showTrait(t.id, v.me);
+    box.appendChild(el);
+  }
+}
+
+function showTrait(k, me) {
+  const t = CAT.traits[k];
+  const mine = (me && me.traits.find(x => x.id === k)) || { count: 0, level: 0 };
+  const onBoard = new Set((me ? me.board : []).filter(Boolean).map(u => u.champ));
+  const scope = t.scope === "team" ? "cả đội trên sân" : "tướng mang tộc";
+  const bps = t.breakpoints.map((b, i) =>
+    `<div class="bp ${i + 1 === mine.level ? "cur" : ""}"><b>${b}</b> tướng: ${esc(t.effects[i] || "")}</div>`).join("");
+  const mem = t.members.map(c => { const ch = CAT.champions[c];
+    return `<span class="chip tc${ch.cost}" style="${onBoard.has(c) ? "font-weight:700;outline:1px solid currentColor" : ""}">${esc(ch.name)} ${ch.cost}v</span>`; }).join("");
+  const nxt = mine.level < t.breakpoints.length ? `Mốc tiếp theo: ${t.breakpoints[mine.level]} (cần thêm ${t.breakpoints[mine.level] - mine.count}) — ${esc(t.effects[mine.level] || "")}` : "Đã đạt mốc cao nhất.";
+  openModal(`<h2>${esc(t.name)} <span class="small">(${t.kind === "class" ? "hệ" : t.kind === "unique" ? "tộc riêng" : "tộc"}, áp dụng cho ${scope})</span></h2>
+    <p class="small">${esc(t.text || "")}</p><p>Đang có <b>${mine.count}</b> tướng khác nhau trên sân. ${nxt}</p>${bps}
+    <div class="label"><span>Tướng mang tộc này (đậm = đang trên sân)</span></div><div>${mem}</div>`);
+}
+
+function renderRows(v) {
+  const board = $("board"), bench = $("bench"); board.innerHTML = ""; bench.innerHTML = "";
+  const mk = (u, slot, final) => {
+    const d = document.createElement("div");
+    d.className = "slot" + (SEL === slot ? " sel" : "");
+    d.innerHTML = unitHtml(u, final);
+    d.onclick = () => { if (u) { SEL = SEL === slot ? null : slot; render(); } };
+    return d;
+  };
+  v.board.forEach((u, i) => board.appendChild(mk(u, 9 + i, true)));
+  v.bench.forEach((u, i) => bench.appendChild(mk(u, i, false)));
+  $("boardcount").textContent = `${v.me.board_count}/${v.me.level} quân`;
+  const tm = v.me.team;
+  $("team").innerHTML = tm ? `Cả đội (đã tính tộc hệ): Máu <b>${tm.hp}</b> · STVL <b>${tm.ad}</b> · STP <b>${tm.ap}</b> · Giáp TB <b>${tm.armor}</b> · KP TB <b>${tm.mr}</b> · Độ mạnh <b>${Math.round(v.me.strength)}</b>`
+                          : `Độ mạnh <b>${Math.round(v.me.strength)}</b>`;
+  const ua = $("unitactions"); ua.innerHTML = "";
+  if (SEL !== null) {
+    const u = SEL < 9 ? v.bench[SEL] : v.board[SEL - 9];
+    if (u) {
+      const mv = document.createElement("button");
+      mv.textContent = SEL < 9 ? `Đưa ${u.name} lên sân (W)` : `Cho ${u.name} xuống hàng chờ (W)`;
+      mv.disabled = !legal(ACT.MOVE0 + SEL); mv.onclick = () => act(ACT.MOVE0 + SEL);
+      const sl = document.createElement("button");
+      sl.textContent = `Bán ${u.name} ${STARS(u.star)} (E)`;
+      sl.disabled = !legal(ACT.SELL0 + SEL); sl.onclick = () => act(ACT.SELL0 + SEL);
+      const info = document.createElement("span"); info.className = "small";
+      info.textContent = "Bấm vào tộc bên trái để xem thưởng từng mốc.";
+      ua.append(mv, sl, info);
+    }
+  }
+}
+
+function renderShop(v) {
+  const box = $("shop"); box.innerHTML = "";
+  const myTraits = new Set(v.me.traits.map(t => t.name));
+  v.shop.forEach((c, i) => {
+    const d = document.createElement("div");
+    if (!c) { d.className = "card no"; d.innerHTML = `<div class="small">trống</div>`; box.appendChild(d); return; }
+    const ok = legal(ACT.BUY0 + i);
+    d.className = `card cost${c.cost}` + (ok ? "" : " no");
+    d.innerHTML = `<div class="price tc${c.cost}">${c.cost}v</div><div class="nm tc${c.cost}" style="font-weight:700">${esc(c.name)}</div>
+      ${c.owned ? `<div class="owned">đang có ${c.owned} quân</div>` : `<div class="small">&nbsp;</div>`}
+      <div>${c.traits.map(t => `<span class="chip ${myTraits.has(t) ? "on" : ""}" data-t="${traitId(t)}">${esc(t)}</span>`).join("")}</div>
+      ${statsHtml(c.stats)}`;
+    d.onclick = e => { const t = e.target.dataset.t; if (t !== undefined) return showTrait(+t, v.me); act(ACT.BUY0 + i); };
+    box.appendChild(d);
+  });
+  $("bRoll").disabled = !legal(ACT.ROLL); $("bXp").disabled = !legal(ACT.XP); $("bEnd").disabled = !legal(ACT.END);
+}
+
+function renderOpps(v) {
+  const box = $("opps"); box.innerHTML = "";
+  for (const o of v.opponents) {
+    const d = document.createElement("div");
+    d.className = "opp" + (o.alive ? "" : " dead");
+    const lr = o.last_result && o.last_result.result ? (o.last_result.result > 0 ? `<span class="win">thắng</span>` : `<span class="lose">thua −${o.last_result.hp_lost}</span>`) : "";
+    const st = o.streak > 0 ? `<span class="win">+${o.streak}</span>` : o.streak < 0 ? `<span class="lose">${o.streak}</span>` : "";
+    d.innerHTML = `<div class="line1"><span><b>${esc(S.labels[o.seat])}</b> <span class="small">ghế ${o.seat}</span></span><span>${o.alive ? o.hp + " máu" : "hạng " + o.placement}</span></div>
+      <div class="hpbar"><div style="width:${Math.max(0, o.hp)}%"></div></div>
+      <div class="small">Cấp ${o.level} · ${o.gold} vàng · chuỗi ${st || "0"} · ${o.board_count} quân · độ mạnh ${Math.round(o.strength)}
+      ${o.win_prob != null && o.alive ? ` · bạn thắng <b>${Math.round(100 * o.win_prob)}%</b>` : ""}${o.meet_prob != null && o.alive ? ` · gặp ${Math.round(100 * o.meet_prob)}%` : ""} ${lr ? "· vừa " + lr : ""}</div>`;
+    d.onclick = () => showOpp(o);
+    box.appendChild(d);
+  }
+}
+
+function showOpp(o) {
+  const cells = (arr, fin) => `<div class="row">${arr.map(u => `<div class="slot" style="cursor:default">${unitHtml(u, fin)}</div>`).join("")}</div>`;
+  const tr = o.traits.map(t => `<span class="chip ${t.level ? "on" : ""}" data-t="${t.id}" style="cursor:pointer">${t.count} ${esc(t.name)}</span>`).join("");
+  const tm = o.team ? `Máu <b>${o.team.hp}</b> · STVL <b>${o.team.ad}</b> · STP <b>${o.team.ap}</b> · Giáp TB <b>${o.team.armor}</b> · KP TB <b>${o.team.mr}</b>` : "";
+  openModal(`<h2>${esc(S.labels[o.seat])} <span class="small">ghế ${o.seat} · ${o.hp} máu · cấp ${o.level} · ${o.gold} vàng</span></h2>
+    <div>${tr || '<span class="small">chưa có tộc</span>'}</div><div class="team">${tm}</div>
+    <div class="label"><span>Sân</span></div>${cells(o.board, true)}
+    <div class="label"><span>Hàng chờ</span></div>${cells(o.bench, false)}
+    <p class="small">Shop của đối thủ là thông tin ẩn.</p>`, o);
+}
+
+function renderRounds() {
+  const box = $("rounds");
+  if (!S.rounds.length) { box.innerHTML = `<div class="small">Chưa có trận nào.</div>`; return; }
+  const r = S.rounds[S.rounds.length - 1];
+  const name = p => p === 0 ? "<b>Bạn</b>" : esc(S.labels[p]);
+  const mine = r.results.find(x => x.seat === 0);
+  let html = `<div class="small">Vòng ${r.round}</div>`;
+  if (mine) html += `<div style="margin:4px 0 8px">${mine.win ? `<span class="win">Bạn thắng</span>` : `<span class="lose">Bạn thua (−${mine.hp_lost} máu)</span>`} ${mine.ghost ? "bóng của" : "trước"} ${name(mine.opponent)}</div>`;
+  const seen = new Set();
+  for (const x of r.results) {
+    if (seen.has(x.seat) || x.ghost) continue;
+    const y = r.results.find(z => z.seat === x.opponent && z.opponent === x.seat);
+    seen.add(x.seat); if (y) seen.add(y.seat);
+    const w = x.win ? x : y, l = x.win ? y : x;
+    if (!w || !l) continue;
+    html += `<div class="small">${name(w.seat)} <span class="win">thắng</span> ${name(l.seat)} <span class="lose">(−${l.hp_lost})</span></div>`;
+  }
+  for (const x of r.results.filter(x => x.ghost))
+    html += `<div class="small">${name(x.seat)} ${x.win ? '<span class="win">thắng</span>' : '<span class="lose">thua</span>'} bóng của ${name(x.opponent)}${x.win ? "" : ` (−${x.hp_lost})`}</div>`;
+  box.innerHTML = html;
+}
+
+function render() {
+  if (!S) return;
+  if (S.error) { $("events").innerHTML = `<div class="err">${esc(S.error)}</div>`; }
+  const v = S.view;
+  renderTop(v); renderTraits(v); renderRows(v); renderShop(v); renderOpps(v); renderRounds();
+  if (!S.error) $("events").innerHTML = S.events.slice().reverse().map(e => `<div>${esc(e)}</div>`).join("");
+  if (S.done) {
+    const order = S.placements.map((p, i) => [p, i]).sort((a, b) => a[0] - b[0]);
+    openModal(`<h2>Hết ván — bạn về hạng ${S.placements[0]}</h2>
+      ${order.map(([p, i]) => `<div>${p}. ${i === 0 ? "<b>Bạn</b>" : esc(S.labels[i])}</div>`).join("")}
+      <p class="small">Log đã lưu: ${esc(S.log || "(đang ghi)")}</p><button onclick="newGame()">Ván mới</button>`);
+  }
+}
+
+function openModal(html, opp) {
+  $("modal").innerHTML = html + `<div style="margin-top:12px"><button onclick="closeModal()">Đóng (Esc)</button></div>`;
+  $("mbg").style.display = "flex";
+  $("modal").querySelectorAll("[data-t]").forEach(el => el.onclick = () => showTrait(+el.dataset.t, opp || S.view.me));
+}
+function closeModal() { $("mbg").style.display = "none"; }
+$("mbg").onclick = e => { if (e.target.id === "mbg") closeModal(); };
+
+async function newGame() {
+  const seed = prompt("Seed cho ván mới (để trống = ngẫu nhiên):", "");
+  closeModal();
+  S = await api("/api/new", seed ? { seed: +seed } : {}); SEL = null; render();
+}
+$("bRoll").onclick = () => act(ACT.ROLL);
+$("bXp").onclick = () => act(ACT.XP);
+$("bEnd").onclick = () => act(ACT.END);
+$("bUndo").onclick = async () => { S = await api("/api/undo", {}); SEL = null; render(); };
+$("bNew").onclick = newGame;
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "INPUT") return;
+  if (e.key === "Escape") return closeModal();
+  if ($("mbg").style.display === "flex") return;
+  const k = e.key.toLowerCase();
+  if (k === "d") act(ACT.ROLL);
+  else if (k === "f") act(ACT.XP);
+  else if (k === " ") { e.preventDefault(); act(ACT.END); }
+  else if (k === "z") $("bUndo").onclick();
+  else if (k === "e" && SEL !== null) act(ACT.SELL0 + SEL);
+  else if (k === "w" && SEL !== null) act(ACT.MOVE0 + SEL);
+  else if (k >= "1" && k <= "5") act(ACT.BUY0 + (+k - 1));
+});
+
+(async () => { CAT = await api("/api/catalog"); S = await api("/api/state"); render(); })();
+</script>
+</body>
+</html>

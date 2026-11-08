@@ -1,0 +1,511 @@
+nohup: ignoring input
+khởi tạo mạng từ runs/v2rules_20261105_121403/checkpoints/latest.pt
+chạy: runs/p3_lobby_20261105_213955 · mạng entity2 361,383 tham số · thiết bị cpu · 128 ván x 128 bước mỗi đợt (pha sảnh {4: 0.25}) · đối thủ ['tempo', 'hyper', 'roll7', 'fast9', 'bank', 'v2_250', 'v1_550', 's2_final', 'r2_final'] · tự đấu 50%
+[    1]      39,480 qđ ·     435 qđ/s · KL 0.0000 kẹp 0.00 entropy 0.73 EV 0.26 · 0 ván, thắng% 
+[    2]      67,057 qđ ·     368 qđ/s · KL 0.0000 kẹp 0.00 entropy 0.64 EV 0.15 · 54 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:52 · tự đấu 49 ván · 4 người hạng TB 1.80 · 8 người hạng TB 4.00
+[    3]      96,577 qđ ·     382 qđ/s · KL 0.0000 kẹp 0.00 entropy 0.72 EV 0.11 · 59 ván, thắng% tempo:73 hyper:100 roll7:85 fast9:100 bank:95 bản-cũ:62 · tự đấu 32 ván · 4 người hạng TB 1.86 · 8 người hạng TB 3.38
+[    4]     127,504 qđ ·     400 qđ/s · KL 0.0000 kẹp 0.00 entropy 0.68 EV 0.25 · 63 ván, thắng% tempo:100 hyper:93 roll7:83 fast9:92 bank:100 bản-cũ:60 · tự đấu 30 ván · 4 người hạng TB 1.87 · 8 người hạng TB 3.03
+[    5]     158,095 qđ ·     391 qđ/s · KL 0.0000 kẹp 0.00 entropy 0.69 EV 0.24 · 63 ván, thắng% tempo:100 hyper:89 roll7:86 fast9:88 bank:100 bản-cũ:72 · tự đấu 38 ván · 4 người hạng TB 2.25 · 8 người hạng TB 2.47
+[    6]     188,090 qđ ·     378 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.69 EV 0.28 · 47 ván, thắng% tempo:100 hyper:100 roll7:83 fast9:82 bank:88 bản-cũ:69 · tự đấu 24 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.20
+[    7]     217,243 qđ ·     356 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.70 EV 0.24 · 72 ván, thắng% tempo:94 hyper:100 roll7:79 fast9:85 bank:78 bản-cũ:62 · tự đấu 42 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.52
+[    8]     246,271 qđ ·     356 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.71 EV 0.34 · 56 ván, thắng% tempo:80 hyper:92 roll7:87 fast9:83 bank:100 bản-cũ:64 · tự đấu 25 ván · 4 người hạng TB 2.09 · 8 người hạng TB 3.88
+[    9]     276,127 qđ ·     435 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.70 EV 0.36 · 75 ván, thắng% tempo:93 hyper:100 roll7:86 fast9:100 bank:91 bản-cũ:75 · tự đấu 42 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.37
+[   10]     306,445 qđ ·     440 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.67 EV 0.46 · 53 ván, thắng% tempo:100 hyper:92 roll7:92 fast9:83 bank:100 bản-cũ:67 · tự đấu 29 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.50
+[   11]     335,451 qđ ·     424 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.68 EV 0.46 · 73 ván, thắng% tempo:93 hyper:100 roll7:77 fast9:100 bank:100 bản-cũ:62 · tự đấu 42 ván · 4 người hạng TB 1.83 · 8 người hạng TB 3.62
+[   12]     363,960 qđ ·     422 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.68 EV 0.51 · 55 ván, thắng% tempo:91 hyper:100 roll7:100 fast9:100 bank:92 bản-cũ:56 · tự đấu 28 ván · 4 người hạng TB 1.85 · 8 người hạng TB 3.62
+[   13]     392,650 qđ ·     418 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.70 EV 0.51 · 60 ván, thắng% tempo:100 hyper:100 roll7:82 fast9:94 bank:100 bản-cũ:71 · tự đấu 28 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.03
+[   14]     421,354 qđ ·     420 qđ/s · KL 0.0042 kẹp 0.05 entropy 0.70 EV 0.57 · 67 ván, thắng% tempo:92 hyper:100 roll7:100 fast9:100 bank:89 bản-cũ:60 · tự đấu 34 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.39
+[   15]     448,071 qđ ·     407 qđ/s · KL 0.0036 kẹp 0.05 entropy 0.67 EV 0.61 · 59 ván, thắng% tempo:94 hyper:90 roll7:92 fast9:92 bank:100 bản-cũ:69 · tự đấu 27 ván · 4 người hạng TB 1.77 · 8 người hạng TB 3.29
+[   16]     474,346 qđ ·     401 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.65 EV 0.61 · 73 ván, thắng% tempo:100 hyper:88 roll7:100 fast9:100 bank:82 bản-cũ:55 · tự đấu 42 ván · 4 người hạng TB 1.94 · 8 người hạng TB 3.73
+[   17]     501,516 qđ ·     409 qđ/s · KL 0.0028 kẹp 0.04 entropy 0.65 EV 0.51 · 73 ván, thắng% tempo:85 hyper:89 roll7:100 fast9:88 bank:100 bản-cũ:61 · tự đấu 29 ván · 4 người hạng TB 2.43 · 8 người hạng TB 3.17
+[   18]     529,415 qđ ·     412 qđ/s · KL 0.0021 kẹp 0.02 entropy 0.63 EV 0.48 · 65 ván, thắng% tempo:92 hyper:88 roll7:100 fast9:77 bank:88 bản-cũ:63 · tự đấu 32 ván · 4 người hạng TB 2.32 · 8 người hạng TB 3.03
+[   19]     555,578 qđ ·     411 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.65 EV 0.55 · 65 ván, thắng% tempo:100 hyper:95 roll7:91 fast9:100 bank:88 bản-cũ:72 · tự đấu 34 ván · 4 người hạng TB 2.28 · 8 người hạng TB 2.96
+[   20]     582,165 qđ ·     407 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.63 EV 0.51 · 58 ván, thắng% tempo:86 hyper:89 roll7:69 fast9:100 bank:88 bản-cũ:72 · tự đấu 26 ván · 4 người hạng TB 1.89 · 8 người hạng TB 3.40
+[   21]     608,791 qđ ·     411 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.65 EV 0.53 · 74 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:90 bank:100 bản-cũ:70 · tự đấu 37 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.29
+[   22]     632,742 qđ ·     398 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.65 EV 0.57 · 56 ván, thắng% tempo:93 hyper:82 roll7:94 fast9:100 bank:100 bản-cũ:63 · tự đấu 29 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.46
+[   23]     659,409 qđ ·     412 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.65 EV 0.57 · 72 ván, thắng% tempo:100 hyper:86 roll7:100 fast9:94 bank:95 bản-cũ:62 · tự đấu 25 ván · 4 người hạng TB 1.88 · 8 người hạng TB 3.66
+[   24]     685,590 qđ ·     412 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.64 EV 0.57 · 61 ván, thắng% tempo:88 hyper:95 roll7:91 fast9:94 bank:83 bản-cũ:63 · tự đấu 23 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.70
+[   25]     711,831 qđ ·     404 qđ/s · KL 0.0029 kẹp 0.03 entropy 0.64 EV 0.56 · 69 ván, thắng% tempo:90 hyper:86 roll7:94 fast9:100 bank:100 bản-cũ:44 · tự đấu 35 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.88
+  kho: thêm snap_00025 vào kho (1/10 bản chụp) · thắng% trước bản cũ: v2_250*:77 v1_550*:77 s2_final*:49 r2_final*:41 snap_00025:50
+[   26]     737,891 qđ ·     402 qđ/s · KL 0.0039 kẹp 0.03 entropy 0.63 EV 0.56 · 69 ván, thắng% tempo:88 hyper:88 roll7:94 fast9:92 bank:93 bản-cũ:65 · tự đấu 32 ván · 4 người hạng TB 1.89 · 8 người hạng TB 3.76
+[   27]     765,066 qđ ·     401 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.64 EV 0.54 · 73 ván, thắng% tempo:92 hyper:87 roll7:94 fast9:100 bank:90 bản-cũ:65 · tự đấu 33 ván · 4 người hạng TB 2.27 · 8 người hạng TB 3.52
+[   28]     794,011 qđ ·     409 qđ/s · KL 0.0039 kẹp 0.04 entropy 0.65 EV 0.54 · 68 ván, thắng% tempo:87 hyper:89 roll7:88 fast9:89 bank:93 bản-cũ:59 · tự đấu 29 ván · 4 người hạng TB 2.27 · 8 người hạng TB 4.02
+[   29]     824,904 qđ ·     431 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.65 EV 0.59 · 60 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:73 · tự đấu 29 ván · 4 người hạng TB 1.56 · 8 người hạng TB 3.32
+[   30]     854,090 qđ ·     419 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.65 EV 0.56 · 79 ván, thắng% tempo:82 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 40 ván · 4 người hạng TB 2.41 · 8 người hạng TB 3.15
+[   31]     884,194 qđ ·     423 qđ/s · KL 0.0050 kẹp 0.05 entropy 0.64 EV 0.56 · 69 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:100 bank:86 bản-cũ:54 · tự đấu 35 ván · 4 người hạng TB 2.57 · 8 người hạng TB 3.80
+[   32]     915,361 qđ ·     429 qđ/s · KL 0.0022 kẹp 0.02 entropy 0.65 EV 0.57 · 70 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:92 bank:85 bản-cũ:56 · tự đấu 35 ván · 4 người hạng TB 2.22 · 8 người hạng TB 3.50
+[   33]     945,770 qđ ·     426 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.63 EV 0.55 · 65 ván, thắng% tempo:91 hyper:79 roll7:100 fast9:92 bank:100 bản-cũ:67 · tự đấu 37 ván · 4 người hạng TB 2.36 · 8 người hạng TB 3.28
+[   34]     973,741 qđ ·     404 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.64 EV 0.60 · 77 ván, thắng% tempo:92 hyper:94 roll7:88 fast9:100 bank:92 bản-cũ:67 · tự đấu 41 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.12
+[   35]     997,497 qđ ·     374 qđ/s · KL 0.0084 kẹp 0.07 entropy 0.61 EV 0.55 · 64 ván, thắng% tempo:95 hyper:75 roll7:84 fast9:100 bank:100 bản-cũ:58 · tự đấu 37 ván · 4 người hạng TB 1.60 · 8 người hạng TB 3.45
+[   36]   1,022,287 qđ ·     372 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.65 EV 0.56 · 68 ván, thắng% tempo:100 hyper:95 roll7:93 fast9:92 bank:100 bản-cũ:66 · tự đấu 26 ván · 4 người hạng TB 2.23 · 8 người hạng TB 3.12
+[   37]   1,048,360 qđ ·     391 qđ/s · KL 0.0034 kẹp 0.04 entropy 0.65 EV 0.56 · 60 ván, thắng% tempo:100 hyper:100 roll7:82 fast9:100 bank:93 bản-cũ:71 · tự đấu 23 ván · 4 người hạng TB 1.80 · 8 người hạng TB 2.94
+[   38]   1,075,644 qđ ·     401 qđ/s · KL 0.0023 kẹp 0.03 entropy 0.67 EV 0.58 · 76 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:86 bản-cũ:65 · tự đấu 32 ván · 4 người hạng TB 2.45 · 8 người hạng TB 3.27
+[   39]   1,105,596 qđ ·     425 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.66 EV 0.57 · 63 ván, thắng% tempo:100 hyper:92 roll7:100 fast9:100 bank:89 bản-cũ:70 · tự đấu 31 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.08
+[   40]   1,138,691 qđ ·     438 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.66 EV 0.58 · 74 ván, thắng% tempo:93 hyper:100 roll7:100 fast9:100 bank:86 bản-cũ:72 · tự đấu 41 ván · 4 người hạng TB 2.12 · 8 người hạng TB 2.86
+[   41]   1,167,928 qđ ·     414 qđ/s · KL 0.0032 kẹp 0.04 entropy 0.65 EV 0.57 · 57 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:50 bank:100 bản-cũ:59 · tự đấu 31 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.00
+[   42]   1,195,785 qđ ·     404 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.66 EV 0.61 · 72 ván, thắng% tempo:100 hyper:100 roll7:88 fast9:100 bank:89 bản-cũ:69 · tự đấu 44 ván · 4 người hạng TB 1.58 · 8 người hạng TB 3.44
+[   43]   1,221,976 qđ ·     395 qđ/s · KL 0.0014 kẹp 0.01 entropy 0.64 EV 0.57 · 72 ván, thắng% tempo:91 hyper:84 roll7:100 fast9:82 bank:95 bản-cũ:63 · tự đấu 29 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.54
+[   44]   1,247,978 qđ ·     393 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.64 EV 0.52 · 62 ván, thắng% tempo:100 hyper:96 roll7:80 fast9:91 bank:100 bản-cũ:60 · tự đấu 26 ván · 4 người hạng TB 2.30 · 8 người hạng TB 3.63
+[   45]   1,275,234 qđ ·     406 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.64 EV 0.55 · 68 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:90 bản-cũ:62 · tự đấu 31 ván · 4 người hạng TB 1.94 · 8 người hạng TB 3.56
+[   46]   1,302,004 qđ ·     404 qđ/s · KL 0.0037 kẹp 0.03 entropy 0.64 EV 0.53 · 70 ván, thắng% tempo:97 hyper:89 roll7:80 fast9:97 bank:86 bản-cũ:65 · tự đấu 33 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.53
+[   47]   1,330,513 qđ ·     408 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.64 EV 0.55 · 67 ván, thắng% tempo:93 hyper:80 roll7:94 fast9:100 bank:93 bản-cũ:53 · tự đấu 30 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.00
+[   48]   1,361,569 qđ ·     430 qđ/s · KL 0.0047 kẹp 0.05 entropy 0.65 EV 0.60 · 67 ván, thắng% tempo:96 hyper:100 roll7:95 fast9:88 bank:100 bản-cũ:66 · tự đấu 33 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.65
+[   49]   1,391,603 qđ ·     421 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.63 EV 0.55 · 73 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:88 bản-cũ:53 · tự đấu 35 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.80
+[   50]   1,418,350 qđ ·     395 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.63 EV 0.56 · 63 ván, thắng% tempo:100 hyper:92 roll7:80 fast9:100 bank:100 bản-cũ:71 · tự đấu 37 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.39
+  kho: thêm snap_00050 vào kho (2/10 bản chụp) · thắng% trước bản cũ: v2_250*:77 v1_550*:84 s2_final*:55 r2_final*:46 snap_00025:52 snap_00050:50
+  ── đánh giá (343 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.29 ± 0.09, top 4 96%, nhất 88%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.58 ± 0.20, top 4 50%, nhất 10%, chót 15%
+  sảnh C (8 người, 128 ván): hạng TB 1.91 ± 0.12, top 4 91%, nhất 59%, chót 0%
+  Elo sảnh: agent 1507, r2_final 1500, v2_250 1240, v1_550 1220, hyper 1160, tempo 1090, bank 1052, fast9 1038, roll7 1022
+  hành vi (sảnh): roll/vòng 0.35, XP/vòng 0.55, mua/vòng 1.56, vàng khi kết thúc lượt 4.2, cấp theo vòng {5: 4.98, 10: 5.89, 15: 6.28, 20: 6.99}
+  tỷ lệ thắng 1 đấu 1: fast9 98%, bank 98%
+  trước bản neo: v2_250 81%, v1_550 89%, s2_final 57%, r2_final 45%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [73 96 57 47]; bank [73 85 64 72]; v2_250 [58 63 63 54]; v1_550 [69 64 63 65]; s2_final [51 59 52 44]; r2_final [46 50 50 47]
+  hành vi: roll/vòng 0.23, XP/vòng 0.56, mua/vòng 1.94, bán/vòng 0.76, chuyển/vòng 1.71, vàng khi kết thúc lượt 3.8, quyết định/vòng 6.2, chạm trần/vòng 0.001, cấp theo vòng {5: 4.96, 10: 5.86, 15: 6.11, 20: 6.9}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[   51]   1,445,078 qđ ·     387 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.64 EV 0.57 · 71 ván, thắng% tempo:90 hyper:79 roll7:90 fast9:93 bank:100 bản-cũ:58 · tự đấu 34 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.68
+[   52]   1,473,470 qđ ·     396 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.65 EV 0.57 · 65 ván, thắng% tempo:91 hyper:87 roll7:100 fast9:90 bank:100 bản-cũ:58 · tự đấu 29 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.68
+[   53]   1,503,504 qđ ·     416 qđ/s · KL 0.0062 kẹp 0.06 entropy 0.65 EV 0.57 · 65 ván, thắng% tempo:92 hyper:93 roll7:100 fast9:95 bank:95 bản-cũ:56 · tự đấu 31 ván · 4 người hạng TB 1.85 · 8 người hạng TB 3.70
+[   54]   1,530,325 qđ ·     394 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.68 EV 0.60 · 61 ván, thắng% tempo:92 hyper:89 roll7:94 fast9:94 bank:96 bản-cũ:60 · tự đấu 31 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.51
+[   55]   1,560,401 qđ ·     421 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.69 EV 0.61 · 69 ván, thắng% tempo:94 hyper:100 roll7:100 fast9:94 bank:100 bản-cũ:54 · tự đấu 33 ván · 4 người hạng TB 2.28 · 8 người hạng TB 3.44
+[   56]   1,594,314 qđ ·     443 qđ/s · KL 0.0021 kẹp 0.02 entropy 0.67 EV 0.52 · 71 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:100 bank:100 bản-cũ:68 · tự đấu 25 ván · 4 người hạng TB 1.81 · 8 người hạng TB 3.35
+[   57]   1,628,413 qđ ·     436 qđ/s · KL 0.0047 kẹp 0.05 entropy 0.67 EV 0.57 · 60 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:49 · tự đấu 40 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.85
+[   58]   1,660,761 qđ ·     425 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.67 EV 0.56 · 72 ván, thắng% tempo:88 hyper:85 roll7:82 fast9:94 bank:92 bản-cũ:53 · tự đấu 38 ván · 4 người hạng TB 2.28 · 8 người hạng TB 3.94
+[   59]   1,691,938 qđ ·     423 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.66 EV 0.57 · 63 ván, thắng% tempo:87 hyper:86 roll7:93 fast9:83 bank:100 bản-cũ:65 · tự đấu 40 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.46
+[   60]   1,721,135 qđ ·     410 qđ/s · KL 0.0032 kẹp 0.04 entropy 0.64 EV 0.58 · 63 ván, thắng% tempo:83 hyper:71 roll7:75 fast9:96 bank:91 bản-cũ:57 · tự đấu 30 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.90
+[   61]   1,749,740 qđ ·     403 qđ/s · KL 0.0052 kẹp 0.06 entropy 0.66 EV 0.56 · 70 ván, thắng% tempo:80 hyper:78 roll7:87 fast9:83 bank:91 bản-cũ:60 · tự đấu 32 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.86
+[   62]   1,777,838 qđ ·     400 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.65 EV 0.57 · 68 ván, thắng% tempo:100 hyper:71 roll7:82 fast9:96 bank:89 bản-cũ:40 · tự đấu 36 ván · 4 người hạng TB 2.57 · 8 người hạng TB 4.00
+[   63]   1,811,074 qđ ·     427 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.66 EV 0.54 · 68 ván, thắng% tempo:100 hyper:90 roll7:94 fast9:94 bank:100 bản-cũ:49 · tự đấu 28 ván · 4 người hạng TB 2.46 · 8 người hạng TB 3.68
+[   64]   1,845,512 qđ ·     437 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.64 EV 0.57 · 76 ván, thắng% tempo:93 hyper:87 roll7:100 fast9:92 bank:100 bản-cũ:63 · tự đấu 43 ván · 4 người hạng TB 1.81 · 8 người hạng TB 3.41
+[   65]   1,877,735 qđ ·     427 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.64 EV 0.54 · 57 ván, thắng% tempo:89 hyper:91 roll7:33 fast9:100 bank:100 bản-cũ:66 · tự đấu 37 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.29
+[   66]   1,907,076 qđ ·     407 qđ/s · KL 0.0052 kẹp 0.05 entropy 0.64 EV 0.60 · 83 ván, thắng% tempo:85 hyper:88 roll7:83 fast9:92 bank:100 bản-cũ:61 · tự đấu 46 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.76
+[   67]   1,935,795 qđ ·     407 qđ/s · KL 0.0048 kẹp 0.04 entropy 0.65 EV 0.58 · 57 ván, thắng% tempo:100 hyper:83 roll7:89 fast9:100 bank:80 bản-cũ:65 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.32
+[   68]   1,966,892 qđ ·     422 qđ/s · KL 0.0029 kẹp 0.04 entropy 0.69 EV 0.58 · 72 ván, thắng% tempo:95 hyper:80 roll7:91 fast9:96 bank:93 bản-cũ:65 · tự đấu 29 ván · 4 người hạng TB 2.36 · 8 người hạng TB 3.40
+[   69]   1,998,952 qđ ·     432 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.70 EV 0.57 · 56 ván, thắng% tempo:100 hyper:82 roll7:100 fast9:100 bank:100 bản-cũ:68 · tự đấu 29 ván · 4 người hạng TB 1.64 · 8 người hạng TB 3.45
+[   70]   2,030,649 qđ ·     439 qđ/s · KL 0.0028 kẹp 0.03 entropy 0.68 EV 0.59 · 73 ván, thắng% tempo:90 hyper:93 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 42 ván · 4 người hạng TB 2.13 · 8 người hạng TB 3.72
+[   71]   2,064,604 qđ ·     441 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.67 EV 0.55 · 58 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:70 · tự đấu 36 ván · 4 người hạng TB 2.08 · 8 người hạng TB 3.00
+[   72]   2,093,646 qđ ·     408 qđ/s · KL 0.0023 kẹp 0.03 entropy 0.66 EV 0.61 · 67 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:92 bank:100 bản-cũ:76 · tự đấu 37 ván · 4 người hạng TB 1.50 · 8 người hạng TB 3.00
+[   73]   2,123,531 qđ ·     414 qđ/s · KL 0.0063 kẹp 0.06 entropy 0.67 EV 0.53 · 66 ván, thắng% tempo:93 hyper:85 roll7:85 fast9:100 bank:100 bản-cũ:59 · tự đấu 36 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.49
+[   74]   2,152,211 qđ ·     401 qđ/s · KL 0.0048 kẹp 0.04 entropy 0.64 EV 0.57 · 68 ván, thắng% tempo:100 hyper:88 roll7:83 fast9:100 bank:94 bản-cũ:61 · tự đấu 28 ván · 4 người hạng TB 2.36 · 8 người hạng TB 3.22
+[   75]   2,180,226 qđ ·     394 qđ/s · KL 0.0029 kẹp 0.03 entropy 0.64 EV 0.58 · 67 ván, thắng% tempo:96 hyper:92 roll7:96 fast9:95 bank:100 bản-cũ:62 · tự đấu 34 ván · 4 người hạng TB 1.50 · 8 người hạng TB 3.54
+  kho: thêm snap_00075 vào kho (3/10 bản chụp) · thắng% trước bản cũ: v2_250*:83 v1_550*:83 s2_final*:55 r2_final*:46 snap_00025:57 snap_00050:59 snap_00075:50
+[   76]   2,206,783 qđ ·     387 qđ/s · KL 0.0029 kẹp 0.03 entropy 0.63 EV 0.56 · 62 ván, thắng% tempo:100 hyper:92 roll7:91 fast9:100 bank:100 bản-cũ:63 · tự đấu 35 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.48
+[   77]   2,236,528 qđ ·     404 qđ/s · KL 0.0032 kẹp 0.04 entropy 0.68 EV 0.57 · 72 ván, thắng% tempo:100 hyper:88 roll7:81 fast9:100 bank:90 bản-cũ:60 · tự đấu 29 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.91
+[   78]   2,264,560 qđ ·     398 qđ/s · KL 0.0013 kẹp 0.01 entropy 0.62 EV 0.54 · 69 ván, thắng% tempo:87 hyper:88 roll7:100 fast9:81 bank:100 bản-cũ:53 · tự đấu 37 ván · 4 người hạng TB 2.08 · 8 người hạng TB 3.88
+[   79]   2,291,862 qđ ·     387 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.67 EV 0.53 · 64 ván, thắng% tempo:75 hyper:100 roll7:100 fast9:100 bank:96 bản-cũ:49 · tự đấu 34 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.90
+[   80]   2,318,532 qđ ·     375 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.66 EV 0.56 · 76 ván, thắng% tempo:100 hyper:89 roll7:92 fast9:100 bank:91 bản-cũ:59 · tự đấu 37 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.78
+[   81]   2,349,481 qđ ·     408 qđ/s · KL 0.0032 kẹp 0.04 entropy 0.67 EV 0.53 · 59 ván, thắng% tempo:100 hyper:100 roll7:90 fast9:100 bank:86 bản-cũ:58 · tự đấu 23 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.60
+[   82]   2,380,783 qđ ·     409 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.65 EV 0.58 · 78 ván, thắng% tempo:92 hyper:96 roll7:86 fast9:100 bank:95 bản-cũ:54 · tự đấu 38 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.56
+[   83]   2,409,259 qđ ·     390 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.67 EV 0.56 · 63 ván, thắng% tempo:100 hyper:86 roll7:73 fast9:100 bank:86 bản-cũ:54 · tự đấu 35 ván · 4 người hạng TB 2.44 · 8 người hạng TB 3.56
+[   84]   2,437,886 qđ ·     394 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.66 EV 0.58 · 71 ván, thắng% tempo:88 hyper:90 roll7:85 fast9:100 bank:100 bản-cũ:65 · tự đấu 34 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.30
+[   85]   2,465,576 qđ ·     384 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.66 EV 0.55 · 61 ván, thắng% tempo:82 hyper:85 roll7:88 fast9:90 bank:100 bản-cũ:56 · tự đấu 29 ván · 4 người hạng TB 1.93 · 8 người hạng TB 3.94
+[   86]   2,493,867 qđ ·     390 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.67 EV 0.50 · 72 ván, thắng% tempo:100 hyper:94 roll7:96 fast9:100 bank:100 bản-cũ:59 · tự đấu 29 ván · 4 người hạng TB 2.16 · 8 người hạng TB 3.48
+[   87]   2,523,926 qđ ·     406 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.68 EV 0.53 · 64 ván, thắng% tempo:88 hyper:100 roll7:90 fast9:90 bank:100 bản-cũ:56 · tự đấu 30 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.85
+[   88]   2,554,722 qđ ·     413 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.67 EV 0.58 · 67 ván, thắng% tempo:82 hyper:84 roll7:100 fast9:100 bank:100 bản-cũ:54 · tự đấu 36 ván · 4 người hạng TB 1.93 · 8 người hạng TB 4.10
+[   89]   2,584,170 qđ ·     404 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.66 EV 0.58 · 64 ván, thắng% tempo:86 hyper:100 roll7:100 fast9:86 bank:100 bản-cũ:62 · tự đấu 33 ván · 4 người hạng TB 1.58 · 8 người hạng TB 3.71
+[   90]   2,615,369 qđ ·     420 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.68 EV 0.59 · 69 ván, thắng% tempo:100 hyper:92 roll7:92 fast9:100 bank:92 bản-cũ:60 · tự đấu 38 ván · 4 người hạng TB 2.65 · 8 người hạng TB 3.41
+[   91]   2,646,633 qđ ·     423 qđ/s · KL 0.0050 kẹp 0.05 entropy 0.65 EV 0.57 · 71 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:100 bank:78 bản-cũ:55 · tự đấu 32 ván · 4 người hạng TB 1.69 · 8 người hạng TB 3.86
+[   92]   2,678,657 qđ ·     424 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.67 EV 0.55 · 63 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:100 bank:95 bản-cũ:51 · tự đấu 39 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.57
+[   93]   2,709,165 qđ ·     420 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.63 EV 0.55 · 70 ván, thắng% tempo:100 hyper:93 roll7:100 fast9:93 bank:93 bản-cũ:57 · tự đấu 32 ván · 4 người hạng TB 2.05 · 8 người hạng TB 3.92
+[   94]   2,739,143 qđ ·     409 qđ/s · KL 0.0023 kẹp 0.03 entropy 0.65 EV 0.59 · 74 ván, thắng% tempo:85 hyper:82 roll7:93 fast9:80 bank:95 bản-cũ:63 · tự đấu 48 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.48
+[   95]   2,769,096 qđ ·     407 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.63 EV 0.56 · 63 ván, thắng% tempo:85 hyper:88 roll7:100 fast9:100 bank:100 bản-cũ:65 · tự đấu 27 ván · 4 người hạng TB 2.26 · 8 người hạng TB 3.45
+[   96]   2,799,023 qđ ·     406 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.64 EV 0.57 · 74 ván, thắng% tempo:100 hyper:95 roll7:96 fast9:95 bank:95 bản-cũ:55 · tự đấu 42 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.46
+[   97]   2,828,991 qđ ·     408 qđ/s · KL 0.0027 kẹp 0.03 entropy 0.64 EV 0.61 · 58 ván, thắng% tempo:94 hyper:92 roll7:100 fast9:100 bank:91 bản-cũ:65 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.30
+[   98]   2,860,772 qđ ·     416 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.66 EV 0.59 · 78 ván, thắng% tempo:100 hyper:88 roll7:87 fast9:80 bank:95 bản-cũ:59 · tự đấu 38 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.59
+[   99]   2,891,858 qđ ·     407 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.65 EV 0.57 · 60 ván, thắng% tempo:83 hyper:86 roll7:82 fast9:92 bank:100 bản-cũ:55 · tự đấu 32 ván · 4 người hạng TB 2.29 · 8 người hạng TB 4.07
+[  100]   2,921,192 qđ ·     404 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.67 EV 0.50 · 74 ván, thắng% tempo:93 hyper:95 roll7:100 fast9:94 bank:95 bản-cũ:64 · tự đấu 40 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.34
+  kho: thêm snap_00100 vào kho (4/10 bản chụp) · thắng% trước bản cũ: v2_250*:79 v1_550*:83 s2_final*:57 r2_final*:45 snap_00025:49 snap_00050:52 snap_00075:49 snap_00100:50
+  ── đánh giá (329 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.22 ± 0.07, top 4 98%, nhất 89%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.48 ± 0.20, top 4 49%, nhất 13%, chót 8%
+  sảnh C (8 người, 128 ván): hạng TB 1.98 ± 0.13, top 4 89%, nhất 59%, chót 0%
+  Elo sảnh: agent 1516, r2_final 1500, v2_250 1262, v1_550 1231, hyper 1157, tempo 1093, roll7 1051, bank 1038, fast9 1034
+  hành vi (sảnh): roll/vòng 0.43, XP/vòng 0.54, mua/vòng 1.59, vàng khi kết thúc lượt 4.2, cấp theo vòng {5: 4.97, 10: 5.83, 15: 6.28, 20: 6.99}
+  tỷ lệ thắng 1 đấu 1: fast9 97%, bank 99%
+  trước bản neo: v2_250 79%, v1_550 92%, s2_final 61%, r2_final 45%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [74 96 56 47]; bank [73 84 65 75]; v2_250 [58 62 64 55]; v1_550 [69 66 63 69]; s2_final [51 60 55 45]; r2_final [46 50 49 48]
+  hành vi: roll/vòng 0.33, XP/vòng 0.53, mua/vòng 1.93, bán/vòng 0.77, chuyển/vòng 1.57, vàng khi kết thúc lượt 3.5, quyết định/vòng 6.1, chạm trần/vòng 0.001, cấp theo vòng {5: 4.97, 10: 5.78, 15: 6.08, 20: 6.93}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[  101]   2,952,376 qđ ·     413 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.66 EV 0.56 · 56 ván, thắng% tempo:100 hyper:89 roll7:92 fast9:88 bank:100 bản-cũ:56 · tự đấu 26 ván · 4 người hạng TB 2.24 · 8 người hạng TB 3.81
+[  102]   2,985,151 qđ ·     421 qđ/s · KL 0.0021 kẹp 0.02 entropy 0.68 EV 0.54 · 75 ván, thắng% tempo:85 hyper:100 roll7:92 fast9:88 bank:100 bản-cũ:54 · tự đấu 40 ván · 4 người hạng TB 2.55 · 8 người hạng TB 3.71
+[  103]   3,020,265 qđ ·     426 qđ/s · KL 0.0030 kẹp 0.04 entropy 0.68 EV 0.57 · 63 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:82 bản-cũ:45 · tự đấu 35 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.41
+[  104]   3,053,470 qđ ·     413 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.66 EV 0.59 · 69 ván, thắng% tempo:78 hyper:100 roll7:88 fast9:92 bank:100 bản-cũ:51 · tự đấu 46 ván · 4 người hạng TB 1.70 · 8 người hạng TB 4.48
+[  105]   3,086,409 qđ ·     420 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.68 EV 0.57 · 59 ván, thắng% tempo:100 hyper:85 roll7:88 fast9:94 bank:100 bản-cũ:52 · tự đấu 32 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.67
+[  106]   3,116,640 qđ ·     400 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.66 EV 0.59 · 72 ván, thắng% tempo:78 hyper:77 roll7:94 fast9:100 bank:91 bản-cũ:69 · tự đấu 40 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.24
+[  107]   3,147,512 qđ ·     406 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.67 EV 0.57 · 59 ván, thắng% tempo:100 hyper:90 roll7:100 fast9:100 bank:75 bản-cũ:66 · tự đấu 34 ván · 4 người hạng TB 2.09 · 8 người hạng TB 3.20
+[  108]   3,178,708 qđ ·     410 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.65 EV 0.58 · 73 ván, thắng% tempo:83 hyper:95 roll7:100 fast9:92 bank:95 bản-cũ:60 · tự đấu 33 ván · 4 người hạng TB 2.07 · 8 người hạng TB 3.70
+[  109]   3,210,931 qđ ·     411 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.66 EV 0.58 · 59 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:47 · tự đấu 35 ván · 4 người hạng TB 1.88 · 8 người hạng TB 3.45
+[  110]   3,241,573 qđ ·     405 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.64 EV 0.60 · 69 ván, thắng% tempo:93 hyper:100 roll7:83 fast9:76 bank:100 bản-cũ:69 · tự đấu 39 ván · 4 người hạng TB 2.38 · 8 người hạng TB 2.89
+[  111]   3,271,101 qđ ·     397 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.65 EV 0.56 · 62 ván, thắng% tempo:100 hyper:93 roll7:86 fast9:96 bank:95 bản-cũ:61 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.18
+[  112]   3,299,079 qđ ·     383 qđ/s · KL 0.0057 kẹp 0.06 entropy 0.66 EV 0.61 · 66 ván, thắng% tempo:96 hyper:92 roll7:85 fast9:100 bank:92 bản-cũ:68 · tự đấu 32 ván · 4 người hạng TB 1.84 · 8 người hạng TB 3.18
+[  113]   3,327,935 qđ ·     390 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.66 EV 0.57 · 64 ván, thắng% tempo:95 hyper:100 roll7:94 fast9:100 bank:100 bản-cũ:62 · tự đấu 33 ván · 4 người hạng TB 1.88 · 8 người hạng TB 3.59
+[  114]   3,360,864 qđ ·     420 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.67 EV 0.55 · 71 ván, thắng% tempo:100 hyper:100 roll7:95 fast9:92 bank:87 bản-cũ:68 · tự đấu 31 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.38
+[  115]   3,391,758 qđ ·     415 qđ/s · KL 0.0028 kẹp 0.04 entropy 0.64 EV 0.58 · 58 ván, thắng% tempo:100 hyper:100 roll7:90 fast9:86 bank:82 bản-cũ:60 · tự đấu 34 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.41
+[  116]   3,420,175 qđ ·     388 qđ/s · KL 0.0030 kẹp 0.04 entropy 0.65 EV 0.61 · 73 ván, thắng% tempo:89 hyper:95 roll7:100 fast9:100 bank:100 bản-cũ:66 · tự đấu 41 ván · 4 người hạng TB 1.83 · 8 người hạng TB 3.06
+[  117]   3,450,700 qđ ·     409 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.65 EV 0.59 · 56 ván, thắng% tempo:100 hyper:80 roll7:100 fast9:100 bank:85 bản-cũ:73 · tự đấu 26 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.11
+[  118]   3,481,288 qđ ·     411 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.66 EV 0.57 · 71 ván, thắng% tempo:97 hyper:100 roll7:92 fast9:100 bank:92 bản-cũ:65 · tự đấu 38 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.09
+[  119]   3,512,801 qđ ·     415 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.68 EV 0.57 · 57 ván, thắng% tempo:90 hyper:75 roll7:88 fast9:86 bank:80 bản-cũ:43 · tự đấu 32 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.44
+[  120]   3,543,343 qđ ·     410 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.66 EV 0.59 · 68 ván, thắng% tempo:100 hyper:100 roll7:86 fast9:100 bank:88 bản-cũ:64 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.24
+[  121]   3,574,539 qđ ·     405 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.67 EV 0.59 · 62 ván, thắng% tempo:80 hyper:82 roll7:75 fast9:87 bank:91 bản-cũ:56 · tự đấu 36 ván · 4 người hạng TB 2.36 · 8 người hạng TB 3.78
+[  122]   3,605,069 qđ ·     408 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.67 EV 0.57 · 65 ván, thắng% tempo:100 hyper:93 roll7:93 fast9:90 bank:80 bản-cũ:56 · tự đấu 33 ván · 4 người hạng TB 2.56 · 8 người hạng TB 3.59
+[  123]   3,637,107 qđ ·     415 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.68 EV 0.59 · 61 ván, thắng% tempo:75 hyper:100 roll7:90 fast9:100 bank:100 bản-cũ:61 · tự đấu 32 ván · 4 người hạng TB 2.08 · 8 người hạng TB 3.38
+[  124]   3,667,809 qđ ·     405 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.67 EV 0.57 · 65 ván, thắng% tempo:83 hyper:88 roll7:80 fast9:100 bank:89 bản-cũ:57 · tự đấu 32 ván · 4 người hạng TB 2.40 · 8 người hạng TB 3.82
+[  125]   3,698,846 qđ ·     410 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.66 EV 0.59 · 68 ván, thắng% tempo:100 hyper:95 roll7:92 fast9:88 bank:78 bản-cũ:64 · tự đấu 38 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.43
+  kho: thêm snap_00125 vào kho (5/10 bản chụp) · thắng% trước bản cũ: v2_250*:84 v1_550*:86 s2_final*:57 r2_final*:52 snap_00025:48 snap_00050:48 snap_00075:50 snap_00100:49 snap_00125:50
+[  126]   3,730,315 qđ ·     406 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.66 EV 0.59 · 55 ván, thắng% tempo:84 hyper:100 roll7:92 fast9:71 bank:100 bản-cũ:63 · tự đấu 29 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.03
+[  127]   3,758,679 qđ ·     380 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.65 EV 0.58 · 70 ván, thắng% tempo:100 hyper:89 roll7:86 fast9:100 bank:87 bản-cũ:49 · tự đấu 36 ván · 4 người hạng TB 2.07 · 8 người hạng TB 3.83
+[  128]   3,786,783 qđ ·     380 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.67 EV 0.58 · 63 ván, thắng% tempo:100 hyper:100 roll7:94 fast9:90 bank:100 bản-cũ:58 · tự đấu 32 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.50
+[  129]   3,816,711 qđ ·     397 qđ/s · KL 0.0037 kẹp 0.04 entropy 0.67 EV 0.58 · 60 ván, thắng% tempo:83 hyper:91 roll7:81 fast9:100 bank:95 bản-cũ:63 · tự đấu 27 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.37
+[  130]   3,849,476 qđ ·     409 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.67 EV 0.59 · 66 ván, thắng% tempo:100 hyper:94 roll7:82 fast9:91 bank:83 bản-cũ:62 · tự đấu 33 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.27
+[  131]   3,879,624 qđ ·     399 qđ/s · KL 0.0035 kẹp 0.04 entropy 0.66 EV 0.58 · 60 ván, thắng% tempo:78 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:71 · tự đấu 33 ván · 4 người hạng TB 2.31 · 8 người hạng TB 3.04
+[  132]   3,907,660 qđ ·     380 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.67 EV 0.61 · 72 ván, thắng% tempo:80 hyper:58 roll7:81 fast9:90 bank:93 bản-cũ:58 · tự đấu 37 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.78
+[  133]   3,934,978 qđ ·     376 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.67 EV 0.61 · 51 ván, thắng% tempo:80 hyper:100 roll7:100 fast9:81 bank:100 bản-cũ:41 · tự đấu 26 ván · 4 người hạng TB 2.46 · 8 người hạng TB 3.96
+[  134]   3,963,016 qđ ·     378 qđ/s · KL 0.0018 kẹp 0.03 entropy 0.66 EV 0.66 · 71 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:95 bản-cũ:62 · tự đấu 31 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.24
+[  135]   3,991,667 qđ ·     383 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.68 EV 0.60 · 55 ván, thắng% tempo:100 hyper:92 roll7:94 fast9:88 bank:94 bản-cũ:56 · tự đấu 25 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.36
+[  136]   4,020,402 qđ ·     379 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.66 EV 0.59 · 69 ván, thắng% tempo:86 hyper:93 roll7:89 fast9:100 bank:100 bản-cũ:46 · tự đấu 36 ván · 4 người hạng TB 2.27 · 8 người hạng TB 3.66
+[  137]   4,048,854 qđ ·     382 qđ/s · KL 0.0047 kẹp 0.05 entropy 0.66 EV 0.59 · 59 ván, thắng% tempo:100 hyper:100 roll7:94 fast9:94 bank:100 bản-cũ:62 · tự đấu 29 ván · 4 người hạng TB 1.87 · 8 người hạng TB 3.31
+[  138]   4,076,022 qđ ·     381 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.67 EV 0.56 · 68 ván, thắng% tempo:100 hyper:90 roll7:100 fast9:100 bank:93 bản-cũ:59 · tự đấu 36 ván · 4 người hạng TB 2.07 · 8 người hạng TB 3.30
+[  139]   4,105,069 qđ ·     382 qđ/s · KL 0.0029 kẹp 0.04 entropy 0.67 EV 0.61 · 65 ván, thắng% tempo:82 hyper:82 roll7:100 fast9:100 bank:100 bản-cũ:60 · tự đấu 27 ván · 4 người hạng TB 1.94 · 8 người hạng TB 3.59
+[  140]   4,133,717 qđ ·     384 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.67 EV 0.61 · 52 ván, thắng% tempo:100 hyper:94 roll7:83 fast9:82 bank:100 bản-cũ:66 · tự đấu 28 ván · 4 người hạng TB 2.85 · 8 người hạng TB 2.83
+[  141]   4,164,475 qđ ·     400 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.69 EV 0.61 · 64 ván, thắng% tempo:92 hyper:93 roll7:96 fast9:97 bank:100 bản-cũ:64 · tự đấu 28 ván · 4 người hạng TB 1.92 · 8 người hạng TB 3.14
+[  142]   4,194,877 qđ ·     405 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.68 EV 0.57 · 57 ván, thắng% tempo:100 hyper:91 roll7:82 fast9:80 bank:71 bản-cũ:56 · tự đấu 32 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.64
+[  143]   4,224,943 qđ ·     397 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.69 EV 0.60 · 67 ván, thắng% tempo:86 hyper:86 roll7:96 fast9:64 bank:93 bản-cũ:56 · tự đấu 31 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.68
+[  144]   4,254,530 qđ ·     392 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.70 EV 0.58 · 56 ván, thắng% tempo:100 hyper:89 roll7:62 fast9:100 bank:90 bản-cũ:54 · tự đấu 36 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.08
+[  145]   4,282,436 qđ ·     381 qđ/s · KL 0.0036 kẹp 0.05 entropy 0.69 EV 0.59 · 56 ván, thắng% tempo:95 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:58 · tự đấu 23 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.48
+[  146]   4,311,600 qđ ·     390 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.70 EV 0.65 · 63 ván, thắng% tempo:100 hyper:100 roll7:88 fast9:100 bank:92 bản-cũ:58 · tự đấu 30 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.44
+[  147]   4,342,521 qđ ·     406 qđ/s · KL 0.0027 kẹp 0.03 entropy 0.71 EV 0.63 · 54 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:70 bank:89 bản-cũ:66 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.12
+[  148]   4,375,423 qđ ·     429 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.71 EV 0.64 · 60 ván, thắng% tempo:92 hyper:86 roll7:96 fast9:100 bank:95 bản-cũ:61 · tự đấu 27 ván · 4 người hạng TB 2.23 · 8 người hạng TB 3.50
+[  149]   4,407,498 qđ ·     417 qđ/s · KL 0.0013 kẹp 0.01 entropy 0.73 EV 0.61 · 49 ván, thắng% tempo:100 hyper:85 roll7:100 fast9:100 bank:86 bản-cũ:59 · tự đấu 29 ván · 4 người hạng TB 2.57 · 8 người hạng TB 3.04
+[  150]   4,437,596 qđ ·     408 qđ/s · KL 0.0034 kẹp 0.04 entropy 0.73 EV 0.65 · 62 ván, thắng% tempo:100 hyper:33 roll7:92 fast9:93 bank:87 bản-cũ:51 · tự đấu 35 ván · 4 người hạng TB 2.11 · 8 người hạng TB 4.00
+  kho: thêm snap_00150 vào kho (6/10 bản chụp) · thắng% trước bản cũ: v2_250*:79 v1_550*:84 s2_final*:62 r2_final*:48 snap_00025:57 snap_00050:56 snap_00075:48 snap_00100:49 snap_00125:49 snap_00150:50
+  ── đánh giá (339 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.20 ± 0.06, top 4 98%, nhất 89%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.12 ± 0.20, top 4 52%, nhất 19%, chót 8%
+  sảnh C (8 người, 128 ván): hạng TB 1.99 ± 0.13, top 4 90%, nhất 59%, chót 0%
+  Elo sảnh: agent 1552, r2_final 1500, v2_250 1287, v1_550 1269, hyper 1213, tempo 1130, bank 1078, roll7 1069, fast9 1068
+  hành vi (sảnh): roll/vòng 0.43, XP/vòng 0.53, mua/vòng 1.53, vàng khi kết thúc lượt 5.0, cấp theo vòng {5: 4.96, 10: 5.79, 15: 6.17, 20: 6.99}
+  tỷ lệ thắng 1 đấu 1: fast9 98%, bank 98%
+  trước bản neo: v2_250 82%, v1_550 91%, s2_final 62%, r2_final 55%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [74 95 63 50]; bank [74 84 64 72]; v2_250 [58 63 64 54]; v1_550 [71 65 65 65]; s2_final [52 59 57 43]; r2_final [49 50 52 52]
+  hành vi: roll/vòng 0.33, XP/vòng 0.50, mua/vòng 1.82, bán/vòng 0.65, chuyển/vòng 2.27, vàng khi kết thúc lượt 4.1, quyết định/vòng 6.6, chạm trần/vòng 0.006, cấp theo vòng {5: 4.94, 10: 5.71, 15: 6.04, 20: 6.93}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[  151]   4,468,747 qđ ·     404 qđ/s · KL 0.0058 kẹp 0.06 entropy 0.73 EV 0.61 · 59 ván, thắng% tempo:94 hyper:86 roll7:100 fast9:100 bank:83 bản-cũ:52 · tự đấu 28 ván · 4 người hạng TB 2.15 · 8 người hạng TB 3.83
+[  152]   4,498,208 qđ ·     395 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.68 EV 0.59 · 49 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:52 · tự đấu 30 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.59
+[  153]   4,527,434 qđ ·     392 qđ/s · KL 0.0058 kẹp 0.05 entropy 0.69 EV 0.62 · 73 ván, thắng% tempo:88 hyper:91 roll7:100 fast9:100 bank:91 bản-cũ:60 · tự đấu 36 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.33
+[  154]   4,554,753 qđ ·     384 qđ/s · KL 0.0039 kẹp 0.05 entropy 0.74 EV 0.60 · 41 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:100 bank:100 bản-cũ:74 · tự đấu 22 ván · 4 người hạng TB 2.08 · 8 người hạng TB 2.59
+[  155]   4,583,838 qđ ·     384 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.71 EV 0.60 · 70 ván, thắng% tempo:89 hyper:75 roll7:93 fast9:100 bank:88 bản-cũ:57 · tự đấu 34 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.59
+[  156]   4,613,454 qđ ·     384 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.71 EV 0.60 · 53 ván, thắng% tempo:94 hyper:92 roll7:100 fast9:100 bank:100 bản-cũ:74 · tự đấu 23 ván · 4 người hạng TB 1.60 · 8 người hạng TB 2.90
+[  157]   4,644,433 qđ ·     412 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.69 EV 0.64 · 57 ván, thắng% tempo:100 hyper:91 roll7:100 fast9:94 bank:100 bản-cũ:60 · tự đấu 26 ván · 4 người hạng TB 1.93 · 8 người hạng TB 3.48
+[  158]   4,676,658 qđ ·     421 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.71 EV 0.59 · 62 ván, thắng% tempo:100 hyper:82 roll7:94 fast9:100 bank:100 bản-cũ:58 · tự đấu 35 ván · 4 người hạng TB 1.80 · 8 người hạng TB 3.46
+[  159]   4,707,173 qđ ·     405 qđ/s · KL 0.0036 kẹp 0.04 entropy 0.72 EV 0.61 · 50 ván, thắng% tempo:100 hyper:86 roll7:67 fast9:80 bank:92 bản-cũ:48 · tự đấu 30 ván · 4 người hạng TB 1.29 · 8 người hạng TB 4.47
+[  160]   4,737,784 qđ ·     403 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.70 EV 0.64 · 62 ván, thắng% tempo:70 hyper:88 roll7:100 fast9:92 bank:100 bản-cũ:58 · tự đấu 33 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.77
+[  161]   4,766,035 qđ ·     376 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.71 EV 0.61 · 52 ván, thắng% tempo:100 hyper:100 roll7:89 fast9:100 bank:100 bản-cũ:66 · tự đấu 28 ván · 4 người hạng TB 1.86 · 8 người hạng TB 3.16
+[  162]   4,794,420 qđ ·     380 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.73 EV 0.68 · 65 ván, thắng% tempo:93 hyper:87 roll7:91 fast9:92 bank:80 bản-cũ:59 · tự đấu 28 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.57
+[  163]   4,824,688 qđ ·     403 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.74 EV 0.62 · 49 ván, thắng% tempo:80 hyper:100 roll7:100 fast9:92 bank:100 bản-cũ:64 · tự đấu 23 ván · 4 người hạng TB 2.47 · 8 người hạng TB 2.93
+[  164]   4,854,766 qđ ·     396 qđ/s · KL 0.0028 kẹp 0.04 entropy 0.70 EV 0.61 · 56 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:92 bản-cũ:64 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.22
+[  165]   4,885,689 qđ ·     404 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.73 EV 0.63 · 54 ván, thắng% tempo:100 hyper:100 roll7:85 fast9:100 bank:100 bản-cũ:70 · tự đấu 27 ván · 4 người hạng TB 1.92 · 8 người hạng TB 2.93
+[  166]   4,917,657 qđ ·     410 qđ/s · KL 0.0038 kẹp 0.04 entropy 0.71 EV 0.60 · 51 ván, thắng% tempo:100 hyper:75 roll7:75 fast9:93 bank:93 bản-cũ:51 · tự đấu 23 ván · 4 người hạng TB 1.73 · 8 người hạng TB 4.00
+[  167]   4,950,150 qđ ·     416 qđ/s · KL 0.0047 kẹp 0.05 entropy 0.70 EV 0.61 · 60 ván, thắng% tempo:100 hyper:90 roll7:90 fast9:82 bank:100 bản-cũ:62 · tự đấu 36 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.17
+[  168]   4,980,383 qđ ·     398 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.69 EV 0.61 · 62 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:90 bank:100 bản-cũ:47 · tự đấu 37 ván · 4 người hạng TB 1.50 · 8 người hạng TB 4.36
+[  169]   5,010,439 qđ ·     402 qđ/s · KL 0.0036 kẹp 0.04 entropy 0.70 EV 0.64 · 52 ván, thắng% tempo:94 hyper:100 roll7:100 fast9:88 bank:92 bản-cũ:69 · tự đấu 28 ván · 4 người hạng TB 1.64 · 8 người hạng TB 3.46
+[  170]   5,040,078 qđ ·     394 qđ/s · KL 0.0072 kẹp 0.07 entropy 0.71 EV 0.63 · 58 ván, thắng% tempo:100 hyper:87 roll7:100 fast9:92 bank:100 bản-cũ:67 · tự đấu 31 ván · 4 người hạng TB 1.64 · 8 người hạng TB 3.14
+[  171]   5,069,102 qđ ·     387 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.69 EV 0.60 · 57 ván, thắng% tempo:100 hyper:100 roll7:86 fast9:100 bank:92 bản-cũ:62 · tự đấu 30 ván · 4 người hạng TB 2.58 · 8 người hạng TB 3.28
+[  172]   5,099,321 qđ ·     394 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.69 EV 0.53 · 62 ván, thắng% tempo:94 hyper:95 roll7:88 fast9:84 bank:88 bản-cũ:43 · tự đấu 30 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.91
+[  173]   5,129,505 qđ ·     395 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.70 EV 0.62 · 50 ván, thắng% tempo:90 hyper:100 roll7:94 fast9:88 bank:91 bản-cũ:55 · tự đấu 26 ván · 4 người hạng TB 1.78 · 8 người hạng TB 3.79
+[  174]   5,160,708 qđ ·     405 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.70 EV 0.63 · 63 ván, thắng% tempo:93 hyper:73 roll7:92 fast9:100 bank:90 bản-cũ:56 · tự đấu 35 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.84
+[  175]   5,191,976 qđ ·     402 qđ/s · KL 0.0019 kẹp 0.03 entropy 0.73 EV 0.60 · 48 ván, thắng% tempo:100 hyper:100 roll7:75 fast9:100 bank:100 bản-cũ:46 · tự đấu 30 ván · 4 người hạng TB 1.50 · 8 người hạng TB 3.88
+  kho: thêm snap_00175 vào kho (7/10 bản chụp) · thắng% trước bản cũ: v2_250*:82 v1_550*:85 s2_final*:59 r2_final*:54 snap_00025:50 snap_00050:50 snap_00075:48 snap_00100:51 snap_00125:52 snap_00150:54 snap_00175:50
+[  176]   5,222,740 qđ ·     399 qđ/s · KL 0.0031 kẹp 0.04 entropy 0.72 EV 0.62 · 58 ván, thắng% tempo:100 hyper:100 roll7:82 fast9:93 bank:92 bản-cũ:66 · tự đấu 31 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.32
+[  177]   5,255,099 qđ ·     405 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.72 EV 0.61 · 57 ván, thắng% tempo:100 hyper:93 roll7:89 fast9:100 bank:100 bản-cũ:61 · tự đấu 33 ván · 4 người hạng TB 2.30 · 8 người hạng TB 3.00
+[  178]   5,290,611 qđ ·     425 qđ/s · KL 0.0035 kẹp 0.04 entropy 0.76 EV 0.61 · 53 ván, thắng% tempo:100 hyper:95 roll7:100 fast9:86 bank:100 bản-cũ:58 · tự đấu 25 ván · 4 người hạng TB 1.88 · 8 người hạng TB 3.36
+[  179]   5,323,342 qđ ·     413 qđ/s · KL 0.0055 kẹp 0.06 entropy 0.74 EV 0.62 · 44 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:89 bank:88 bản-cũ:60 · tự đấu 25 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.68
+[  180]   5,355,143 qđ ·     399 qđ/s · KL 0.0028 kẹp 0.04 entropy 0.70 EV 0.64 · 69 ván, thắng% tempo:100 hyper:82 roll7:88 fast9:100 bank:67 bản-cũ:58 · tự đấu 46 ván · 4 người hạng TB 2.05 · 8 người hạng TB 3.73
+[  181]   5,387,082 qđ ·     396 qđ/s · KL 0.0036 kẹp 0.04 entropy 0.75 EV 0.65 · 45 ván, thắng% tempo:100 hyper:92 roll7:100 fast9:92 bank:100 bản-cũ:66 · tự đấu 23 ván · 4 người hạng TB 1.90 · 8 người hạng TB 2.75
+[  182]   5,418,432 qđ ·     397 qđ/s · KL 0.0028 kẹp 0.03 entropy 0.73 EV 0.62 · 57 ván, thắng% tempo:96 hyper:80 roll7:91 fast9:82 bank:100 bản-cũ:55 · tự đấu 27 ván · 4 người hạng TB 2.56 · 8 người hạng TB 3.58
+[  183]   5,448,900 qđ ·     393 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.73 EV 0.65 · 60 ván, thắng% tempo:86 hyper:100 roll7:100 fast9:100 bank:96 bản-cũ:68 · tự đấu 30 ván · 4 người hạng TB 1.95 · 8 người hạng TB 3.04
+[  184]   5,477,757 qđ ·     379 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.73 EV 0.67 · 54 ván, thắng% tempo:94 hyper:93 roll7:100 fast9:100 bank:100 bản-cũ:53 · tự đấu 29 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.43
+[  185]   5,507,170 qđ ·     378 qđ/s · KL 0.0039 kẹp 0.05 entropy 0.74 EV 0.67 · 58 ván, thắng% tempo:83 hyper:76 roll7:93 fast9:100 bank:81 bản-cũ:51 · tự đấu 26 ván · 4 người hạng TB 2.23 · 8 người hạng TB 3.94
+[  186]   5,538,712 qđ ·     396 qđ/s · KL 0.0058 kẹp 0.06 entropy 0.75 EV 0.63 · 58 ván, thắng% tempo:100 hyper:64 roll7:83 fast9:100 bank:91 bản-cũ:51 · tự đấu 28 ván · 4 người hạng TB 2.13 · 8 người hạng TB 3.90
+[  187]   5,571,125 qđ ·     412 qđ/s · KL 0.0065 kẹp 0.07 entropy 0.75 EV 0.67 · 50 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 24 ván · 4 người hạng TB 2.40 · 8 người hạng TB 3.08
+[  188]   5,604,680 qđ ·     419 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.80 EV 0.67 · 58 ván, thắng% tempo:93 hyper:100 roll7:91 fast9:100 bank:89 bản-cũ:52 · tự đấu 31 ván · 4 người hạng TB 2.69 · 8 người hạng TB 3.15
+[  189]   5,636,259 qđ ·     411 qđ/s · KL 0.0033 kẹp 0.03 entropy 0.78 EV 0.68 · 44 ván, thắng% tempo:100 hyper:92 roll7:90 fast9:100 bank:100 bản-cũ:61 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.28
+[  190]   5,668,687 qđ ·     407 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.78 EV 0.66 · 58 ván, thắng% tempo:95 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 32 ván · 4 người hạng TB 1.86 · 8 người hạng TB 3.40
+[  191]   5,701,722 qđ ·     410 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.81 EV 0.65 · 50 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:86 bản-cũ:65 · tự đấu 29 ván · 4 người hạng TB 1.33 · 8 người hạng TB 3.05
+[  192]   5,733,722 qđ ·     403 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.79 EV 0.63 · 52 ván, thắng% tempo:100 hyper:95 roll7:100 fast9:100 bank:88 bản-cũ:59 · tự đấu 23 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.21
+[  193]   5,764,065 qđ ·     396 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.77 EV 0.67 · 52 ván, thắng% tempo:100 hyper:75 roll7:100 fast9:80 bank:100 bản-cũ:60 · tự đấu 31 ván · 4 người hạng TB 2.27 · 8 người hạng TB 3.38
+[  194]   5,793,570 qđ ·     396 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.80 EV 0.63 · 50 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:55 · tự đấu 25 ván · 4 người hạng TB 1.75 · 8 người hạng TB 4.14
+[  195]   5,823,476 qđ ·     395 qđ/s · KL 0.0030 kẹp 0.04 entropy 0.82 EV 0.61 · 45 ván, thắng% tempo:100 hyper:91 roll7:93 fast9:100 bank:100 bản-cũ:65 · tự đấu 23 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.40
+[  196]   5,853,857 qđ ·     392 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.77 EV 0.65 · 62 ván, thắng% tempo:94 hyper:95 roll7:92 fast9:100 bank:89 bản-cũ:55 · tự đấu 22 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.52
+[  197]   5,882,992 qđ ·     382 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.78 EV 0.64 · 54 ván, thắng% tempo:100 hyper:92 roll7:91 fast9:100 bank:71 bản-cũ:64 · tự đấu 30 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.05
+[  198]   5,913,417 qđ ·     398 qđ/s · KL 0.0028 kẹp 0.03 entropy 0.80 EV 0.62 · 48 ván, thắng% tempo:95 hyper:100 roll7:100 fast9:82 bank:92 bản-cũ:58 · tự đấu 17 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.49
+[  199]   5,947,620 qđ ·     424 qđ/s · KL 0.0051 kẹp 0.06 entropy 0.85 EV 0.66 · 52 ván, thắng% tempo:100 hyper:91 roll7:100 fast9:100 bank:100 bản-cũ:62 · tự đấu 25 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.27
+[  200]   5,981,228 qđ ·     417 qđ/s · KL 0.0023 kẹp 0.03 entropy 0.85 EV 0.66 · 46 ván, thắng% tempo:92 hyper:94 roll7:86 fast9:100 bank:100 bản-cũ:51 · tự đấu 20 ván · 4 người hạng TB 2.21 · 8 người hạng TB 3.80
+  kho: thêm snap_00200 vào kho (8/10 bản chụp) · thắng% trước bản cũ: v2_250*:80 v1_550*:88 s2_final*:61 r2_final*:57 snap_00025:59 snap_00050:50 snap_00075:53 snap_00100:57 snap_00125:52 snap_00150:46 snap_00175:45 snap_00200:50
+  ── đánh giá (362 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.27 ± 0.06, top 4 100%, nhất 82%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.20 ± 0.18, top 4 55%, nhất 12%, chót 8%
+  sảnh C (8 người, 128 ván): hạng TB 2.12 ± 0.14, top 4 90%, nhất 55%, chót 0%
+  Elo sảnh: agent 1543, r2_final 1500, v2_250 1309, v1_550 1275, hyper 1214, tempo 1132, bank 1092, fast9 1090, roll7 1081
+  hành vi (sảnh): roll/vòng 0.57, XP/vòng 0.47, mua/vòng 2.09, vàng khi kết thúc lượt 2.7, cấp theo vòng {5: 4.88, 10: 5.53, 15: 6.05, 20: 6.82}
+  tỷ lệ thắng 1 đấu 1: fast9 97%, bank 98%
+  trước bản neo: v2_250 79%, v1_550 91%, s2_final 52%, r2_final 50%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [75 96 67 33]; bank [74 83 68 65]; v2_250 [61 63 67 45]; v1_550 [71 65 69 60]; s2_final [52 60 57 35]; r2_final [49 52 55 43]
+  hành vi: roll/vòng 0.52, XP/vòng 0.42, mua/vòng 2.46, bán/vòng 1.16, chuyển/vòng 3.35, vàng khi kết thúc lượt 2.2, quyết định/vòng 8.9, chạm trần/vòng 0.019, cấp theo vòng {5: 4.89, 10: 5.43, 15: 6.01, 20: 6.5}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[  201]   6,011,724 qđ ·     390 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.82 EV 0.68 · 47 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:49 · tự đấu 25 ván · 4 người hạng TB 2.07 · 8 người hạng TB 3.73
+[  202]   6,043,235 qđ ·     401 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.84 EV 0.67 · 57 ván, thắng% tempo:90 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:46 · tự đấu 26 ván · 4 người hạng TB 2.58 · 8 người hạng TB 3.70
+[  203]   6,076,811 qđ ·     416 qđ/s · KL 0.0019 kẹp 0.03 entropy 0.86 EV 0.67 · 39 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:100 bank:100 bản-cũ:66 · tự đấu 19 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.00
+[  204]   6,109,840 qđ ·     415 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.85 EV 0.65 · 43 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:100 bank:100 bản-cũ:64 · tự đấu 22 ván · 4 người hạng TB 2.00 · 8 người hạng TB 2.93
+[  205]   6,141,814 qđ ·     408 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.85 EV 0.67 · 52 ván, thắng% tempo:83 hyper:82 roll7:100 fast9:92 bank:93 bản-cũ:59 · tự đấu 27 ván · 4 người hạng TB 1.60 · 8 người hạng TB 3.77
+[  206]   6,173,898 qđ ·     413 qđ/s · KL 0.0035 kẹp 0.04 entropy 0.88 EV 0.69 · 39 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:69 · tự đấu 21 ván · 4 người hạng TB 1.91 · 8 người hạng TB 3.16
+[  207]   6,205,642 qđ ·     413 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.84 EV 0.63 · 56 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:90 bản-cũ:54 · tự đấu 28 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.50
+[  208]   6,237,244 qđ ·     399 qđ/s · KL 0.0044 kẹp 0.04 entropy 0.86 EV 0.66 · 47 ván, thắng% tempo:94 hyper:84 roll7:89 fast9:81 bank:100 bản-cũ:42 · tự đấu 21 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.96
+[  209]   6,267,049 qđ ·     387 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.81 EV 0.68 · 53 ván, thắng% tempo:95 hyper:100 roll7:100 fast9:73 bank:92 bản-cũ:53 · tự đấu 25 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.78
+[  210]   6,298,115 qđ ·     390 qđ/s · KL 0.0078 kẹp 0.08 entropy 0.77 EV 0.66 · 54 ván, thắng% tempo:77 hyper:100 roll7:84 fast9:100 bank:95 bản-cũ:61 · tự đấu 26 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.41
+[  211]   6,328,706 qđ ·     392 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.77 EV 0.62 · 57 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:92 bank:100 bản-cũ:55 · tự đấu 28 ván · 4 người hạng TB 1.95 · 8 người hạng TB 3.50
+[  212]   6,358,469 qđ ·     388 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.78 EV 0.64 · 43 ván, thắng% tempo:100 hyper:89 roll7:100 fast9:100 bank:100 bản-cũ:52 · tự đấu 25 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.11
+[  213]   6,387,442 qđ ·     385 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.78 EV 0.63 · 66 ván, thắng% tempo:78 hyper:78 roll7:100 fast9:100 bank:95 bản-cũ:54 · tự đấu 33 ván · 4 người hạng TB 1.88 · 8 người hạng TB 4.12
+[  214]   6,416,922 qđ ·     387 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.83 EV 0.66 · 36 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:66 · tự đấu 21 ván · 4 người hạng TB 2.50 · 8 người hạng TB 2.86
+[  215]   6,446,591 qđ ·     382 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.81 EV 0.63 · 52 ván, thắng% tempo:93 hyper:100 roll7:95 fast9:83 bank:91 bản-cũ:56 · tự đấu 18 ván · 4 người hạng TB 2.08 · 8 người hạng TB 3.56
+[  216]   6,477,838 qđ ·     394 qđ/s · KL 0.0035 kẹp 0.04 entropy 0.81 EV 0.65 · 55 ván, thắng% tempo:79 hyper:90 roll7:58 fast9:100 bank:92 bản-cũ:49 · tự đấu 27 ván · 4 người hạng TB 1.91 · 8 người hạng TB 4.14
+[  217]   6,509,410 qđ ·     397 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.79 EV 0.59 · 50 ván, thắng% tempo:79 hyper:67 roll7:83 fast9:100 bank:67 bản-cũ:49 · tự đấu 24 ván · 4 người hạng TB 2.12 · 8 người hạng TB 4.45
+[  218]   6,540,177 qđ ·     397 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.79 EV 0.66 · 51 ván, thắng% tempo:80 hyper:100 roll7:100 fast9:100 bank:88 bản-cũ:67 · tự đấu 27 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.23
+[  219]   6,569,830 qđ ·     381 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.79 EV 0.64 · 55 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:93 bank:100 bản-cũ:66 · tự đấu 31 ván · 4 người hạng TB 1.73 · 8 người hạng TB 3.15
+[  220]   6,597,823 qđ ·     369 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.78 EV 0.65 · 51 ván, thắng% tempo:100 hyper:95 roll7:80 fast9:88 bank:100 bản-cũ:60 · tự đấu 22 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.69
+[  221]   6,628,203 qđ ·     383 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.78 EV 0.64 · 61 ván, thắng% tempo:91 hyper:90 roll7:91 fast9:86 bank:82 bản-cũ:53 · tự đấu 28 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.83
+[  222]   6,660,294 qđ ·     397 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.77 EV 0.60 · 56 ván, thắng% tempo:92 hyper:85 roll7:93 fast9:94 bank:100 bản-cũ:59 · tự đấu 22 ván · 4 người hạng TB 1.83 · 8 người hạng TB 3.70
+[  223]   6,690,901 qđ ·     385 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.74 EV 0.63 · 55 ván, thắng% tempo:91 hyper:86 roll7:100 fast9:100 bank:100 bản-cũ:60 · tự đấu 32 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.50
+[  224]   6,720,382 qđ ·     377 qđ/s · KL 0.0013 kẹp 0.01 entropy 0.75 EV 0.61 · 55 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:89 bank:92 bản-cũ:42 · tự đấu 27 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.76
+[  225]   6,750,007 qđ ·     386 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.75 EV 0.67 · 58 ván, thắng% tempo:90 hyper:75 roll7:93 fast9:80 bank:94 bản-cũ:61 · tự đấu 28 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.60
+  kho: thêm snap_00225 vào kho (9/10 bản chụp) · thắng% trước bản cũ: v2_250*:81 v1_550*:84 s2_final*:65 r2_final*:50 snap_00025:51 snap_00050:56 snap_00075:63 snap_00100:58 snap_00125:52 snap_00150:44 snap_00175:46 snap_00200:44 snap_00225:50
+[  226]   6,783,099 qđ ·     407 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.77 EV 0.67 · 52 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:86 bản-cũ:51 · tự đấu 22 ván · 4 người hạng TB 2.31 · 8 người hạng TB 3.69
+[  227]   6,815,753 qđ ·     402 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.75 EV 0.64 · 54 ván, thắng% tempo:94 hyper:93 roll7:100 fast9:95 bank:93 bản-cũ:55 · tự đấu 33 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.29
+[  228]   6,849,055 qđ ·     403 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.75 EV 0.62 · 55 ván, thắng% tempo:100 hyper:100 roll7:78 fast9:100 bank:100 bản-cũ:46 · tự đấu 28 ván · 4 người hạng TB 2.15 · 8 người hạng TB 3.48
+[  229]   6,881,781 qđ ·     407 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.77 EV 0.62 · 54 ván, thắng% tempo:93 hyper:100 roll7:91 fast9:100 bank:82 bản-cũ:53 · tự đấu 34 ván · 4 người hạng TB 1.33 · 8 người hạng TB 3.60
+[  230]   6,913,498 qđ ·     392 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.77 EV 0.58 · 55 ván, thắng% tempo:75 hyper:100 roll7:89 fast9:100 bank:100 bản-cũ:70 · tự đấu 35 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.17
+[  231]   6,943,722 qđ ·     379 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.77 EV 0.62 · 54 ván, thắng% tempo:95 hyper:81 roll7:100 fast9:95 bank:92 bản-cũ:56 · tự đấu 26 ván · 4 người hạng TB 2.45 · 8 người hạng TB 3.32
+[  232]   6,972,919 qđ ·     369 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.77 EV 0.64 · 51 ván, thắng% tempo:100 hyper:100 roll7:89 fast9:100 bank:93 bản-cũ:43 · tự đấu 27 ván · 4 người hạng TB 2.07 · 8 người hạng TB 4.38
+[  233]   7,001,794 qđ ·     368 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.76 EV 0.66 · 58 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:65 · tự đấu 27 ván · 4 người hạng TB 1.93 · 8 người hạng TB 3.25
+[  234]   7,029,795 qđ ·     357 qđ/s · KL 0.0019 kẹp 0.03 entropy 0.76 EV 0.62 · 54 ván, thắng% tempo:100 hyper:80 roll7:95 fast9:60 bank:94 bản-cũ:56 · tự đấu 28 ván · 4 người hạng TB 2.22 · 8 người hạng TB 3.56
+[  235]   7,058,981 qđ ·     368 qđ/s · KL 0.0037 kẹp 0.04 entropy 0.75 EV 0.63 · 60 ván, thắng% tempo:100 hyper:100 roll7:80 fast9:100 bank:93 bản-cũ:57 · tự đấu 28 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.50
+[  236]   7,089,695 qđ ·     383 qđ/s · KL 0.0031 kẹp 0.04 entropy 0.74 EV 0.60 · 59 ván, thắng% tempo:100 hyper:88 roll7:100 fast9:89 bank:95 bản-cũ:60 · tự đấu 25 ván · 4 người hạng TB 1.75 · 8 người hạng TB 3.34
+[  237]   7,120,609 qđ ·     379 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.71 EV 0.60 · 56 ván, thắng% tempo:80 hyper:82 roll7:86 fast9:100 bank:90 bản-cũ:61 · tự đấu 29 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.38
+[  238]   7,148,308 qđ ·     354 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.71 EV 0.61 · 61 ván, thắng% tempo:89 hyper:100 roll7:86 fast9:100 bank:88 bản-cũ:47 · tự đấu 39 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.45
+[  239]   7,175,765 qđ ·     351 qđ/s · KL 0.0012 kẹp 0.02 entropy 0.70 EV 0.59 · 62 ván, thắng% tempo:83 hyper:100 roll7:94 fast9:100 bank:90 bản-cũ:54 · tự đấu 31 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.29
+[  240]   7,203,296 qđ ·     360 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.71 EV 0.56 · 57 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:56 · tự đấu 26 ván · 4 người hạng TB 3.09 · 8 người hạng TB 3.29
+[  241]   7,232,694 qđ ·     374 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.72 EV 0.59 · 61 ván, thắng% tempo:82 hyper:91 roll7:100 fast9:100 bank:83 bản-cũ:55 · tự đấu 31 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.91
+[  242]   7,265,173 qđ ·     402 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.74 EV 0.61 · 55 ván, thắng% tempo:100 hyper:100 roll7:86 fast9:100 bank:100 bản-cũ:61 · tự đấu 27 ván · 4 người hạng TB 1.78 · 8 người hạng TB 3.30
+[  243]   7,297,706 qđ ·     389 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.74 EV 0.60 · 62 ván, thắng% tempo:100 hyper:91 roll7:86 fast9:92 bank:100 bản-cũ:52 · tự đấu 37 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.44
+[  244]   7,327,257 qđ ·     374 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.70 EV 0.62 · 63 ván, thắng% tempo:100 hyper:100 roll7:82 fast9:100 bank:94 bản-cũ:57 · tự đấu 36 ván · 4 người hạng TB 2.42 · 8 người hạng TB 3.30
+[  245]   7,356,916 qđ ·     367 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.76 EV 0.61 · 57 ván, thắng% tempo:92 hyper:100 roll7:100 fast9:89 bank:100 bản-cũ:53 · tự đấu 32 ván · 4 người hạng TB 2.42 · 8 người hạng TB 4.00
+[  246]   7,388,059 qđ ·     384 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.75 EV 0.59 · 54 ván, thắng% tempo:100 hyper:94 roll7:94 fast9:92 bank:100 bản-cũ:68 · tự đấu 20 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.06
+[  247]   7,419,713 qđ ·     382 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.76 EV 0.60 · 66 ván, thắng% tempo:91 hyper:94 roll7:82 fast9:100 bank:83 bản-cũ:44 · tự đấu 36 ván · 4 người hạng TB 2.50 · 8 người hạng TB 4.04
+[  248]   7,451,411 qđ ·     385 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.76 EV 0.61 · 56 ván, thắng% tempo:90 hyper:73 roll7:82 fast9:100 bank:100 bản-cũ:40 · tự đấu 30 ván · 4 người hạng TB 2.38 · 8 người hạng TB 4.27
+[  249]   7,480,735 qđ ·     366 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.71 EV 0.62 · 59 ván, thắng% tempo:100 hyper:91 roll7:94 fast9:100 bank:83 bản-cũ:62 · tự đấu 32 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.59
+[  250]   7,510,788 qđ ·     366 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.74 EV 0.61 · 65 ván, thắng% tempo:100 hyper:88 roll7:91 fast9:83 bank:90 bản-cũ:53 · tự đấu 35 ván · 4 người hạng TB 2.17 · 8 người hạng TB 4.00
+  kho: thêm snap_00250 vào kho (10/10 bản chụp) · thắng% trước bản cũ: v2_250*:79 v1_550*:84 s2_final*:52 r2_final*:51 snap_00025:49 snap_00050:53 snap_00075:62 snap_00100:58 snap_00125:43 snap_00150:46 snap_00175:53 snap_00200:51 snap_00225:41 snap_00250:50
+  ── đánh giá (334 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.23 ± 0.06, top 4 100%, nhất 86%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.12 ± 0.20, top 4 59%, nhất 17%, chót 12%
+  sảnh C (8 người, 128 ván): hạng TB 1.85 ± 0.13, top 4 91%, nhất 65%, chót 0%
+  Elo sảnh: agent 1552, r2_final 1500, v2_250 1284, v1_550 1245, hyper 1173, tempo 1120, fast9 1058, bank 1057, roll7 1054
+  hành vi (sảnh): roll/vòng 0.36, XP/vòng 0.54, mua/vòng 1.81, vàng khi kết thúc lượt 3.9, cấp theo vòng {5: 4.91, 10: 5.71, 15: 6.23, 20: 6.98}
+  tỷ lệ thắng 1 đấu 1: fast9 96%, bank 99%
+  trước bản neo: v2_250 79%, v1_550 91%, s2_final 62%, r2_final 49%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [74 96 59 44]; bank [74 84 65 68]; v2_250 [60 63 64 49]; v1_550 [71 65 67 62]; s2_final [53 59 59 43]; r2_final [49 51 53 47]
+  hành vi: roll/vòng 0.32, XP/vòng 0.49, mua/vòng 2.15, bán/vòng 0.87, chuyển/vòng 1.65, vàng khi kết thúc lượt 3.1, quyết định/vòng 6.5, chạm trần/vòng 0.002, cấp theo vòng {5: 4.9, 10: 5.61, 15: 6.03, 20: 6.85}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[  251]   7,540,466 qđ ·     360 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.70 EV 0.60 · 53 ván, thắng% tempo:83 hyper:100 roll7:90 fast9:90 bank:90 bản-cũ:51 · tự đấu 26 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.27
+[  252]   7,571,312 qđ ·     375 qđ/s · KL 0.0043 kẹp 0.04 entropy 0.73 EV 0.63 · 61 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:63 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 2.80
+[  253]   7,601,664 qđ ·     376 qđ/s · KL 0.0021 kẹp 0.03 entropy 0.72 EV 0.59 · 57 ván, thắng% tempo:80 hyper:94 roll7:100 fast9:100 bank:92 bản-cũ:52 · tự đấu 29 ván · 4 người hạng TB 1.83 · 8 người hạng TB 3.71
+[  254]   7,633,016 qđ ·     378 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.73 EV 0.62 · 67 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:80 bank:100 bản-cũ:49 · tự đấu 36 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.62
+[  255]   7,662,482 qđ ·     356 qđ/s · KL 0.0047 kẹp 0.05 entropy 0.71 EV 0.57 · 54 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:51 · tự đấu 30 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.75
+[  256]   7,689,524 qđ ·     340 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.70 EV 0.55 · 65 ván, thắng% tempo:91 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:45 · tự đấu 34 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.92
+[  257]   7,718,521 qđ ·     354 qđ/s · KL 0.0026 kẹp 0.03 entropy 0.70 EV 0.56 · 66 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:100 bank:92 bản-cũ:52 · tự đấu 26 ván · 4 người hạng TB 2.19 · 8 người hạng TB 3.83
+[  258]   7,747,683 qđ ·     355 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.68 EV 0.57 · 58 ván, thắng% tempo:90 hyper:80 roll7:91 fast9:100 bank:93 bản-cũ:44 · tự đấu 26 ván · 4 người hạng TB 2.31 · 8 người hạng TB 3.91
+[  259]   7,777,164 qđ ·     356 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.70 EV 0.58 · 69 ván, thắng% tempo:100 hyper:77 roll7:95 fast9:100 bank:88 bản-cũ:59 · tự đấu 36 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.87
+[  260]   7,804,846 qđ ·     347 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.67 EV 0.59 · 52 ván, thắng% tempo:100 hyper:100 roll7:94 fast9:100 bank:75 bản-cũ:51 · tự đấu 28 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.59
+[  261]   7,832,929 qđ ·     356 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.68 EV 0.61 · 77 ván, thắng% tempo:100 hyper:95 roll7:83 fast9:95 bank:100 bản-cũ:57 · tự đấu 36 ván · 4 người hạng TB 1.63 · 8 người hạng TB 3.73
+[  262]   7,863,330 qđ ·     375 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.70 EV 0.57 · 47 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:95 bank:94 bản-cũ:54 · tự đấu 23 ván · 4 người hạng TB 1.38 · 8 người hạng TB 3.47
+[  263]   7,890,923 qđ ·     340 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.66 EV 0.58 · 65 ván, thắng% tempo:89 hyper:90 roll7:100 fast9:100 bank:100 bản-cũ:53 · tự đấu 40 ván · 4 người hạng TB 1.78 · 8 người hạng TB 3.89
+[  264]   7,920,185 qđ ·     354 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.71 EV 0.60 · 65 ván, thắng% tempo:100 hyper:93 roll7:86 fast9:89 bank:86 bản-cũ:51 · tự đấu 28 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.69
+[  265]   7,948,980 qđ ·     355 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.68 EV 0.63 · 54 ván, thắng% tempo:100 hyper:93 roll7:100 fast9:88 bank:100 bản-cũ:51 · tự đấu 26 ván · 4 người hạng TB 2.06 · 8 người hạng TB 4.25
+[  266]   7,979,612 qđ ·     375 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.70 EV 0.62 · 72 ván, thắng% tempo:95 hyper:100 roll7:80 fast9:100 bank:91 bản-cũ:60 · tự đấu 37 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.44
+[  267]   8,006,765 qđ ·     348 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.64 EV 0.62 · 48 ván, thắng% tempo:100 hyper:73 roll7:100 fast9:100 bank:100 bản-cũ:50 · tự đấu 26 ván · 4 người hạng TB 2.38 · 8 người hạng TB 4.00
+[  268]   8,034,329 qđ ·     344 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.69 EV 0.58 · 79 ván, thắng% tempo:95 hyper:100 roll7:87 fast9:94 bank:100 bản-cũ:61 · tự đấu 41 ván · 4 người hạng TB 1.75 · 8 người hạng TB 3.44
+[  269]   8,061,524 qđ ·     344 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.66 EV 0.53 · 51 ván, thắng% tempo:85 hyper:90 roll7:100 fast9:100 bank:100 bản-cũ:57 · tự đấu 18 ván · 4 người hạng TB 2.32 · 8 người hạng TB 3.30
+[  270]   8,089,688 qđ ·     358 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.68 EV 0.62 · 76 ván, thắng% tempo:89 hyper:100 roll7:88 fast9:100 bank:89 bản-cũ:61 · tự đấu 41 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.49
+[  271]   8,121,120 qđ ·     379 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.69 EV 0.56 · 49 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:93 bank:100 bản-cũ:58 · tự đấu 22 ván · 4 người hạng TB 1.91 · 8 người hạng TB 3.38
+[  272]   8,148,940 qđ ·     349 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.65 EV 0.59 · 69 ván, thắng% tempo:100 hyper:90 roll7:100 fast9:86 bank:86 bản-cũ:48 · tự đấu 38 ván · 4 người hạng TB 2.53 · 8 người hạng TB 3.69
+[  273]   8,177,944 qđ ·     351 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.71 EV 0.60 · 53 ván, thắng% tempo:50 hyper:87 roll7:100 fast9:70 bank:93 bản-cũ:39 · tự đấu 29 ván · 4 người hạng TB 2.62 · 8 người hạng TB 4.54
+[  274]   8,205,220 qđ ·     341 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.63 EV 0.59 · 60 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:53 · tự đấu 26 ván · 4 người hạng TB 2.13 · 8 người hạng TB 3.60
+[  275]   8,233,117 qđ ·     345 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.68 EV 0.64 · 67 ván, thắng% tempo:80 hyper:92 roll7:100 fast9:82 bank:88 bản-cũ:44 · tự đấu 38 ván · 4 người hạng TB 2.71 · 8 người hạng TB 3.87
+  kho: thêm snap_00275 vào kho, thay snap_00125 · thắng% trước bản cũ: v2_250*:78 v1_550*:81 s2_final*:57 r2_final*:56 snap_00025:49 snap_00050:46 snap_00075:45 snap_00100:51 snap_00275:50 snap_00150:43 snap_00175:46 snap_00200:51 snap_00225:46 snap_00250:43
+[  276]   8,262,113 qđ ·     361 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.64 EV 0.66 · 49 ván, thắng% tempo:75 hyper:100 roll7:92 fast9:91 bank:89 bản-cũ:50 · tự đấu 17 ván · 4 người hạng TB 1.82 · 8 người hạng TB 4.19
+[  277]   8,292,451 qđ ·     375 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.65 EV 0.64 · 71 ván, thắng% tempo:95 hyper:88 roll7:89 fast9:100 bank:90 bản-cũ:59 · tự đấu 38 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.41
+[  278]   8,322,137 qđ ·     366 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.65 EV 0.58 · 53 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:58 · tự đấu 31 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.44
+[  279]   8,352,618 qđ ·     366 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.65 EV 0.63 · 73 ván, thắng% tempo:89 hyper:96 roll7:100 fast9:100 bank:95 bản-cũ:46 · tự đấu 38 ván · 4 người hạng TB 2.40 · 8 người hạng TB 3.76
+[  280]   8,382,002 qđ ·     358 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.66 EV 0.63 · 50 ván, thắng% tempo:100 hyper:95 roll7:100 fast9:100 bank:100 bản-cũ:56 · tự đấu 26 ván · 4 người hạng TB 2.46 · 8 người hạng TB 3.20
+[  281]   8,410,955 qđ ·     351 qđ/s · KL 0.0029 kẹp 0.03 entropy 0.64 EV 0.62 · 67 ván, thắng% tempo:94 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 37 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.10
+[  282]   8,442,355 qđ ·     374 qđ/s · KL 0.0038 kẹp 0.04 entropy 0.66 EV 0.62 · 60 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:95 bank:94 bản-cũ:57 · tự đấu 27 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.62
+[  283]   8,472,571 qđ ·     374 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.62 EV 0.64 · 62 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:93 bank:100 bản-cũ:64 · tự đấu 36 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.00
+[  284]   8,501,644 qđ ·     360 qđ/s · KL 0.0027 kẹp 0.03 entropy 0.65 EV 0.56 · 64 ván, thắng% tempo:92 hyper:82 roll7:93 fast9:92 bank:100 bản-cũ:50 · tự đấu 38 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.80
+[  285]   8,529,569 qđ ·     362 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.64 EV 0.62 · 51 ván, thắng% tempo:100 hyper:90 roll7:86 fast9:89 bank:100 bản-cũ:51 · tự đấu 27 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.84
+[  286]   8,557,418 qđ ·     352 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.67 EV 0.64 · 69 ván, thắng% tempo:100 hyper:100 roll7:85 fast9:91 bank:80 bản-cũ:48 · tự đấu 35 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.22
+[  287]   8,586,002 qđ ·     353 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.67 EV 0.61 · 48 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 27 ván · 4 người hạng TB 2.43 · 8 người hạng TB 2.95
+[  288]   8,614,166 qđ ·     356 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.66 EV 0.65 · 62 ván, thắng% tempo:94 hyper:100 roll7:95 fast9:89 bank:96 bản-cũ:62 · tự đấu 30 ván · 4 người hạng TB 2.40 · 8 người hạng TB 3.00
+[  289]   8,643,235 qđ ·     356 qđ/s · KL 0.0021 kẹp 0.02 entropy 0.69 EV 0.62 · 62 ván, thắng% tempo:100 hyper:100 roll7:80 fast9:100 bank:100 bản-cũ:55 · tự đấu 33 ván · 4 người hạng TB 2.31 · 8 người hạng TB 3.23
+[  290]   8,670,717 qđ ·     350 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.66 EV 0.61 · 59 ván, thắng% tempo:100 hyper:78 roll7:100 fast9:100 bank:100 bản-cũ:48 · tự đấu 24 ván · 4 người hạng TB 2.05 · 8 người hạng TB 3.97
+[  291]   8,700,014 qđ ·     356 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.68 EV 0.61 · 68 ván, thắng% tempo:90 hyper:92 roll7:100 fast9:100 bank:87 bản-cũ:55 · tự đấu 34 ván · 4 người hạng TB 1.93 · 8 người hạng TB 4.00
+[  292]   8,727,740 qđ ·     350 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.63 EV 0.63 · 48 ván, thắng% tempo:89 hyper:80 roll7:91 fast9:100 bank:100 bản-cũ:56 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.19
+[  293]   8,755,509 qđ ·     356 qđ/s · KL 0.0028 kẹp 0.03 entropy 0.65 EV 0.60 · 73 ván, thắng% tempo:100 hyper:96 roll7:92 fast9:96 bank:96 bản-cũ:51 · tự đấu 29 ván · 4 người hạng TB 1.89 · 8 người hạng TB 3.63
+[  294]   8,782,225 qđ ·     346 qđ/s · KL 0.0033 kẹp 0.04 entropy 0.64 EV 0.62 · 43 ván, thắng% tempo:100 hyper:50 roll7:100 fast9:100 bank:100 bản-cũ:57 · tự đấu 28 ván · 4 người hạng TB 2.86 · 8 người hạng TB 3.25
+[  295]   8,810,481 qđ ·     355 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.64 EV 0.63 · 74 ván, thắng% tempo:100 hyper:89 roll7:100 fast9:96 bank:88 bản-cũ:47 · tự đấu 33 ván · 4 người hạng TB 2.44 · 8 người hạng TB 3.73
+[  296]   8,840,851 qđ ·     370 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.65 EV 0.60 · 54 ván, thắng% tempo:88 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:70 · tự đấu 28 ván · 4 người hạng TB 2.11 · 8 người hạng TB 2.97
+[  297]   8,871,067 qđ ·     375 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.64 EV 0.62 · 55 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:92 bank:91 bản-cũ:49 · tự đấu 29 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.83
+[  298]   8,902,368 qđ ·     374 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.67 EV 0.64 · 69 ván, thắng% tempo:85 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:60 · tự đấu 39 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.47
+[  299]   8,930,860 qđ ·     361 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.65 EV 0.58 · 47 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:92 bank:90 bản-cũ:51 · tự đấu 24 ván · 4 người hạng TB 2.36 · 8 người hạng TB 3.26
+[  300]   8,956,803 qđ ·     339 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.67 EV 0.64 · 71 ván, thắng% tempo:94 hyper:94 roll7:89 fast9:100 bank:100 bản-cũ:52 · tự đấu 37 ván · 4 người hạng TB 2.19 · 8 người hạng TB 3.90
+  kho: thêm snap_00300 vào kho, thay snap_00025 · thắng% trước bản cũ: v2_250*:79 v1_550*:83 s2_final*:50 r2_final*:50 snap_00300:50 snap_00050:55 snap_00075:52 snap_00100:54 snap_00275:51 snap_00150:39 snap_00175:49 snap_00200:46 snap_00225:50 snap_00250:52
+  ── đánh giá (344 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.30 ± 0.08, top 4 97%, nhất 84%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 4.17 ± 0.19, top 4 56%, nhất 14%, chót 5%
+  sảnh C (8 người, 128 ván): hạng TB 1.60 ± 0.09, top 4 98%, nhất 63%, chót 1%
+  Elo sảnh: agent 1548, r2_final 1500, v2_250 1244, v1_550 1201, hyper 1152, tempo 1096, bank 1053, fast9 1038, roll7 1020
+  hành vi (sảnh): roll/vòng 0.48, XP/vòng 0.50, mua/vòng 1.78, vàng khi kết thúc lượt 3.7, cấp theo vòng {5: 4.91, 10: 5.56, 15: 6.1, 20: 6.92}
+  tỷ lệ thắng 1 đấu 1: fast9 98%, bank 98%
+  trước bản neo: v2_250 80%, v1_550 89%, s2_final 57%, r2_final 50%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [73 96 63 48]; bank [73 82 64 68]; v2_250 [57 63 66 51]; v1_550 [73 66 64 59]; s2_final [53 59 56 42]; r2_final [49 52 52 47]
+  hành vi: roll/vòng 0.42, XP/vòng 0.45, mua/vòng 2.05, bán/vòng 0.80, chuyển/vòng 1.61, vàng khi kết thúc lượt 2.9, quyết định/vòng 6.3, chạm trần/vòng 0.002, cấp theo vòng {5: 4.9, 10: 5.42, 15: 6.01, 20: 6.76}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 chưa
+[  301]   8,984,434 qđ ·     350 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.67 EV 0.58 · 51 ván, thắng% tempo:100 hyper:100 roll7:89 fast9:100 bank:93 bản-cũ:56 · tự đấu 20 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.50
+[  302]   9,013,249 qđ ·     356 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.66 EV 0.62 · 62 ván, thắng% tempo:93 hyper:83 roll7:100 fast9:89 bank:92 bản-cũ:50 · tự đấu 28 ván · 4 người hạng TB 2.77 · 8 người hạng TB 4.03
+[  303]   9,044,997 qđ ·     378 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.67 EV 0.63 · 63 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:78 bank:90 bản-cũ:66 · tự đấu 32 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.29
+[  304]   9,074,002 qđ ·     360 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.65 EV 0.61 · 48 ván, thắng% tempo:92 hyper:83 roll7:100 fast9:100 bank:100 bản-cũ:53 · tự đấu 27 ván · 4 người hạng TB 2.21 · 8 người hạng TB 3.53
+[  305]   9,101,668 qđ ·     355 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.68 EV 0.65 · 60 ván, thắng% tempo:78 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:39 · tự đấu 31 ván · 4 người hạng TB 2.35 · 8 người hạng TB 3.79
+[  306]   9,129,699 qđ ·     355 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.67 EV 0.63 · 54 ván, thắng% tempo:100 hyper:88 roll7:100 fast9:100 bank:93 bản-cũ:51 · tự đấu 22 ván · 4 người hạng TB 2.31 · 8 người hạng TB 3.61
+[  307]   9,159,497 qđ ·     367 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.67 EV 0.64 · 58 ván, thắng% tempo:100 hyper:92 roll7:92 fast9:100 bank:100 bản-cũ:55 · tự đấu 26 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.69
+[  308]   9,189,857 qđ ·     367 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.70 EV 0.62 · 55 ván, thắng% tempo:100 hyper:93 roll7:87 fast9:91 bank:88 bản-cũ:61 · tự đấu 30 ván · 4 người hạng TB 1.70 · 8 người hạng TB 3.14
+[  309]   9,217,173 qđ ·     356 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.66 EV 0.65 · 54 ván, thắng% tempo:86 hyper:93 roll7:100 fast9:83 bank:95 bản-cũ:52 · tự đấu 27 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.81
+[  310]   9,245,073 qđ ·     366 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.67 EV 0.67 · 54 ván, thắng% tempo:91 hyper:100 roll7:90 fast9:91 bank:100 bản-cũ:62 · tự đấu 27 ván · 4 người hạng TB 1.92 · 8 người hạng TB 3.42
+[  311]   9,275,196 qđ ·     386 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.66 EV 0.64 · 56 ván, thắng% tempo:87 hyper:96 roll7:83 fast9:100 bank:100 bản-cũ:68 · tự đấu 26 ván · 4 người hạng TB 1.93 · 8 người hạng TB 3.09
+[  312]   9,304,568 qđ ·     373 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.67 EV 0.60 · 59 ván, thắng% tempo:94 hyper:100 roll7:95 fast9:100 bank:94 bản-cũ:56 · tự đấu 32 ván · 4 người hạng TB 1.67 · 8 người hạng TB 3.73
+[  313]   9,332,753 qđ ·     362 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.67 EV 0.66 · 49 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:52 · tự đấu 30 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.86
+[  314]   9,359,789 qđ ·     352 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.68 EV 0.66 · 63 ván, thắng% tempo:100 hyper:84 roll7:78 fast9:96 bank:90 bản-cũ:61 · tự đấu 29 ván · 4 người hạng TB 2.24 · 8 người hạng TB 3.22
+[  315]   9,389,025 qđ ·     367 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.67 EV 0.64 · 52 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:95 bank:100 bản-cũ:65 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 2.87
+[  316]   9,417,320 qđ ·     355 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.68 EV 0.63 · 53 ván, thắng% tempo:87 hyper:96 roll7:100 fast9:91 bank:87 bản-cũ:62 · tự đấu 25 ván · 4 người hạng TB 2.09 · 8 người hạng TB 3.26
+[  317]   9,444,161 qđ ·     346 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.68 EV 0.65 · 55 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:78 bank:100 bản-cũ:56 · tự đấu 29 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.32
+[  318]   9,472,395 qđ ·     360 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.71 EV 0.66 · 54 ván, thắng% tempo:95 hyper:70 roll7:100 fast9:100 bank:100 bản-cũ:63 · tự đấu 24 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.42
+[  319]   9,501,486 qđ ·     366 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.71 EV 0.66 · 49 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:90 bank:90 bản-cũ:61 · tự đấu 19 ván · 4 người hạng TB 1.85 · 8 người hạng TB 3.38
+[  320]   9,530,940 qđ ·     374 qđ/s · KL 0.0007 kẹp 0.01 entropy 0.70 EV 0.67 · 57 ván, thắng% tempo:80 hyper:89 roll7:78 fast9:100 bank:89 bản-cũ:55 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 4.08
+[  321]   9,559,076 qđ ·     366 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.70 EV 0.63 · 52 ván, thắng% tempo:93 hyper:100 roll7:92 fast9:80 bank:100 bản-cũ:67 · tự đấu 26 ván · 4 người hạng TB 1.87 · 8 người hạng TB 3.15
+[  322]   9,585,398 qđ ·     352 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.68 EV 0.64 · 52 ván, thắng% tempo:75 hyper:95 roll7:94 fast9:83 bank:100 bản-cũ:54 · tự đấu 24 ván · 4 người hạng TB 1.86 · 8 người hạng TB 3.75
+[  323]   9,615,947 qđ ·     383 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.69 EV 0.61 · 63 ván, thắng% tempo:100 hyper:100 roll7:88 fast9:100 bank:100 bản-cũ:66 · tự đấu 34 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.09
+[  324]   9,647,594 qđ ·     392 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.69 EV 0.65 · 43 ván, thắng% tempo:93 hyper:90 roll7:88 fast9:87 bank:80 bản-cũ:66 · tự đấu 16 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.19
+[  325]   9,678,944 qđ ·     388 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.68 EV 0.61 · 70 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:88 bản-cũ:67 · tự đấu 42 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.12
+  kho: thêm snap_00325 vào kho, thay snap_00100 · thắng% trước bản cũ: v2_250*:82 v1_550*:86 s2_final*:61 r2_final*:56 snap_00300:52 snap_00050:45 snap_00075:58 snap_00325:50 snap_00275:60 snap_00150:52 snap_00175:44 snap_00200:58 snap_00225:56 snap_00250:57
+[  326]   9,707,960 qđ ·     359 qđ/s · KL 0.0028 kẹp 0.03 entropy 0.66 EV 0.59 · 49 ván, thắng% tempo:67 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:72 · tự đấu 30 ván · 4 người hạng TB 1.54 · 8 người hạng TB 3.21
+[  327]   9,734,746 qđ ·     341 qđ/s · KL 0.0027 kẹp 0.03 entropy 0.66 EV 0.61 · 59 ván, thắng% tempo:88 hyper:94 roll7:80 fast9:82 bank:100 bản-cũ:44 · tự đấu 27 ván · 4 người hạng TB 2.13 · 8 người hạng TB 4.03
+[  328]   9,762,550 qđ ·     345 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.67 EV 0.56 · 62 ván, thắng% tempo:82 hyper:67 roll7:64 fast9:100 bank:75 bản-cũ:62 · tự đấu 32 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.93
+[  329]   9,790,520 qđ ·     349 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.66 EV 0.61 · 50 ván, thắng% tempo:86 hyper:80 roll7:90 fast9:89 bank:77 bản-cũ:55 · tự đấu 21 ván · 4 người hạng TB 2.27 · 8 người hạng TB 3.97
+[  330]   9,818,967 qđ ·     357 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.68 EV 0.64 · 67 ván, thắng% tempo:100 hyper:100 roll7:95 fast9:100 bank:88 bản-cũ:52 · tự đấu 28 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.71
+[  331]   9,847,668 qđ ·     361 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.68 EV 0.65 · 43 ván, thắng% tempo:100 hyper:90 roll7:86 fast9:75 bank:100 bản-cũ:70 · tự đấu 27 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.06
+[  332]   9,877,360 qđ ·     367 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.68 EV 0.65 · 71 ván, thắng% tempo:94 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:58 · tự đấu 29 ván · 4 người hạng TB 2.45 · 8 người hạng TB 3.27
+[  333]   9,904,899 qđ ·     351 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.66 EV 0.66 · 52 ván, thắng% tempo:100 hyper:80 roll7:100 fast9:92 bank:100 bản-cũ:66 · tự đấu 30 ván · 4 người hạng TB 2.67 · 8 người hạng TB 2.91
+[  334]   9,931,340 qđ ·     348 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.65 EV 0.67 · 55 ván, thắng% tempo:95 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:61 · tự đấu 29 ván · 4 người hạng TB 2.29 · 8 người hạng TB 3.44
+[  335]   9,959,779 qđ ·     356 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.68 EV 0.62 · 62 ván, thắng% tempo:100 hyper:92 roll7:100 fast9:100 bank:100 bản-cũ:48 · tự đấu 26 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.59
+[  336]   9,987,872 qđ ·     351 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.65 EV 0.57 · 42 ván, thắng% tempo:91 hyper:100 roll7:100 fast9:86 bank:100 bản-cũ:46 · tự đấu 26 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.80
+[  337]  10,016,968 qđ ·     356 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.70 EV 0.61 · 74 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:84 bank:100 bản-cũ:60 · tự đấu 30 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.13
+[  338]  10,047,797 qđ ·     378 qđ/s · KL 0.0025 kẹp 0.03 entropy 0.68 EV 0.60 · 51 ván, thắng% tempo:92 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:48 · tự đấu 27 ván · 4 người hạng TB 2.19 · 8 người hạng TB 3.90
+[  339]  10,077,191 qđ ·     365 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.68 EV 0.61 · 56 ván, thắng% tempo:93 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:54 · tự đấu 28 ván · 4 người hạng TB 1.80 · 8 người hạng TB 3.80
+[  340]  10,107,636 qđ ·     372 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.72 EV 0.65 · 60 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:94 bank:92 bản-cũ:43 · tự đấu 29 ván · 4 người hạng TB 2.41 · 8 người hạng TB 3.77
+[  341]  10,136,921 qđ ·     362 qđ/s · KL 0.0012 kẹp 0.02 entropy 0.69 EV 0.62 · 45 ván, thắng% tempo:100 hyper:90 roll7:100 fast9:100 bank:80 bản-cũ:75 · tự đấu 27 ván · 4 người hạng TB 1.71 · 8 người hạng TB 2.81
+[  342]  10,164,590 qđ ·     350 qđ/s · KL 0.0031 kẹp 0.04 entropy 0.68 EV 0.62 · 68 ván, thắng% tempo:88 hyper:100 roll7:100 fast9:89 bank:100 bản-cũ:53 · tự đấu 30 ván · 4 người hạng TB 1.84 · 8 người hạng TB 3.83
+[  343]  10,192,135 qđ ·     347 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.70 EV 0.62 · 55 ván, thắng% tempo:89 hyper:95 roll7:100 fast9:100 bank:94 bản-cũ:64 · tự đấu 25 ván · 4 người hạng TB 2.20 · 8 người hạng TB 2.93
+[  344]  10,219,765 qđ ·     358 qđ/s · KL 0.0007 kẹp 0.01 entropy 0.68 EV 0.64 · 51 ván, thắng% tempo:100 hyper:100 roll7:89 fast9:100 bank:93 bản-cũ:66 · tự đấu 17 ván · 4 người hạng TB 1.71 · 8 người hạng TB 3.19
+[  345]  10,247,446 qđ ·     352 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.70 EV 0.62 · 58 ván, thắng% tempo:100 hyper:89 roll7:90 fast9:90 bank:100 bản-cũ:51 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.76
+[  346]  10,275,917 qđ ·     358 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.71 EV 0.69 · 46 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:92 bank:100 bản-cũ:61 · tự đấu 18 ván · 4 người hạng TB 1.60 · 8 người hạng TB 3.37
+[  347]  10,309,036 qđ ·     398 qđ/s · KL 0.0013 kẹp 0.01 entropy 0.71 EV 0.66 · 63 ván, thắng% tempo:100 hyper:96 roll7:100 fast9:90 bank:93 bản-cũ:55 · tự đấu 28 ván · 4 người hạng TB 2.27 · 8 người hạng TB 3.26
+[  348]  10,341,247 qđ ·     393 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.69 EV 0.64 · 47 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:62 · tự đấu 27 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.21
+[  349]  10,369,599 qđ ·     354 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.69 EV 0.68 · 58 ván, thắng% tempo:90 hyper:95 roll7:100 fast9:88 bank:100 bản-cũ:59 · tự đấu 35 ván · 4 người hạng TB 1.90 · 8 người hạng TB 3.42
+[  350]  10,399,105 qđ ·     362 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.72 EV 0.65 · 52 ván, thắng% tempo:94 hyper:75 roll7:92 fast9:100 bank:100 bản-cũ:66 · tự đấu 23 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.58
+  kho: thêm snap_00350 vào kho, thay snap_00275 · thắng% trước bản cũ: v2_250*:82 v1_550*:82 s2_final*:60 r2_final*:56 snap_00300:58 snap_00050:55 snap_00075:55 snap_00325:59 snap_00350:50 snap_00150:48 snap_00175:51 snap_00200:53 snap_00225:57 snap_00250:57
+  ── đánh giá (347 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.27 ± 0.08, top 4 98%, nhất 86%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 3.85 ± 0.18, top 4 66%, nhất 14%, chót 4%
+  sảnh C (8 người, 128 ván): hạng TB 1.76 ± 0.11, top 4 94%, nhất 65%, chót 0%
+  Elo sảnh: agent 1579, r2_final 1500, v2_250 1291, v1_550 1261, hyper 1190, tempo 1149, fast9 1099, bank 1080, roll7 1071
+  hành vi (sảnh): roll/vòng 0.49, XP/vòng 0.51, mua/vòng 1.79, vàng khi kết thúc lượt 3.6, cấp theo vòng {5: 4.9, 10: 5.5, 15: 6.13, 20: 6.92}
+  tỷ lệ thắng 1 đấu 1: fast9 96%, bank 98%
+  trước bản neo: v2_250 86%, v1_550 90%, s2_final 59%, r2_final 54%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [73 96 67 26]; bank [74 83 66 75]; v2_250 [59 63 69 56]; v1_550 [70 64 68 58]; s2_final [52 61 58 40]; r2_final [50 53 56 46]
+  hành vi: roll/vòng 0.45, XP/vòng 0.44, mua/vòng 2.10, bán/vòng 0.84, chuyển/vòng 2.02, vàng khi kết thúc lượt 2.8, quyết định/vòng 6.9, chạm trần/vòng 0.005, cấp theo vòng {5: 4.87, 10: 5.33, 15: 6.02, 20: 6.73}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 ĐẠT
+[  351]  10,431,346 qđ ·     392 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.72 EV 0.64 · 49 ván, thắng% tempo:95 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:60 · tự đấu 18 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.13
+[  352]  10,464,288 qđ ·     401 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.69 EV 0.64 · 52 ván, thắng% tempo:100 hyper:93 roll7:100 fast9:92 bank:100 bản-cũ:63 · tự đấu 28 ván · 4 người hạng TB 2.10 · 8 người hạng TB 3.48
+[  353]  10,497,632 qđ ·     400 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.72 EV 0.66 · 60 ván, thắng% tempo:100 hyper:79 roll7:80 fast9:90 bank:100 bản-cũ:44 · tự đấu 38 ván · 4 người hạng TB 2.60 · 8 người hạng TB 4.05
+[  354]  10,528,451 qđ ·     385 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.69 EV 0.63 · 38 ván, thắng% tempo:100 hyper:100 roll7:90 fast9:100 bank:100 bản-cũ:64 · tự đấu 25 ván · 4 người hạng TB 2.25 · 8 người hạng TB 2.92
+[  355]  10,559,235 qđ ·     379 qđ/s · KL 0.0006 kẹp 0.01 entropy 0.69 EV 0.66 · 65 ván, thắng% tempo:93 hyper:92 roll7:100 fast9:89 bank:100 bản-cũ:48 · tự đấu 40 ván · 4 người hạng TB 2.67 · 8 người hạng TB 3.82
+[  356]  10,590,543 qđ ·     382 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.69 EV 0.64 · 51 ván, thắng% tempo:91 hyper:89 roll7:100 fast9:80 bank:91 bản-cũ:49 · tự đấu 27 ván · 4 người hạng TB 1.80 · 8 người hạng TB 4.21
+[  357]  10,619,216 qđ ·     358 qđ/s · KL 0.0020 kẹp 0.03 entropy 0.66 EV 0.64 · 58 ván, thắng% tempo:92 hyper:92 roll7:93 fast9:100 bank:100 bản-cũ:50 · tự đấu 33 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.46
+[  358]  10,648,389 qđ ·     358 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.68 EV 0.67 · 59 ván, thắng% tempo:100 hyper:86 roll7:92 fast9:85 bank:95 bản-cũ:34 · tự đấu 30 ván · 4 người hạng TB 2.29 · 8 người hạng TB 4.23
+[  359]  10,675,822 qđ ·     358 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.67 EV 0.63 · 45 ván, thắng% tempo:91 hyper:100 roll7:85 fast9:100 bank:100 bản-cũ:63 · tự đấu 21 ván · 4 người hạng TB 2.17 · 8 người hạng TB 3.00
+[  360]  10,702,835 qđ ·     355 qđ/s · KL 0.0021 kẹp 0.02 entropy 0.66 EV 0.70 · 71 ván, thắng% tempo:94 hyper:95 roll7:100 fast9:100 bank:100 bản-cũ:60 · tự đấu 39 ván · 4 người hạng TB 1.57 · 8 người hạng TB 3.06
+[  361]  10,732,495 qđ ·     374 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.68 EV 0.63 · 54 ván, thắng% tempo:94 hyper:94 roll7:100 fast9:100 bank:79 bản-cũ:66 · tự đấu 23 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.27
+[  362]  10,761,030 qđ ·     370 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.67 EV 0.63 · 48 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:80 bank:100 bản-cũ:61 · tự đấu 26 ván · 4 người hạng TB 2.44 · 8 người hạng TB 3.19
+[  363]  10,789,804 qđ ·     360 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.70 EV 0.64 · 59 ván, thắng% tempo:73 hyper:80 roll7:100 fast9:95 bank:100 bản-cũ:68 · tự đấu 31 ván · 4 người hạng TB 2.12 · 8 người hạng TB 2.97
+[  364]  10,819,208 qđ ·     368 qđ/s · KL 0.0024 kẹp 0.03 entropy 0.69 EV 0.64 · 46 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:88 bank:100 bản-cũ:65 · tự đấu 25 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.14
+[  365]  10,848,202 qđ ·     373 qđ/s · KL 0.0012 kẹp 0.02 entropy 0.71 EV 0.62 · 57 ván, thắng% tempo:83 hyper:100 roll7:100 fast9:95 bank:94 bản-cũ:56 · tự đấu 27 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.54
+[  366]  10,878,311 qđ ·     372 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.71 EV 0.65 · 55 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:71 · tự đấu 31 ván · 4 người hạng TB 1.77 · 8 người hạng TB 2.70
+[  367]  10,906,617 qđ ·     350 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.67 EV 0.64 · 49 ván, thắng% tempo:100 hyper:84 roll7:100 fast9:100 bank:88 bản-cũ:55 · tự đấu 21 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.28
+[  368]  10,934,407 qđ ·     357 qđ/s · KL 0.0006 kẹp 0.01 entropy 0.69 EV 0.65 · 57 ván, thắng% tempo:100 hyper:100 fast9:100 bank:93 bản-cũ:58 · tự đấu 31 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.67
+[  369]  10,964,209 qđ ·     365 qđ/s · KL 0.0030 kẹp 0.03 entropy 0.70 EV 0.62 · 55 ván, thắng% tempo:94 hyper:85 roll7:100 fast9:87 bank:83 bản-cũ:59 · tự đấu 25 ván · 4 người hạng TB 1.87 · 8 người hạng TB 3.57
+[  370]  10,994,647 qđ ·     375 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.67 EV 0.66 · 53 ván, thắng% tempo:91 hyper:100 roll7:100 fast9:90 bank:90 bản-cũ:54 · tự đấu 26 ván · 4 người hạng TB 2.15 · 8 người hạng TB 3.72
+[  371]  11,025,101 qđ ·     373 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.69 EV 0.67 · 62 ván, thắng% tempo:92 hyper:89 roll7:100 fast9:79 bank:100 bản-cũ:58 · tự đấu 32 ván · 4 người hạng TB 2.09 · 8 người hạng TB 3.58
+[  372]  11,056,238 qđ ·     304 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.66 EV 0.61 · 54 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:80 bản-cũ:59 · tự đấu 31 ván · 4 người hạng TB 1.92 · 8 người hạng TB 3.45
+[  373]  11,085,551 qđ ·     317 qđ/s · KL 0.0012 kẹp 0.01 entropy 0.64 EV 0.64 · 62 ván, thắng% tempo:94 hyper:89 roll7:73 fast9:95 bank:92 bản-cũ:60 · tự đấu 37 ván · 4 người hạng TB 2.38 · 8 người hạng TB 3.53
+[  374]  11,114,424 qđ ·     355 qđ/s · KL 0.0007 kẹp 0.01 entropy 0.65 EV 0.60 · 51 ván, thắng% tempo:100 hyper:83 roll7:100 fast9:75 bank:100 bản-cũ:52 · tự đấu 27 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.26
+[  375]  11,144,640 qđ ·     368 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.66 EV 0.63 · 60 ván, thắng% tempo:92 hyper:88 roll7:94 fast9:90 bank:94 bản-cũ:61 · tự đấu 30 ván · 4 người hạng TB 2.45 · 8 người hạng TB 3.48
+  kho: thêm snap_00375 vào kho, thay snap_00050 · thắng% trước bản cũ: v2_250*:81 v1_550*:85 s2_final*:59 r2_final*:63 snap_00300:49 snap_00375:50 snap_00075:57 snap_00325:55 snap_00350:49 snap_00150:48 snap_00175:51 snap_00200:57 snap_00225:55 snap_00250:54
+[  376]  11,174,862 qđ ·     374 qđ/s · KL 0.0020 kẹp 0.02 entropy 0.65 EV 0.61 · 52 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:92 bản-cũ:58 · tự đấu 26 ván · 4 người hạng TB 2.50 · 8 người hạng TB 3.00
+[  377]  11,203,448 qđ ·     360 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.63 EV 0.62 · 56 ván, thắng% tempo:67 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:64 · tự đấu 39 ván · 4 người hạng TB 2.18 · 8 người hạng TB 3.38
+[  378]  11,231,618 qđ ·     358 qđ/s · KL 0.0019 kẹp 0.02 entropy 0.65 EV 0.63 · 65 ván, thắng% tempo:94 hyper:92 roll7:91 fast9:94 bank:88 bản-cũ:50 · tự đấu 35 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.73
+[  379]  11,256,971 qđ ·     337 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.62 EV 0.63 · 51 ván, thắng% tempo:92 hyper:92 roll7:67 fast9:100 bank:80 bản-cũ:52 · tự đấu 28 ván · 4 người hạng TB 2.11 · 8 người hạng TB 3.78
+[  380]  11,282,528 qđ ·     333 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.62 EV 0.65 · 64 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:94 bản-cũ:61 · tự đấu 35 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.14
+[  381]  11,309,750 qđ ·     343 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.63 EV 0.62 · 53 ván, thắng% tempo:100 hyper:86 roll7:92 fast9:77 bank:95 bản-cũ:56 · tự đấu 19 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.80
+[  382]  11,338,894 qđ ·     361 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.63 EV 0.64 · 66 ván, thắng% tempo:100 hyper:95 roll7:94 fast9:92 bank:100 bản-cũ:51 · tự đấu 33 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.29
+[  383]  11,366,280 qđ ·     351 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.61 EV 0.61 · 53 ván, thắng% tempo:33 hyper:92 roll7:100 fast9:100 bank:100 bản-cũ:43 · tự đấu 29 ván · 4 người hạng TB 2.30 · 8 người hạng TB 4.39
+[  384]  11,392,447 qđ ·     312 qđ/s · KL 0.0016 kẹp 0.02 entropy 0.61 EV 0.62 · 68 ván, thắng% tempo:100 hyper:100 roll7:92 fast9:96 bank:92 bản-cũ:50 · tự đấu 39 ván · 4 người hạng TB 2.25 · 8 người hạng TB 3.63
+[  385]  11,421,202 qđ ·     356 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.62 EV 0.56 · 54 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:93 bank:90 bản-cũ:58 · tự đấu 22 ván · 4 người hạng TB 2.24 · 8 người hạng TB 3.83
+[  386]  11,450,636 qđ ·     366 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.61 EV 0.60 · 62 ván, thắng% tempo:88 hyper:94 roll7:100 fast9:100 bank:94 bản-cũ:63 · tự đấu 34 ván · 4 người hạng TB 1.89 · 8 người hạng TB 3.11
+[  387]  11,480,437 qđ ·     373 qđ/s · KL 0.0014 kẹp 0.02 entropy 0.61 EV 0.65 · 60 ván, thắng% tempo:89 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:44 · tự đấu 34 ván · 4 người hạng TB 2.21 · 8 người hạng TB 3.67
+[  388]  11,508,872 qđ ·     364 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.60 EV 0.55 · 57 ván, thắng% tempo:100 hyper:94 roll7:100 fast9:100 bank:100 bản-cũ:59 · tự đấu 33 ván · 4 người hạng TB 1.82 · 8 người hạng TB 3.25
+[  389]  11,537,350 qđ ·     357 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.62 EV 0.63 · 64 ván, thắng% tempo:78 hyper:88 roll7:92 fast9:100 bank:90 bản-cũ:51 · tự đấu 33 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.97
+[  390]  11,564,372 qđ ·     343 qđ/s · KL 0.0007 kẹp 0.01 entropy 0.61 EV 0.57 · 53 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:75 bank:100 bản-cũ:58 · tự đấu 31 ván · 4 người hạng TB 2.12 · 8 người hạng TB 3.15
+[  391]  11,590,124 qđ ·     332 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.62 EV 0.60 · 62 ván, thắng% tempo:100 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:62 · tự đấu 31 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.43
+[  392]  11,614,955 qđ ·     324 qđ/s · KL 0.0011 kẹp 0.01 entropy 0.62 EV 0.62 · 59 ván, thắng% tempo:88 hyper:100 roll7:95 fast9:100 bank:92 bản-cũ:54 · tự đấu 26 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.88
+[  393]  11,642,523 qđ ·     348 qđ/s · KL 0.0022 kẹp 0.03 entropy 0.63 EV 0.57 · 65 ván, thắng% tempo:93 hyper:79 roll7:94 fast9:88 bank:71 bản-cũ:54 · tự đấu 29 ván · 4 người hạng TB 1.93 · 8 người hạng TB 3.95
+[  394]  11,673,941 qđ ·     382 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.64 EV 0.58 · 55 ván, thắng% tempo:91 hyper:92 roll7:83 fast9:78 bank:89 bản-cũ:58 · tự đấu 28 ván · 4 người hạng TB 2.64 · 8 người hạng TB 3.15
+[  395]  11,704,642 qđ ·     380 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.62 EV 0.62 · 58 ván, thắng% tempo:100 hyper:82 roll7:100 fast9:100 bank:100 bản-cũ:62 · tự đấu 32 ván · 4 người hạng TB 2.00 · 8 người hạng TB 3.45
+[  396]  11,733,284 qđ ·     363 qđ/s · KL 0.0018 kẹp 0.02 entropy 0.65 EV 0.65 · 58 ván, thắng% tempo:91 hyper:86 roll7:93 fast9:100 bank:100 bản-cũ:72 · tự đấu 39 ván · 4 người hạng TB 1.89 · 8 người hạng TB 2.52
+[  397]  11,761,768 qđ ·     357 qđ/s · KL 0.0009 kẹp 0.01 entropy 0.64 EV 0.63 · 60 ván, thắng% tempo:96 hyper:100 roll7:100 fast9:87 bank:91 bản-cũ:61 · tự đấu 27 ván · 4 người hạng TB 2.20 · 8 người hạng TB 3.05
+[  398]  11,790,706 qđ ·     357 qđ/s · KL 0.0011 kẹp 0.02 entropy 0.65 EV 0.62 · 62 ván, thắng% tempo:86 hyper:100 roll7:90 fast9:100 bank:96 bản-cũ:57 · tự đấu 32 ván · 4 người hạng TB 2.33 · 8 người hạng TB 3.14
+[  399]  11,819,161 qđ ·     348 qđ/s · KL 0.0013 kẹp 0.01 entropy 0.65 EV 0.59 · 49 ván, thắng% tempo:100 hyper:100 roll7:82 fast9:100 bank:100 bản-cũ:59 · tự đấu 27 ván · 4 người hạng TB 3.00 · 8 người hạng TB 3.56
+[  400]  11,847,077 qđ ·     322 qđ/s · KL 0.0008 kẹp 0.01 entropy 0.64 EV 0.65 · 61 ván, thắng% tempo:92 hyper:85 roll7:100 fast9:100 bank:100 bản-cũ:56 · tự đấu 28 ván · 4 người hạng TB 1.91 · 8 người hạng TB 4.12
+  kho: thêm snap_00400 vào kho, thay snap_00200 · thắng% trước bản cũ: v2_250*:82 v1_550*:87 s2_final*:68 r2_final*:61 snap_00300:52 snap_00375:46 snap_00075:49 snap_00325:54 snap_00350:48 snap_00150:51 snap_00175:49 snap_00400:50 snap_00225:47 snap_00250:51
+  ── đánh giá (329 giây) ──
+  sảnh A (8 người, 128 ván): hạng TB 1.27 ± 0.07, top 4 98%, nhất 84%, chót 0%
+  sảnh B (8 người, 128 ván): hạng TB 3.83 ± 0.19, top 4 62%, nhất 19%, chót 4%
+  sảnh C (8 người, 128 ván): hạng TB 1.88 ± 0.12, top 4 93%, nhất 61%, chót 0%
+  Elo sảnh: agent 1581, r2_final 1500, v2_250 1301, v1_550 1274, hyper 1230, tempo 1152, bank 1122, roll7 1121, fast9 1112
+  hành vi (sảnh): roll/vòng 0.38, XP/vòng 0.54, mua/vòng 1.74, vàng khi kết thúc lượt 4.7, cấp theo vòng {5: 4.92, 10: 5.62, 15: 6.16, 20: 6.99}
+  tỷ lệ thắng 1 đấu 1: fast9 97%, bank 97%
+  trước bản neo: v2_250 81%, v1_550 91%, s2_final 59%, r2_final 52%
+  theo giai đoạn (1-6, 7-11, 12-16, 17+): fast9 [73 96 60 47]; bank [73 83 63 74]; v2_250 [59 63 65 54]; v1_550 [70 63 66 60]; s2_final [50 58 57 41]; r2_final [48 51 51 50]
+  hành vi: roll/vòng 0.32, XP/vòng 0.48, mua/vòng 2.01, bán/vòng 0.74, chuyển/vòng 1.56, vàng khi kết thúc lượt 3.7, quyết định/vòng 6.1, chạm trần/vòng 0.001, cấp theo vòng {5: 4.89, 10: 5.47, 15: 6.04, 20: 6.86}
+  mốc: m1 chưa, m2 ĐẠT, m3 ĐẠT, m5 ĐẠT
+[  401]  11,876,145 qđ ·     359 qđ/s · KL 0.0013 kẹp 0.02 entropy 0.65 EV 0.61 · 56 ván, thắng% tempo:95 hyper:95 roll7:94 fast9:89 bank:100 bản-cũ:63 · tự đấu 22 ván · 4 người hạng TB 2.24 · 8 người hạng TB 3.08
+[  402]  11,907,315 qđ ·     371 qđ/s · KL 0.0017 kẹp 0.02 entropy 0.63 EV 0.57 · 62 ván, thắng% tempo:100 hyper:80 roll7:100 fast9:95 bank:100 bản-cũ:52 · tự đấu 35 ván · 4 người hạng TB 2.14 · 8 người hạng TB 3.54
+[  403]  11,938,382 qđ ·     372 qđ/s · KL 0.0015 kẹp 0.02 entropy 0.62 EV 0.55 · 66 ván, thắng% tempo:86 hyper:100 roll7:100 fast9:100 bank:100 bản-cũ:56 · tự đấu 35 ván · 4 người hạng TB 2.06 · 8 người hạng TB 3.97
+[  404]  11,969,494 qđ ·     375 qđ/s · KL 0.0010 kẹp 0.01 entropy 0.63 EV 0.58 · 58 ván, thắng% tempo:92 hyper:100 roll7:85 fast9:71 bank:100 bản-cũ:49 · tự đấu 35 ván · 4 người hạng TB 2.18 · 8 người hạng TB 4.05

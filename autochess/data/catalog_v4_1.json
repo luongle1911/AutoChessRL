@@ -1,0 +1,1860 @@
+{
+ "version": "catalog-v4.1",
+ "note": "Luật bản 4.1 (08/11/2026): như catalog-v4, chỉ đổi con số hiệu ứng của 16 tộc hệ thường để cân bằng (Đấu sĩ, Quái thú, Lưỡng Hà, Hộ vệ giảm; Hy Lạp, Ai Cập, Celt, Bắc Âu, Ấn Độ tăng). Sinh bằng autochess/data/make_catalog_v4_1.py.",
+ "stats_note": "chỉ số 1 sao; mỗi sao máu và sát thương x star_mult, giáp và kháng phép giữ nguyên",
+ "stat_names": [
+  "hp",
+  "ad",
+  "ap",
+  "armor",
+  "mr"
+ ],
+ "star_mult": [
+  1.0,
+  1.8,
+  3.24
+ ],
+ "champions": [
+  {
+   "id": 0,
+   "name": "Sobek",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    7,
+    15
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 25,
+    "ap": 15,
+    "armor": 45,
+    "mr": 45
+   }
+  },
+  {
+   "id": 1,
+   "name": "Chử Đồng Tử",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    9
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 25,
+    "ap": 15,
+    "armor": 45,
+    "mr": 45
+   }
+  },
+  {
+   "id": 2,
+   "name": "Xolotl",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    14
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 25,
+    "ap": 15,
+    "armor": 45,
+    "mr": 45
+   }
+  },
+  {
+   "id": 3,
+   "name": "Enkidu",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    12
+   ],
+   "stats": {
+    "hp": 600,
+    "ad": 45,
+    "ap": 10,
+    "armor": 35,
+    "mr": 30
+   }
+  },
+  {
+   "id": 4,
+   "name": "Na Tra",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    8
+   ],
+   "stats": {
+    "hp": 600,
+    "ad": 45,
+    "ap": 10,
+    "armor": 35,
+    "mr": 30
+   }
+  },
+  {
+   "id": 5,
+   "name": "Momotarō",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    10
+   ],
+   "stats": {
+    "hp": 600,
+    "ad": 45,
+    "ap": 10,
+    "armor": 35,
+    "mr": 30
+   }
+  },
+  {
+   "id": 6,
+   "name": "Hermes",
+   "cost": 1,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    5
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 65,
+    "ap": 10,
+    "armor": 25,
+    "mr": 25
+   }
+  },
+  {
+   "id": 7,
+   "name": "Tengu",
+   "cost": 1,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    10
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 65,
+    "ap": 10,
+    "armor": 25,
+    "mr": 25
+   }
+  },
+  {
+   "id": 8,
+   "name": "Valkyrie",
+   "cost": 1,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    6
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 60,
+    "ap": 5,
+    "armor": 20,
+    "mr": 20
+   }
+  },
+  {
+   "id": 9,
+   "name": "Karna",
+   "cost": 1,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    11
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 60,
+    "ap": 5,
+    "armor": 20,
+    "mr": 20
+   }
+  },
+  {
+   "id": 10,
+   "name": "Brigid",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    13
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 15,
+    "ap": 60,
+    "armor": 20,
+    "mr": 30
+   }
+  },
+  {
+   "id": 11,
+   "name": "Kitsune",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    10,
+    15
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 15,
+    "ap": 60,
+    "armor": 20,
+    "mr": 30
+   }
+  },
+  {
+   "id": 12,
+   "name": "Bastet",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    7
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 15,
+    "ap": 60,
+    "armor": 20,
+    "mr": 30
+   }
+  },
+  {
+   "id": 13,
+   "name": "Heimdall",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    6
+   ],
+   "stats": {
+    "hp": 810,
+    "ad": 31,
+    "ap": 19,
+    "armor": 50,
+    "mr": 50
+   }
+  },
+  {
+   "id": 14,
+   "name": "Anubis",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    7
+   ],
+   "stats": {
+    "hp": 810,
+    "ad": 31,
+    "ap": 19,
+    "armor": 50,
+    "mr": 50
+   }
+  },
+  {
+   "id": 15,
+   "name": "Dagda",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    13
+   ],
+   "stats": {
+    "hp": 810,
+    "ad": 31,
+    "ap": 19,
+    "armor": 50,
+    "mr": 50
+   }
+  },
+  {
+   "id": 16,
+   "name": "Heracles",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    5
+   ],
+   "stats": {
+    "hp": 825,
+    "ad": 53,
+    "ap": 12,
+    "armor": 40,
+    "mr": 35
+   }
+  },
+  {
+   "id": 17,
+   "name": "Thạch Sanh",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9
+   ],
+   "stats": {
+    "hp": 750,
+    "ad": 56,
+    "ap": 12,
+    "armor": 40,
+    "mr": 35
+   }
+  },
+  {
+   "id": 18,
+   "name": "Cú Chulainn",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    13
+   ],
+   "stats": {
+    "hp": 750,
+    "ad": 56,
+    "ap": 12,
+    "armor": 40,
+    "mr": 35
+   }
+  },
+  {
+   "id": 19,
+   "name": "Camazotz",
+   "cost": 2,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    14,
+    15
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 81,
+    "ap": 12,
+    "armor": 30,
+    "mr": 30
+   }
+  },
+  {
+   "id": 20,
+   "name": "Garuda",
+   "cost": 2,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    11,
+    15
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 81,
+    "ap": 12,
+    "armor": 30,
+    "mr": 30
+   }
+  },
+  {
+   "id": 21,
+   "name": "Artemis",
+   "cost": 2,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    5
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 75,
+    "ap": 6,
+    "armor": 25,
+    "mr": 25
+   }
+  },
+  {
+   "id": 22,
+   "name": "Arjuna",
+   "cost": 2,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    11
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 75,
+    "ap": 6,
+    "armor": 25,
+    "mr": 25
+   }
+  },
+  {
+   "id": 23,
+   "name": "Freyja",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    6
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 19,
+    "ap": 75,
+    "armor": 25,
+    "mr": 35
+   }
+  },
+  {
+   "id": 24,
+   "name": "Thoth",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    7
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 19,
+    "ap": 75,
+    "armor": 25,
+    "mr": 35
+   }
+  },
+  {
+   "id": 25,
+   "name": "Hằng Nga",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    8
+   ],
+   "stats": {
+    "hp": 560,
+    "ad": 19,
+    "ap": 75,
+    "armor": 25,
+    "mr": 35
+   }
+  },
+  {
+   "id": 26,
+   "name": "Cộng Công",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    8
+   ],
+   "stats": {
+    "hp": 1010,
+    "ad": 39,
+    "ap": 23,
+    "armor": 55,
+    "mr": 55
+   }
+  },
+  {
+   "id": 27,
+   "name": "Jörmungandr",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    6,
+    15
+   ],
+   "stats": {
+    "hp": 1010,
+    "ad": 39,
+    "ap": 23,
+    "armor": 55,
+    "mr": 55
+   }
+  },
+  {
+   "id": 28,
+   "name": "Atlas",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    5
+   ],
+   "stats": {
+    "hp": 1130,
+    "ad": 33,
+    "ap": 20,
+    "armor": 55,
+    "mr": 55
+   }
+  },
+  {
+   "id": 29,
+   "name": "Ares",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    5
+   ],
+   "stats": {
+    "hp": 930,
+    "ad": 70,
+    "ap": 16,
+    "armor": 45,
+    "mr": 40
+   }
+  },
+  {
+   "id": 30,
+   "name": "Thánh Gióng",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9
+   ],
+   "stats": {
+    "hp": 975,
+    "ad": 70,
+    "ap": 16,
+    "armor": 45,
+    "mr": 40
+   }
+  },
+  {
+   "id": 31,
+   "name": "Gilgamesh",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    12
+   ],
+   "stats": {
+    "hp": 930,
+    "ad": 70,
+    "ap": 16,
+    "armor": 45,
+    "mr": 40
+   }
+  },
+  {
+   "id": 32,
+   "name": "Hanuman",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    11
+   ],
+   "stats": {
+    "hp": 930,
+    "ad": 70,
+    "ap": 16,
+    "armor": 45,
+    "mr": 40
+   }
+  },
+  {
+   "id": 33,
+   "name": "Fenrir",
+   "cost": 3,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    6,
+    15
+   ],
+   "stats": {
+    "hp": 730,
+    "ad": 99,
+    "ap": 15,
+    "armor": 35,
+    "mr": 35
+   }
+  },
+  {
+   "id": 34,
+   "name": "Morrígan",
+   "cost": 3,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    13
+   ],
+   "stats": {
+    "hp": 700,
+    "ad": 101,
+    "ap": 16,
+    "armor": 35,
+    "mr": 35
+   }
+  },
+  {
+   "id": 35,
+   "name": "Hậu Nghệ",
+   "cost": 3,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    8
+   ],
+   "stats": {
+    "hp": 665,
+    "ad": 100,
+    "ap": 8,
+    "armor": 30,
+    "mr": 30
+   }
+  },
+  {
+   "id": 36,
+   "name": "Horus",
+   "cost": 3,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    7
+   ],
+   "stats": {
+    "hp": 700,
+    "ad": 93,
+    "ap": 8,
+    "armor": 30,
+    "mr": 30
+   }
+  },
+  {
+   "id": 37,
+   "name": "Medusa",
+   "cost": 3,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5,
+    15
+   ],
+   "stats": {
+    "hp": 730,
+    "ad": 22,
+    "ap": 88,
+    "armor": 30,
+    "mr": 40
+   }
+  },
+  {
+   "id": 38,
+   "name": "Âu Cơ",
+   "cost": 3,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    9
+   ],
+   "stats": {
+    "hp": 700,
+    "ad": 23,
+    "ap": 93,
+    "armor": 30,
+    "mr": 40
+   }
+  },
+  {
+   "id": 39,
+   "name": "Athena",
+   "cost": 4,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    5
+   ],
+   "stats": {
+    "hp": 1235,
+    "ad": 48,
+    "ap": 28,
+    "armor": 60,
+    "mr": 60
+   }
+  },
+  {
+   "id": 40,
+   "name": "Sơn Tinh",
+   "cost": 4,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    9
+   ],
+   "stats": {
+    "hp": 1360,
+    "ad": 45,
+    "ap": 27,
+    "armor": 60,
+    "mr": 60
+   }
+  },
+  {
+   "id": 41,
+   "name": "Thor",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    6
+   ],
+   "stats": {
+    "hp": 1140,
+    "ad": 92,
+    "ap": 21,
+    "armor": 50,
+    "mr": 45
+   }
+  },
+  {
+   "id": 42,
+   "name": "Sekhmet",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    7
+   ],
+   "stats": {
+    "hp": 1140,
+    "ad": 86,
+    "ap": 19,
+    "armor": 50,
+    "mr": 45
+   }
+  },
+  {
+   "id": 43,
+   "name": "Susanoo",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    10
+   ],
+   "stats": {
+    "hp": 1140,
+    "ad": 86,
+    "ap": 19,
+    "armor": 50,
+    "mr": 45
+   }
+  },
+  {
+   "id": 44,
+   "name": "Tôn Ngộ Không",
+   "cost": 4,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    8
+   ],
+   "stats": {
+    "hp": 925,
+    "ad": 120,
+    "ap": 18,
+    "armor": 40,
+    "mr": 40
+   }
+  },
+  {
+   "id": 45,
+   "name": "Ishtar",
+   "cost": 4,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    12
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 124,
+    "ap": 19,
+    "armor": 40,
+    "mr": 40
+   }
+  },
+  {
+   "id": 46,
+   "name": "Lugh",
+   "cost": 4,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    13
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 114,
+    "ap": 10,
+    "armor": 35,
+    "mr": 35
+   }
+  },
+  {
+   "id": 47,
+   "name": "Huitzilopochtli",
+   "cost": 4,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    14
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 114,
+    "ap": 10,
+    "armor": 35,
+    "mr": 35
+   }
+  },
+  {
+   "id": 48,
+   "name": "Hades",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 28,
+    "ap": 114,
+    "armor": 35,
+    "mr": 45
+   }
+  },
+  {
+   "id": 49,
+   "name": "Thủy Tinh",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    9
+   ],
+   "stats": {
+    "hp": 810,
+    "ad": 31,
+    "ap": 123,
+    "armor": 35,
+    "mr": 45
+   }
+  },
+  {
+   "id": 50,
+   "name": "Ravana",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    11
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 28,
+    "ap": 114,
+    "armor": 35,
+    "mr": 45
+   }
+  },
+  {
+   "id": 51,
+   "name": "Zeus",
+   "cost": 5,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5,
+    16
+   ],
+   "stats": {
+    "hp": 1005,
+    "ad": 38,
+    "ap": 152,
+    "armor": 40,
+    "mr": 50
+   }
+  },
+  {
+   "id": 52,
+   "name": "Odin",
+   "cost": 5,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    6,
+    17
+   ],
+   "stats": {
+    "hp": 1060,
+    "ad": 35,
+    "ap": 141,
+    "armor": 40,
+    "mr": 50
+   }
+  },
+  {
+   "id": 53,
+   "name": "Ra",
+   "cost": 5,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    7,
+    18
+   ],
+   "stats": {
+    "hp": 1060,
+    "ad": 141,
+    "ap": 12,
+    "armor": 40,
+    "mr": 40
+   }
+  },
+  {
+   "id": 54,
+   "name": "Nữ Oa",
+   "cost": 5,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    8,
+    19
+   ],
+   "stats": {
+    "hp": 1530,
+    "ad": 59,
+    "ap": 35,
+    "armor": 65,
+    "mr": 65
+   }
+  },
+  {
+   "id": 55,
+   "name": "Lạc Long Quân",
+   "cost": 5,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9,
+    20
+   ],
+   "stats": {
+    "hp": 1410,
+    "ad": 106,
+    "ap": 24,
+    "armor": 55,
+    "mr": 50
+   }
+  },
+  {
+   "id": 56,
+   "name": "Tiamat",
+   "cost": 5,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    15,
+    21
+   ],
+   "stats": {
+    "hp": 1550,
+    "ad": 100,
+    "ap": 22,
+    "armor": 55,
+    "mr": 50
+   }
+  },
+  {
+   "id": 57,
+   "name": "Tezcatlipoca",
+   "cost": 5,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    14,
+    22
+   ],
+   "stats": {
+    "hp": 1060,
+    "ad": 153,
+    "ap": 24,
+    "armor": 45,
+    "mr": 45
+   }
+  },
+  {
+   "id": 58,
+   "name": "Amaterasu",
+   "cost": 5,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    10,
+    23
+   ],
+   "stats": {
+    "hp": 1060,
+    "ad": 141,
+    "ap": 12,
+    "armor": 40,
+    "mr": 40
+   }
+  }
+ ],
+ "traits": [
+  {
+   "id": 0,
+   "name": "Hộ vệ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "armor",
+     "flat",
+     [
+      15,
+      35,
+      60
+     ]
+    ],
+    [
+     "mr",
+     "flat",
+     [
+      15,
+      35,
+      60
+     ]
+    ]
+   ],
+   "text": "Tướng Hộ vệ được cộng giáp và kháng phép."
+  },
+  {
+   "id": 1,
+   "name": "Đấu sĩ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      10,
+      25,
+      40,
+      60
+     ]
+    ]
+   ],
+   "text": "Tướng Đấu sĩ được tăng máu."
+  },
+  {
+   "id": 2,
+   "name": "Sát thủ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      20,
+      40,
+      65
+     ]
+    ]
+   ],
+   "text": "Tướng Sát thủ được tăng sát thương vật lý. Khắc Xạ thủ và Pháp sư (lao vào hàng sau), bị Hộ vệ khắc."
+  },
+  {
+   "id": 3,
+   "name": "Xạ thủ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      20,
+      40,
+      70
+     ]
+    ]
+   ],
+   "text": "Tướng Xạ thủ được tăng sát thương vật lý. Khắc Hộ vệ."
+  },
+  {
+   "id": 4,
+   "name": "Pháp sư",
+   "kind": "class",
+   "breakpoints": [
+    3,
+    5,
+    7
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ap",
+     "pct",
+     [
+      25,
+      45,
+      80
+     ]
+    ]
+   ],
+   "text": "Tướng Pháp sư được tăng sát thương phép. Khắc Đấu sĩ (đánh lan vào đám đông)."
+  },
+  {
+   "id": 5,
+   "name": "Hy Lạp",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "ap",
+     "pct",
+     [
+      15,
+      40,
+      75
+     ]
+    ]
+   ],
+   "text": "Cả đội được tăng sát thương phép."
+  },
+  {
+   "id": 6,
+   "name": "Bắc Âu",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      20,
+      50,
+      80
+     ]
+    ]
+   ],
+   "text": "Tướng Bắc Âu được tăng sát thương vật lý."
+  },
+  {
+   "id": 7,
+   "name": "Ai Cập",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "armor",
+     "flat",
+     [
+      15,
+      40,
+      70
+     ]
+    ],
+    [
+     "mr",
+     "flat",
+     [
+      15,
+      40,
+      70
+     ]
+    ]
+   ],
+   "text": "Cả đội được cộng giáp và kháng phép."
+  },
+  {
+   "id": 8,
+   "name": "Trung Hoa",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      25,
+      65
+     ]
+    ],
+    [
+     "ap",
+     "pct",
+     [
+      25,
+      65
+     ]
+    ]
+   ],
+   "text": "Tướng Trung Hoa được tăng cả sát thương vật lý lẫn phép."
+  },
+  {
+   "id": 9,
+   "name": "Việt Nam",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      10,
+      20,
+      35
+     ]
+    ]
+   ],
+   "text": "Cả đội được tăng máu."
+  },
+  {
+   "id": 10,
+   "name": "Nhật Bản",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "armor",
+     "flat",
+     [
+      40,
+      90
+     ]
+    ],
+    [
+     "ad",
+     "pct",
+     [
+      15,
+      30
+     ]
+    ]
+   ],
+   "text": "Tướng Nhật Bản được cộng giáp và tăng sát thương vật lý."
+  },
+  {
+   "id": 11,
+   "name": "Ấn Độ",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ap",
+     "pct",
+     [
+      15,
+      30,
+      50,
+      80
+     ]
+    ],
+    [
+     "ad",
+     "pct",
+     [
+      15,
+      30,
+      50,
+      80
+     ]
+    ]
+   ],
+   "text": "Tướng Ấn Độ được tăng sát thương; mỗi tướng thêm một mốc."
+  },
+  {
+   "id": 12,
+   "name": "Lưỡng Hà",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    3
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      20,
+      35
+     ]
+    ]
+   ],
+   "text": "Tướng Lưỡng Hà được tăng máu."
+  },
+  {
+   "id": 13,
+   "name": "Celt",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "mr",
+     "flat",
+     [
+      40,
+      85
+     ]
+    ]
+   ],
+   "text": "Cả đội được cộng kháng phép."
+  },
+  {
+   "id": 14,
+   "name": "Trung Mỹ",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      10,
+      25
+     ]
+    ],
+    [
+     "hp",
+     "pct",
+     [
+      5,
+      10
+     ]
+    ]
+   ],
+   "text": "Tướng Trung Mỹ được tăng sát thương vật lý và máu."
+  },
+  {
+   "id": 15,
+   "name": "Quái thú",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      20,
+      45
+     ]
+    ],
+    [
+     "armor",
+     "flat",
+     [
+      10,
+      25
+     ]
+    ]
+   ],
+   "text": "Quái thú được tăng máu và giáp."
+  },
+  {
+   "id": 16,
+   "name": "Vua Olympus",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "ap",
+     "pct",
+     [
+      15
+     ]
+    ]
+   ],
+   "text": "Zeus: cả đội tăng 15% sát thương phép."
+  },
+  {
+   "id": 17,
+   "name": "Toàn Phụ",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "ap",
+     "pct",
+     [
+      10
+     ]
+    ],
+    [
+     "mr",
+     "flat",
+     [
+      10
+     ]
+    ]
+   ],
+   "text": "Odin: cả đội tăng 10% sát thương phép, +10 kháng phép."
+  },
+  {
+   "id": 18,
+   "name": "Thái Dương",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      10
+     ]
+    ]
+   ],
+   "text": "Ra: cả đội tăng 10% sát thương vật lý."
+  },
+  {
+   "id": 19,
+   "name": "Vá Trời",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "armor",
+     "flat",
+     [
+      15
+     ]
+    ],
+    [
+     "mr",
+     "flat",
+     [
+      15
+     ]
+    ]
+   ],
+   "text": "Nữ Oa: cả đội +15 giáp và kháng phép."
+  },
+  {
+   "id": 20,
+   "name": "Rồng Tiên",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      12
+     ]
+    ]
+   ],
+   "text": "Lạc Long Quân: cả đội tăng 12% máu."
+  },
+  {
+   "id": 21,
+   "name": "Mẹ Hỗn Mang",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "hp",
+     "pct",
+     [
+      40
+     ]
+    ]
+   ],
+   "text": "Tiamat: tự tăng 40% máu."
+  },
+  {
+   "id": 22,
+   "name": "Gương Khói",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "members",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      40
+     ]
+    ]
+   ],
+   "text": "Tezcatlipoca: tự tăng 40% sát thương vật lý."
+  },
+  {
+   "id": 23,
+   "name": "Đại Thần Mặt Trời",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    [
+     "ad",
+     "pct",
+     [
+      8
+     ]
+    ],
+    [
+     "ap",
+     "pct",
+     [
+      8
+     ]
+    ]
+   ],
+   "text": "Amaterasu: cả đội tăng 8% sát thương vật lý và phép."
+  }
+ ],
+ "role_counter_note": "khắc chế giữa các hệ: hàng khắc cột; cộng vào logit theo tỷ lệ hệ của hai đội",
+ "role_counter": {
+  "roles": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "matrix": [
+   [
+    0.0,
+    0.0,
+    0.3,
+    -0.15,
+    0.0
+   ],
+   [
+    0.0,
+    0.0,
+    0.15,
+    0.0,
+    -0.15
+   ],
+   [
+    -0.3,
+    -0.15,
+    0.0,
+    0.3,
+    0.3
+   ],
+   [
+    0.15,
+    0.0,
+    -0.3,
+    0.0,
+    0.0
+   ],
+   [
+    0.0,
+    0.15,
+    -0.3,
+    0.0,
+    0.0
+   ]
+  ]
+ },
+ "pool_size_by_cost_note": "số bản mỗi tướng theo giá 1..5, theo số người chơi (nội suy ở giữa)",
+ "pool_size_by_cost": {
+  "2": [
+   12,
+   10,
+   8,
+   5,
+   4
+  ],
+  "8": [
+   30,
+   25,
+   18,
+   10,
+   9
+  ]
+ },
+ "shop_odds_note": "Hàng thứ L-1 là tỷ lệ (%) bậc 1..5 ở cấp L.",
+ "shop_odds": [
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   75,
+   25,
+   0,
+   0,
+   0
+  ],
+  [
+   55,
+   30,
+   15,
+   0,
+   0
+  ],
+  [
+   45,
+   33,
+   20,
+   2,
+   0
+  ],
+  [
+   30,
+   40,
+   25,
+   5,
+   0
+  ],
+  [
+   19,
+   30,
+   35,
+   15,
+   1
+  ],
+  [
+   18,
+   25,
+   32,
+   22,
+   3
+  ],
+  [
+   10,
+   20,
+   25,
+   35,
+   10
+  ]
+ ],
+ "xp_to_next": [
+  2,
+  2,
+  6,
+  10,
+  20,
+  36,
+  48,
+  76
+ ],
+ "economy": {
+  "base_income": 5,
+  "interest_step": 10,
+  "interest_max": 5,
+  "streak_bonus": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   3
+  ],
+  "roll_cost": 2,
+  "xp_cost": 4,
+  "xp_per_buy": 4,
+  "xp_per_round": 2,
+  "start_gold": 10
+ },
+ "rules": {
+  "start_hp": 100,
+  "max_rounds": 50,
+  "max_actions_per_round": 50
+ },
+ "stage_damage_note": "[vòng bắt đầu, sát thương giai đoạn]",
+ "stage_damage": [
+  [
+   1,
+   1
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   11,
+   5
+  ],
+  [
+   16,
+   7
+  ],
+  [
+   21,
+   10
+  ],
+  [
+   26,
+   13
+  ],
+  [
+   30,
+   17
+  ],
+  [
+   34,
+   22
+  ]
+ ],
+ "unit_damage_scale_note": "[vòng bắt đầu, hệ số nhân phần sát thương theo số quân của bên thắng]",
+ "unit_damage_scale": [
+  [
+   1,
+   0.5
+  ],
+  [
+   11,
+   0.6
+  ],
+  [
+   16,
+   0.75
+  ],
+  [
+   21,
+   0.9
+  ],
+  [
+   26,
+   1.0
+  ]
+ ],
+ "combat": {
+  "ttk-v1": {
+   "temperature": 0.34,
+   "armor_scale": 100.0,
+   "note": "logit(i thắng j) = (log TTK(j hạ i) - log TTK(i hạ j) + khắc chế) / T"
+  }
+ }
+}

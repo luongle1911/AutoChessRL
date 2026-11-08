@@ -1,0 +1,18 @@
+# Ghi đè cho PC (Threadripper 24 nhân, RTX 3070 Ti, 16 GB RAM): mạng học trên GPU, thu thập bằng nhiều
+# tiến trình con (rl/vec.py). Mỗi tiến trình con nạp PyTorch (~0,3-0,4 GB RAM), nên 12 tiến trình là vừa với
+# 16 GB; tăng dần nếu còn RAM. Lần đầu trên PC: chạy kiểm thử GPU trước
+#   python3 -m pytest -q autochess/tests/test_stage3.py -k gpu
+device: auto
+threads: 4
+workers: 12
+env:
+  num_games: 384
+  steps: 128
+ppo:
+  minibatch_size: 8192
+  update_epochs: 4            # GPU: cập nhật không còn là nút thắt
+eval:
+  games: 400
+  B: 256
+  lobby_games: 256
+  lobby_B: 128

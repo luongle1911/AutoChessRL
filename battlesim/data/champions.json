@@ -1,0 +1,33 @@
+{
+  "global": {
+    "dt": 0.1,
+    "max_steps": 300,
+    "move_time": 0.5,
+    "star_mult": { "hp": [1.0, 1.8, 3.24], "ad": [1.0, 1.5, 2.25] }
+  },
+  "traits": [
+    { "name": "Vệ Binh",  "breakpoints": [2, 4], "bonus": { "armor": [20, 50] } },
+    { "name": "Xạ Thủ",   "breakpoints": [2, 4], "bonus": { "as": [0.15, 0.35] } },
+    { "name": "Đấu Sĩ",   "breakpoints": [2, 4], "bonus": { "hp": [150, 350] } }
+  ],
+  "champions": [
+    { "name": "Khiên Sắt",  "cost": 1, "hp": 650, "ad": 90, "as": 0.60, "armor": 45, "mr": 30, "range": 1,
+      "crit_chance": 0.25, "crit_mult": 1.4, "mana_max": 80, "mana_start": 30,
+      "skill": "self_shield", "skill_power": 250, "skill_param": 4.0, "traits": ["Vệ Binh", "Đấu Sĩ"] },
+    { "name": "Kiếm Khách", "cost": 1, "hp": 550, "ad": 110, "as": 0.70, "armor": 30, "mr": 30, "range": 1,
+      "crit_chance": 0.25, "crit_mult": 1.4, "mana_max": 60, "mana_start": 0,
+      "skill": "single_damage", "skill_power": 200, "skill_param": 0.0, "traits": ["Đấu Sĩ"] },
+    { "name": "Cung Thủ",   "cost": 1, "hp": 450, "ad": 100, "as": 0.75, "armor": 20, "mr": 20, "range": 4,
+      "crit_chance": 0.25, "crit_mult": 1.4, "mana_max": 50, "mana_start": 0,
+      "skill": "single_damage", "skill_power": 180, "skill_param": 0.0, "traits": ["Xạ Thủ"] },
+    { "name": "Pháp Sư",    "cost": 2, "hp": 500, "ad": 80, "as": 0.65, "armor": 20, "mr": 30, "range": 4,
+      "crit_chance": 0.25, "crit_mult": 1.4, "mana_max": 70, "mana_start": 20,
+      "skill": "area_damage", "skill_power": 220, "skill_param": 1.0, "traits": [] },
+    { "name": "Mục Sư",     "cost": 2, "hp": 500, "ad": 70, "as": 0.65, "armor": 25, "mr": 30, "range": 3,
+      "crit_chance": 0.25, "crit_mult": 1.4, "mana_max": 80, "mana_start": 30,
+      "skill": "heal_lowest_ally", "skill_power": 250, "skill_param": 0.0, "traits": ["Vệ Binh"] },
+    { "name": "Thích Khách", "cost": 2, "hp": 500, "ad": 120, "as": 0.75, "armor": 25, "mr": 25, "range": 1,
+      "crit_chance": 0.40, "crit_mult": 1.6, "mana_max": 60, "mana_start": 10,
+      "skill": "stun_target", "skill_power": 150, "skill_param": 1.5, "traits": ["Xạ Thủ"] }
+  ]
+}

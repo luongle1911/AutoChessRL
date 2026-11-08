@@ -1,0 +1,66 @@
+# Luật bản 4.1 (cân bằng lại tộc hệ, xem autochess/data/make_catalog_v4_1.py): tinh chỉnh tiếp agent bản 4.
+#   Mạng giữ nguyên (thẻ tộc đọc hiệu ứng mới từ file luật), nên nạp thẳng checkpoint của lần chạy bản 4.
+#   Bản 4 cũ (chuyên Đấu sĩ) vào kho làm hạt giống cố định và vào sảnh đánh giá C.
+#
+#   python3 -u -m autochess.rl.train --config configs/p4_1_finetune.yaml
+#   trước đó chép checkpoint bản 4 ra chỗ cố định: cp runs/p4_league_<thời gian>/checkpoints/latest.pt runs/p4_v4.pt
+name: p4_1_finetune
+num_players: 8
+catalog: autochess/data/catalog_v4_1.json
+total_decisions: 8000000
+init: runs/p4_v4.pt
+
+env:
+  num_games: 128
+  steps: 128
+  mix: {4: 0.25}
+  skip_waiting: true
+
+net:
+  mixer: none                    # attn: bật attention giữa các thực thể (phải giống lúc học bắt chước)
+
+opponents:
+  names: [tempo, bank, tank, fast9, roll7, hyper]
+  prioritize: true
+  power: 2.0
+  floor: 0.05
+  selfplay_prob: 0.4
+  agent_seats: [1, 2]
+
+league:
+  seeds:
+    bc: runs/bc_v4.pt
+    p4: runs/p4_v4.pt
+  snapshot_every: 25
+  max_snapshots: 10
+  group_weights: {bot: 0.5, policy: 0.5}
+
+reward:
+  gamma_round: 0.995
+  lam: 0.95
+  beta: 0.1
+  churn_cost: 0.002
+
+ppo:
+  lr: 2.0e-4
+  update_epochs: 2               # 8 người: cập nhật là nút thắt trên CPU 2 nhân
+  value_warmup: 5                # luật đổi nên giá trị lệch một chút
+  lr_warmup: 5
+  ent_coef: 0.008
+  ent_coef_final: 0.002
+
+eval:
+  every: 50
+  games: 0                       # không đánh giá 1 đấu 1
+  matrix: false
+  anchors:
+    bc: runs/bc_v4.pt
+    p4: runs/p4_v4.pt
+  lobbies:
+    A: [tempo, bank, tank, fast9, roll7, hyper, bank]
+    B: [recent, recent, recent, recent, recent, recent, recent]
+    C: [p4, p4, p4, bc, tempo, bank, tank]      # 3 bản 4 cũ (chuyên Đấu sĩ)
+  lobby_games: 96                # 3 sảnh x 96 ván ~ 5 phút trên laptop (mỗi 50 lần cập nhật ~ 25-30 phút)
+  lobby_B: 96
+  lobby_elo_anchor: bc
+  m5_lobby: A                    # mốc 5: top 4 trên 60% trong sảnh A (toàn bot luật)
