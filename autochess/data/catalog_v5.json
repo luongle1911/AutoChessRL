@@ -1,0 +1,6476 @@
+{
+ "version": "catalog-v5-combat-0",
+ "note": "Luật bản 5, phần giao tranh (08/11/2026): 59 tướng như bản 4 với chỉ số kiểu ĐTCL (máu, công, tốc đánh, sức mạnh phép, giáp, kháng phép, tầm, năng lượng, chí mạng) và kỹ năng theo giá; 24 tộc hệ; 8 mảnh đồ + 36 đồ ghép có hiệu ứng riêng. Mọi hiệu ứng viết bằng khối hiệu ứng (battlesim/effects.py), giao tranh do battlesim/sim2.py mô phỏng. Sinh bằng autochess/data/make_catalog_v5.py.",
+ "star_mult": {
+  "hp": [
+   1.0,
+   1.8,
+   3.24
+  ],
+  "ad": [
+   1.0,
+   1.5,
+   2.25
+  ]
+ },
+ "combat_v5": {
+  "dt": 0.1,
+  "move_time": 0.5,
+  "max_time": 40.0,
+  "overtime_start": 20.0,
+  "overtime_span": 5.0,
+  "mana_per_attack": 10.0,
+  "mana_lock": 1.0,
+  "mana_from_damage": 0.02,
+  "mana_from_damage_cap": 15.0,
+  "wound": 0.33,
+  "big_hp": 1600.0,
+  "cast_time": 0.3,
+  "as_cap": 5.0,
+  "note": "hiệp phụ: từ giây 20 mọi sát thương x(1 + (t-20)/5); hết 40 giây hai bên cùng thua"
+ },
+ "champions": [
+  {
+   "id": 0,
+   "name": "Sobek",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    7,
+    15
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 45,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 40,
+    "mr": 40,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "shield_self",
+    "name": "Da Cá Sấu",
+    "text": "Thần cá sấu sông Nile khoác lớp da dày: tạo khiên cho bản thân.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       260.0,
+       390.0,
+       585.0
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 1,
+   "name": "Chử Đồng Tử",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    9
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 45,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 40,
+    "mr": 40,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "heal_self",
+    "name": "Gậy Và Nón Thần",
+    "text": "Gậy và nón thần nhà sư cho: hồi máu cho bản thân.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       230.0,
+       345.0,
+       518.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 2,
+   "name": "Xolotl",
+   "cost": 1,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    14
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 45,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 40,
+    "mr": 40,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "stun_short",
+    "name": "Dẫn Lối Âm Giới",
+    "text": "Chó thần dẫn hồn xuống Mictlan: làm choáng mục tiêu.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       100.0,
+       150.0,
+       225.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 3,
+   "name": "Enkidu",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    12
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 55,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 35,
+    "mr": 30,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Sức Hoang Dã",
+    "text": "Người rừng do thần nặn từ đất sét: đòn đánh mạnh.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.1,
+       2.2,
+       2.3000000000000003
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 4,
+   "name": "Na Tra",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    8
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 55,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 35,
+    "mr": 30,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "stun_short",
+    "name": "Càn Khôn Quyển",
+    "text": "Ném vòng càn khôn: làm choáng và gây sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       100.0,
+       150.0,
+       225.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 5,
+   "name": "Momotarō",
+   "cost": 1,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    10
+   ],
+   "stats": {
+    "hp": 650,
+    "ad": 55,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 35,
+    "mr": 30,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "heal_self",
+    "name": "Bánh Kê",
+    "text": "Ăn bánh kê mẹ làm: hồi máu.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       230.0,
+       345.0,
+       518.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 6,
+   "name": "Hermes",
+   "cost": 1,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    5
+   ],
+   "stats": {
+    "hp": 500,
+    "ad": 60,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 25,
+    "mr": 25,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Dép Có Cánh",
+    "text": "Sứ giả nhanh nhất Olympus: đâm mục tiêu.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.1,
+       2.2,
+       2.3000000000000003
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 7,
+   "name": "Tengu",
+   "cost": 1,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    10
+   ],
+   "stats": {
+    "hp": 500,
+    "ad": 60,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 25,
+    "mr": 25,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "frenzy",
+    "name": "Quạt Lông",
+    "text": "Quạt lông thần gió: tăng mạnh tốc đánh.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stat",
+      "stat": "as",
+      "mode": "mul",
+      "values": [
+       0.6,
+       0.7,
+       0.85
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 8,
+   "name": "Valkyrie",
+   "cost": 1,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    6
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 55,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 20,
+    "mr": 20,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Chọn Người Ngã Xuống",
+    "text": "Nữ thần chọn chiến binh tử trận: bắn mạnh.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.1,
+       2.2,
+       2.3000000000000003
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 9,
+   "name": "Karna",
+   "cost": 1,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    11
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 55,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 20,
+    "mr": 20,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "shield_self",
+    "name": "Giáp Mặt Trời",
+    "text": "Bộ giáp bẩm sinh của con thần Mặt Trời: tạo khiên.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       260.0,
+       390.0,
+       585.0
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 10,
+   "name": "Brigid",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    13
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 35,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 20,
+    "mr": 25,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Lửa Thiêng",
+    "text": "Ngọn lửa thiêng của nữ thần Celt: cầu lửa vào mục tiêu.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       220.0,
+       330.0,
+       495.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 11,
+   "name": "Kitsune",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    10,
+    15
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 35,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 20,
+    "mr": 25,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Hồ Hỏa",
+    "text": "Lửa cáo chín đuôi: sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       220.0,
+       330.0,
+       495.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 12,
+   "name": "Bastet",
+   "cost": 1,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    7
+   ],
+   "stats": {
+    "hp": 450,
+    "ad": 35,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 20,
+    "mr": 25,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Vuốt Mèo Thần",
+    "text": "Nữ thần mèo vồ: sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       220.0,
+       330.0,
+       495.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 13,
+   "name": "Heimdall",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    6
+   ],
+   "stats": {
+    "hp": 745,
+    "ad": 52,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 43,
+    "mr": 43,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "stun_short",
+    "name": "Kèn Gjallarhorn",
+    "text": "Thổi kèn báo tận thế: làm choáng mục tiêu.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       125.0,
+       188.0,
+       281.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 14,
+   "name": "Anubis",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    7
+   ],
+   "stats": {
+    "hp": 745,
+    "ad": 52,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 43,
+    "mr": 43,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "shield_self",
+    "name": "Cân Linh Hồn",
+    "text": "Cân trái tim với lông vũ Maat: tạo khiên.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       325.0,
+       488.0,
+       731.0
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 15,
+   "name": "Dagda",
+   "cost": 2,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    13
+   ],
+   "stats": {
+    "hp": 745,
+    "ad": 52,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 43,
+    "mr": 43,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "heal_self",
+    "name": "Vạc Bất Tận",
+    "text": "Vạc không bao giờ cạn: hồi máu.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       288.0,
+       431.0,
+       647.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 16,
+   "name": "Heracles",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    5
+   ],
+   "stats": {
+    "hp": 820,
+    "ad": 60,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 38,
+    "mr": 33,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Mười Hai Kỳ Công",
+    "text": "Cú đấm của người hùng mạnh nhất Hy Lạp.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.3000000000000003,
+       2.4000000000000004
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 17,
+   "name": "Thạch Sanh",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9
+   ],
+   "stats": {
+    "hp": 745,
+    "ad": 63,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 38,
+    "mr": 33,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Rìu Thần",
+    "text": "Lưỡi rìu thần Thái tử Ngọc Hoàng dạy võ: chém mạnh.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.3000000000000003,
+       2.4000000000000004
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 18,
+   "name": "Cú Chulainn",
+   "cost": 2,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    13
+   ],
+   "stats": {
+    "hp": 745,
+    "ad": 63,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 38,
+    "mr": 33,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Gáe Bolg",
+    "text": "Ngọn giáo gai không thể rút ra: đâm cực mạnh.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.3000000000000003,
+       2.4000000000000004
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 19,
+   "name": "Camazotz",
+   "cost": 2,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    14,
+    15
+   ],
+   "stats": {
+    "hp": 575,
+    "ad": 69,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 28,
+    "mr": 28,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Dơi Tử Thần",
+    "text": "Dơi thần cắt đầu: đòn chí mạng.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.3000000000000003,
+       2.4000000000000004
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 20,
+   "name": "Garuda",
+   "cost": 2,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    11,
+    15
+   ],
+   "stats": {
+    "hp": 575,
+    "ad": 69,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 28,
+    "mr": 28,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "frenzy",
+    "name": "Cánh Bão",
+    "text": "Vua loài chim vỗ cánh: tăng tốc đánh.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stat",
+      "stat": "as",
+      "mode": "mul",
+      "values": [
+       0.6,
+       0.7,
+       0.85
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 21,
+   "name": "Artemis",
+   "cost": 2,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    5
+   ],
+   "stats": {
+    "hp": 520,
+    "ad": 63,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 23,
+    "mr": 23,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "strike",
+    "name": "Mũi Tên Bạc",
+    "text": "Mũi tên bạc của nữ thần săn bắn.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.3000000000000003,
+       2.4000000000000004
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 22,
+   "name": "Arjuna",
+   "cost": 2,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    11
+   ],
+   "stats": {
+    "hp": 520,
+    "ad": 63,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 23,
+    "mr": 23,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "frenzy",
+    "name": "Cung Gandiva",
+    "text": "Giương cung thần: bắn liên hồi.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stat",
+      "stat": "as",
+      "mode": "mul",
+      "values": [
+       0.6,
+       0.7,
+       0.85
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 23,
+   "name": "Freyja",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    6
+   ],
+   "stats": {
+    "hp": 520,
+    "ad": 40,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 23,
+    "mr": 28,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Áo Lông Chim Ưng",
+    "text": "Phép seiðr: sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       275.0,
+       412.0,
+       619.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 24,
+   "name": "Thoth",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    7
+   ],
+   "stats": {
+    "hp": 520,
+    "ad": 40,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 23,
+    "mr": 28,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Chữ Thần",
+    "text": "Thần chữ viết khắc lời nguyền: sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       275.0,
+       412.0,
+       619.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 25,
+   "name": "Hằng Nga",
+   "cost": 2,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    8
+   ],
+   "stats": {
+    "hp": 520,
+    "ad": 40,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 23,
+    "mr": 28,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "bolt",
+    "name": "Ánh Trăng",
+    "text": "Tia sáng cung Quảng Hàn: sát thương phép.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       275.0,
+       412.0,
+       619.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 26,
+   "name": "Cộng Công",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    8
+   ],
+   "stats": {
+    "hp": 880,
+    "ad": 61,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 46,
+    "mr": 46,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "slam_stun",
+    "name": "Húc Núi Bất Chu",
+    "text": "Thần nước húc gãy cột trời: gây sát thương và choáng.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       320.0,
+       480.0,
+       720.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 27,
+   "name": "Jörmungandr",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    6,
+    15
+   ],
+   "stats": {
+    "hp": 880,
+    "ad": 61,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 46,
+    "mr": 46,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "ward",
+    "name": "Quấn Quanh Trái Đất",
+    "text": "Rắn quấn thế giới bao bọc đồng đội: khiên cho đồng minh kề.",
+    "effects": [
+     {
+      "to": "allies_r",
+      "radius": 1,
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       320.0,
+       480.0,
+       720.0
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 28,
+   "name": "Atlas",
+   "cost": 3,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    5
+   ],
+   "stats": {
+    "hp": 985,
+    "ad": 52,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 46,
+    "mr": 46,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "ward",
+    "name": "Đỡ Bầu Trời",
+    "text": "Titan gánh trời che chở đồng đội: khiên cho đồng minh kề.",
+    "effects": [
+     {
+      "to": "allies_r",
+      "radius": 1,
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       320.0,
+       480.0,
+       720.0
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 29,
+   "name": "Ares",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    5
+   ],
+   "stats": {
+    "hp": 880,
+    "ad": 74,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 41,
+    "mr": 36,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "cleave",
+    "name": "Cuồng Chiến",
+    "text": "Thần chiến tranh chém quanh mục tiêu.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.6,
+       1.7,
+       1.9
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 30,
+   "name": "Thánh Gióng",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9
+   ],
+   "stats": {
+    "hp": 920,
+    "ad": 74,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 41,
+    "mr": 36,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "slam_stun",
+    "name": "Nhổ Tre Đánh Giặc",
+    "text": "Quật bụi tre: sát thương và choáng.",
+    "effects": [
+     {
+      "to": "target",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       320.0,
+       480.0,
+       720.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 31,
+   "name": "Gilgamesh",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    12
+   ],
+   "stats": {
+    "hp": 880,
+    "ad": 74,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 41,
+    "mr": 36,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "cleave",
+    "name": "Vua Uruk",
+    "text": "Chém quét quanh mục tiêu.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.6,
+       1.7,
+       1.9
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 32,
+   "name": "Hanuman",
+   "cost": 3,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    11
+   ],
+   "stats": {
+    "hp": 880,
+    "ad": 74,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 41,
+    "mr": 36,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "leap_stun",
+    "name": "Nhảy Qua Biển",
+    "text": "Vượt biển sang Lanka: lướt tới kẻ địch xa nhất và làm choáng.",
+    "effects": [
+     {
+      "to": "farthest_enemy",
+      "do": "dash",
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       240.0,
+       360.0,
+       540.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 33,
+   "name": "Fenrir",
+   "cost": 3,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    6,
+    15
+   ],
+   "stats": {
+    "hp": 710,
+    "ad": 79,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 31,
+    "mr": 31,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "ambush",
+    "name": "Nuốt Chửng",
+    "text": "Sói khổng lồ lao vào kẻ địch xa nhất.",
+    "effects": [
+     {
+      "to": "farthest_enemy",
+      "do": "dash",
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.4,
+       2.5,
+       2.7
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 34,
+   "name": "Morrígan",
+   "cost": 3,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    13
+   ],
+   "stats": {
+    "hp": 675,
+    "ad": 81,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 31,
+    "mr": 31,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "ambush",
+    "name": "Quạ Báo Tử",
+    "text": "Hóa quạ lao tới kẻ địch xa nhất.",
+    "effects": [
+     {
+      "to": "farthest_enemy",
+      "do": "dash",
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.4,
+       2.5,
+       2.7
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 35,
+   "name": "Hậu Nghệ",
+   "cost": 3,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    8
+   ],
+   "stats": {
+    "hp": 575,
+    "ad": 80,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 26,
+    "mr": 26,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "fan",
+    "name": "Bắn Rụng Mặt Trời",
+    "text": "Bắn ba mũi tên vào ba kẻ địch gần nhất.",
+    "effects": [
+     {
+      "to": "nearest_n",
+      "count": 3,
+      "radius": 6,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.3,
+       1.4,
+       1.5
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 36,
+   "name": "Horus",
+   "cost": 3,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    7
+   ],
+   "stats": {
+    "hp": 610,
+    "ad": 74,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 26,
+    "mr": 26,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "fan",
+    "name": "Mắt Horus",
+    "text": "Mắt chim ưng: bắn ba mục tiêu.",
+    "effects": [
+     {
+      "to": "nearest_n",
+      "count": 3,
+      "radius": 6,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.3,
+       1.4,
+       1.5
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 37,
+   "name": "Medusa",
+   "cost": 3,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5,
+    15
+   ],
+   "stats": {
+    "hp": 640,
+    "ad": 45,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 26,
+    "mr": 31,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "petrify",
+    "name": "Hóa Đá",
+    "text": "Ánh mắt hóa đá mục tiêu và kẻ đứng cạnh.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "stun",
+      "values": [
+       1.5,
+       1.75,
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       208.0,
+       312.0,
+       468.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 38,
+   "name": "Âu Cơ",
+   "cost": 3,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    9
+   ],
+   "stats": {
+    "hp": 610,
+    "ad": 47,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 26,
+    "mr": 31,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 70
+   },
+   "skill": {
+    "template": "heal_ally",
+    "name": "Mẹ Trăm Trứng",
+    "text": "Che chở con: hồi máu đồng minh ít máu nhất.",
+    "effects": [
+     {
+      "to": "lowest_ally",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       448.0,
+       672.0,
+       1008.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 39,
+   "name": "Athena",
+   "cost": 4,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    5
+   ],
+   "stats": {
+    "hp": 1040,
+    "ad": 72,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 49,
+    "mr": 49,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "quake",
+    "name": "Khiên Aegis",
+    "text": "Giơ khiên có đầu Medusa: làm choáng kẻ địch xung quanh.",
+    "effects": [
+     {
+      "to": "enemies_r",
+      "radius": 1,
+      "do": "stun",
+      "values": [
+       1.5,
+       2.0,
+       2.5
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "enemies_r",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       300.0,
+       450.0,
+       675.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 40,
+   "name": "Sơn Tinh",
+   "cost": 4,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    9
+   ],
+   "stats": {
+    "hp": 1145,
+    "ad": 68,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 49,
+    "mr": 49,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "barrier",
+    "name": "Dời Non",
+    "text": "Nâng núi chặn nước: khiên cho đồng minh trong 2 ô.",
+    "effects": [
+     {
+      "to": "allies_r",
+      "radius": 2,
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       440.0,
+       660.0,
+       990.0
+      ],
+      "duration": 5,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 41,
+   "name": "Thor",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    6
+   ],
+   "stats": {
+    "hp": 1040,
+    "ad": 95,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 44,
+    "mr": 39,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "thunder",
+    "name": "Búa Mjölnir",
+    "text": "Búa sấm giáng xuống mục tiêu, lan sang kẻ địch cạnh đó.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       340.0,
+       510.0,
+       765.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "target",
+      "do": "stun",
+      "values": [
+       1.0,
+       1.25,
+       1.5
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 42,
+   "name": "Sekhmet",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    7
+   ],
+   "stats": {
+    "hp": 1040,
+    "ad": 88,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 44,
+    "mr": 39,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "drain",
+    "name": "Khát Máu",
+    "text": "Nữ thần sư tử hút máu kẻ địch xung quanh.",
+    "effects": [
+     {
+      "to": "enemies_r",
+      "radius": 2,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       240.0,
+       360.0,
+       540.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "self",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       400.0,
+       600.0,
+       900.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 43,
+   "name": "Susanoo",
+   "cost": 4,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    10
+   ],
+   "stats": {
+    "hp": 1040,
+    "ad": 88,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 44,
+    "mr": 39,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "cleave_big",
+    "name": "Kiếm Kusanagi",
+    "text": "Thanh kiếm lấy từ đuôi rắn tám đầu: chém quanh mục tiêu.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.2,
+       2.4,
+       2.8
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 44,
+   "name": "Tôn Ngộ Không",
+   "cost": 4,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    8
+   ],
+   "stats": {
+    "hp": 865,
+    "ad": 93,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 34,
+    "mr": 34,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "clones",
+    "name": "Phân Thân",
+    "text": "Nhổ lông hóa phân thân: mất dấu rồi đánh ba kẻ địch gần.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stealth",
+      "values": [
+       1.5
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "nearest_n",
+      "count": 3,
+      "radius": 3,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.8,
+       2.0,
+       2.4
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 45,
+   "name": "Ishtar",
+   "cost": 4,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    12
+   ],
+   "stats": {
+    "hp": 800,
+    "ad": 96,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 34,
+    "mr": 34,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "bull",
+    "name": "Bò Trời",
+    "text": "Thả Bò Trời: lướt tới kẻ địch xa nhất, sát thương lớn và choáng.",
+    "effects": [
+     {
+      "to": "farthest_enemy",
+      "do": "dash",
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.8,
+       3.0,
+       3.4
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "stun",
+      "values": [
+       1.0,
+       1.25,
+       1.5
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 46,
+   "name": "Lugh",
+   "cost": 4,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    13
+   ],
+   "stats": {
+    "hp": 720,
+    "ad": 88,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 29,
+    "mr": 29,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "volley",
+    "name": "Giáo Lửa Areadbhair",
+    "text": "Ngọn giáo lửa tự bay: đánh bốn kẻ địch gần nhất.",
+    "effects": [
+     {
+      "to": "nearest_n",
+      "count": 4,
+      "radius": 8,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.4,
+       1.5,
+       1.7
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 47,
+   "name": "Huitzilopochtli",
+   "cost": 4,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    14
+   ],
+   "stats": {
+    "hp": 720,
+    "ad": 88,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 29,
+    "mr": 29,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "fire_line",
+    "name": "Rắn Lửa Xiuhcoatl",
+    "text": "Rắn lửa thiêu mục tiêu và kẻ đứng cạnh.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.8,
+       1.9,
+       2.1
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "burn",
+      "scale": "target_hp",
+      "values": [
+       0.02
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 48,
+   "name": "Hades",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5
+   ],
+   "stats": {
+    "hp": 720,
+    "ad": 56,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 29,
+    "mr": 34,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "dark_nova",
+    "name": "Âm Phủ",
+    "text": "Mở cửa âm phủ vào vùng đông địch: sát thương và vết thương.",
+    "effects": [
+     {
+      "to": "densest",
+      "radius": 2,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       400.0,
+       600.0,
+       900.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "densest",
+      "radius": 2,
+      "do": "wound",
+      "values": [
+       6
+      ],
+      "duration": 6,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 49,
+   "name": "Thủy Tinh",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    9
+   ],
+   "stats": {
+    "hp": 685,
+    "ad": 60,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 29,
+    "mr": 34,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "flood",
+    "name": "Nước Dâng",
+    "text": "Dâng nước vào vùng đông địch: sát thương và làm chậm.",
+    "effects": [
+     {
+      "to": "densest",
+      "radius": 2,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       380.0,
+       570.0,
+       855.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "densest",
+      "radius": 2,
+      "do": "stat",
+      "stat": "as",
+      "mode": "mul",
+      "values": [
+       -0.3
+      ],
+      "duration": 4,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 50,
+   "name": "Ravana",
+   "cost": 4,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    11
+   ],
+   "stats": {
+    "hp": 720,
+    "ad": 56,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 29,
+    "mr": 34,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "chain",
+    "name": "Mười Đầu",
+    "text": "Mười cái đầu niệm chú: sát thương phép bốn kẻ địch.",
+    "effects": [
+     {
+      "to": "nearest_n",
+      "count": 4,
+      "radius": 8,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       320.0,
+       480.0,
+       720.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 51,
+   "name": "Zeus",
+   "cost": 5,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    5,
+    16
+   ],
+   "stats": {
+    "hp": 810,
+    "ad": 72,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 32,
+    "mr": 37,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "storm",
+    "name": "Sấm Sét Olympus",
+    "text": "Gọi sét ba lần vào vùng đông địch nhất.",
+    "effects": [
+     {
+      "to": "densest",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       286.0,
+       429.0,
+       1144.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "densest",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       286.0,
+       429.0,
+       1144.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "densest",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       286.0,
+       429.0,
+       1144.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 52,
+   "name": "Odin",
+   "cost": 5,
+   "role": "Pháp sư",
+   "traits": [
+    4,
+    6,
+    17
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 66,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 32,
+    "mr": 37,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "rally",
+    "name": "Hiến Mắt Cầu Trí",
+    "text": "Ban trí tuệ: cả đội tăng tốc đánh và sức mạnh phép.",
+    "effects": [
+     {
+      "to": "all_allies",
+      "do": "stat",
+      "stat": "as",
+      "mode": "mul",
+      "values": [
+       0.3,
+       0.4,
+       0.8
+      ],
+      "duration": 6,
+      "when": "cast"
+     },
+     {
+      "to": "all_allies",
+      "do": "stat",
+      "stat": "ap",
+      "mode": "add",
+      "values": [
+       20,
+       30,
+       60
+      ],
+      "duration": 6,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 53,
+   "name": "Ra",
+   "cost": 5,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    7,
+    18
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 104,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 32,
+    "mr": 32,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "sun_boat",
+    "name": "Thuyền Mặt Trời",
+    "text": "Thuyền mặt trời thiêu đốt vùng quanh mục tiêu.",
+    "effects": [
+     {
+      "to": "around_target",
+      "radius": 2,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       1.8,
+       2.0,
+       2.6
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "around_target",
+      "radius": 2,
+      "do": "burn",
+      "scale": "target_hp",
+      "values": [
+       0.02
+      ],
+      "duration": 5,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 54,
+   "name": "Nữ Oa",
+   "cost": 5,
+   "role": "Hộ vệ",
+   "traits": [
+    0,
+    8,
+    19
+   ],
+   "stats": {
+    "hp": 1235,
+    "ad": 86,
+    "ap": 100,
+    "as": 0.6,
+    "armor": 52,
+    "mr": 52,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 40,
+    "mana_max": 90
+   },
+   "skill": {
+    "template": "barrier_all",
+    "name": "Vá Trời",
+    "text": "Đá ngũ sắc vá trời: khiên cho cả đội.",
+    "effects": [
+     {
+      "to": "all_allies",
+      "do": "shield",
+      "scale": "ap",
+      "values": [
+       442.0,
+       663.0,
+       1768.0
+      ],
+      "duration": 6,
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 55,
+   "name": "Lạc Long Quân",
+   "cost": 5,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    9,
+    20
+   ],
+   "stats": {
+    "hp": 1235,
+    "ad": 104,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 47,
+    "mr": 42,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "avatar",
+    "name": "Hóa Rồng",
+    "text": "Hiện nguyên hình rồng: tăng máu, công và đánh quanh mình.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stat",
+      "stat": "hp",
+      "mode": "mul",
+      "values": [
+       0.3,
+       0.4,
+       0.8
+      ],
+      "key": 9001,
+      "when": "cast"
+     },
+     {
+      "to": "self",
+      "do": "stat",
+      "stat": "ad",
+      "mode": "mul",
+      "values": [
+       0.4,
+       0.5,
+       1.0
+      ],
+      "key": 9002,
+      "when": "cast"
+     },
+     {
+      "to": "enemies_r",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       312.0,
+       468.0,
+       1248.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 56,
+   "name": "Tiamat",
+   "cost": 5,
+   "role": "Đấu sĩ",
+   "traits": [
+    1,
+    15,
+    21
+   ],
+   "stats": {
+    "hp": 1360,
+    "ad": 99,
+    "ap": 100,
+    "as": 0.65,
+    "armor": 47,
+    "mr": 42,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 30,
+    "mana_max": 80
+   },
+   "skill": {
+    "template": "chaos_sea",
+    "name": "Biển Hỗn Mang",
+    "text": "Biển mặn nguyên thủy: sát thương, giảm giáp quanh mình, hồi máu.",
+    "effects": [
+     {
+      "to": "enemies_r",
+      "radius": 2,
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       390.0,
+       585.0,
+       1560.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "enemies_r",
+      "radius": 2,
+      "do": "stat",
+      "stat": "armor",
+      "mode": "mul",
+      "values": [
+       -0.3
+      ],
+      "duration": 5,
+      "when": "cast"
+     },
+     {
+      "to": "self",
+      "do": "heal",
+      "scale": "ap",
+      "values": [
+       650.0,
+       975.0,
+       2600.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 57,
+   "name": "Tezcatlipoca",
+   "cost": 5,
+   "role": "Sát thủ",
+   "traits": [
+    2,
+    14,
+    22
+   ],
+   "stats": {
+    "hp": 950,
+    "ad": 114,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 37,
+    "mr": 37,
+    "range": 1,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 20,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "smoke_mirror",
+    "name": "Gương Khói",
+    "text": "Biến vào khói rồi xuất hiện sau lưng kẻ địch xa nhất.",
+    "effects": [
+     {
+      "to": "self",
+      "do": "stealth",
+      "values": [
+       2.0
+      ],
+      "when": "cast"
+     },
+     {
+      "to": "farthest_enemy",
+      "do": "dash",
+      "when": "cast"
+     },
+     {
+      "to": "around_target",
+      "radius": 1,
+      "do": "damage",
+      "dtype": "physical",
+      "scale": "ad",
+      "values": [
+       2.5,
+       2.8,
+       4.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  },
+  {
+   "id": 58,
+   "name": "Amaterasu",
+   "cost": 5,
+   "role": "Xạ thủ",
+   "traits": [
+    3,
+    10,
+    23
+   ],
+   "stats": {
+    "hp": 855,
+    "ad": 104,
+    "ap": 100,
+    "as": 0.75,
+    "armor": 32,
+    "mr": 32,
+    "range": 4,
+    "crit_chance": 0.25,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 60
+   },
+   "skill": {
+    "template": "sunlight",
+    "name": "Ánh Dương",
+    "text": "Bước ra khỏi hang: ánh sáng đốt mọi kẻ địch.",
+    "effects": [
+     {
+      "to": "all_enemies",
+      "do": "damage",
+      "dtype": "magic",
+      "scale": "ap",
+      "values": [
+       286.0,
+       429.0,
+       1144.0
+      ],
+      "when": "cast"
+     }
+    ]
+   }
+  }
+ ],
+ "traits": [
+  {
+   "id": 0,
+   "name": "Hộ vệ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20,
+      40,
+      70
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20,
+      40,
+      70
+     ]
+    },
+    {
+     "when": "start",
+     "to": "allies_r",
+     "radius": 1,
+     "do": "shield",
+     "values": [
+      100,
+      200,
+      350
+     ],
+     "duration": 8
+    }
+   ],
+   "text": "Tướng Hộ vệ được cộng giáp và kháng phép."
+  },
+  {
+   "id": 1,
+   "name": "Đấu sĩ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6,
+    8
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.12,
+      0.25,
+      0.4,
+      0.6
+     ]
+    },
+    {
+     "when": "kill",
+     "to": "self",
+     "do": "heal",
+     "scale": "self_hp",
+     "values": [
+      0.15
+     ]
+    }
+   ],
+   "text": "Tướng Đấu sĩ được tăng máu."
+  },
+  {
+   "id": 2,
+   "name": "Sát thủ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "when": "start",
+     "to": "farthest_enemy",
+     "do": "dash"
+    },
+    {
+     "do": "stat",
+     "stat": "ability_crit",
+     "mode": "add",
+     "values": [
+      1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.1,
+      0.2,
+      0.35
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_dmg",
+     "mode": "add",
+     "values": [
+      0.1,
+      0.25,
+      0.4
+     ]
+    }
+   ],
+   "text": "Tướng Sát thủ được tăng sát thương vật lý. Khắc Xạ thủ và Pháp sư (lao vào hàng sau), bị Hộ vệ khắc."
+  },
+  {
+   "id": 3,
+   "name": "Xạ thủ",
+   "kind": "class",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "when": "attack",
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.04,
+      0.07,
+      0.11
+     ],
+     "max_stacks": 10
+    }
+   ],
+   "text": "Tướng Xạ thủ được tăng sát thương vật lý. Khắc Hộ vệ."
+  },
+  {
+   "id": 4,
+   "name": "Pháp sư",
+   "kind": "class",
+   "breakpoints": [
+    3,
+    5,
+    7
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      20,
+      40,
+      70
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      10,
+      20,
+      30
+     ]
+    }
+   ],
+   "text": "Tướng Pháp sư được tăng sát thương phép. Khắc Đấu sĩ (đánh lan vào đám đông)."
+  },
+  {
+   "id": 5,
+   "name": "Hy Lạp",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    5,
+    7
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      15.0,
+      40.0,
+      75.0
+     ]
+    }
+   ],
+   "text": "Cả đội được tăng sát thương phép."
+  },
+  {
+   "id": 6,
+   "name": "Bắc Âu",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.2,
+      0.5,
+      0.8
+     ]
+    }
+   ],
+   "text": "Tướng Bắc Âu được tăng sát thương vật lý."
+  },
+  {
+   "id": 7,
+   "name": "Ai Cập",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      15.0,
+      40.0,
+      70.0
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      15.0,
+      40.0,
+      70.0
+     ]
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "shield",
+     "values": [
+      60,
+      150,
+      300
+     ],
+     "duration": 6
+    }
+   ],
+   "text": "Cả đội được cộng giáp và kháng phép."
+  },
+  {
+   "id": 8,
+   "name": "Trung Hoa",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.25,
+      0.65
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      25.0,
+      65.0
+     ]
+    }
+   ],
+   "text": "Tướng Trung Hoa được tăng cả sát thương vật lý lẫn phép."
+  },
+  {
+   "id": 9,
+   "name": "Việt Nam",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4,
+    6
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.1,
+      0.2,
+      0.35
+     ]
+    }
+   ],
+   "text": "Cả đội được tăng máu."
+  },
+  {
+   "id": 10,
+   "name": "Nhật Bản",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      40.0,
+      90.0
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.15,
+      0.3
+     ]
+    }
+   ],
+   "text": "Tướng Nhật Bản được cộng giáp và tăng sát thương vật lý."
+  },
+  {
+   "id": 11,
+   "name": "Ấn Độ",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    3,
+    4,
+    5
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      15.0,
+      30.0,
+      50.0,
+      80.0
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.15,
+      0.3,
+      0.5,
+      0.8
+     ]
+    }
+   ],
+   "text": "Tướng Ấn Độ được tăng sát thương; mỗi tướng thêm một mốc."
+  },
+  {
+   "id": 12,
+   "name": "Lưỡng Hà",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    3
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.2,
+      0.35
+     ]
+    }
+   ],
+   "text": "Tướng Lưỡng Hà được tăng máu."
+  },
+  {
+   "id": 13,
+   "name": "Celt",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      40.0,
+      85.0
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 3,
+     "to": "self",
+     "do": "heal",
+     "scale": "self_hp",
+     "values": [
+      0.02,
+      0.04
+     ]
+    }
+   ],
+   "text": "Cả đội được cộng kháng phép."
+  },
+  {
+   "id": 14,
+   "name": "Trung Mỹ",
+   "kind": "origin",
+   "breakpoints": [
+    2,
+    4
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1,
+      0.25
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.05,
+      0.1
+     ]
+    }
+   ],
+   "text": "Tướng Trung Mỹ được tăng sát thương vật lý và máu."
+  },
+  {
+   "id": 15,
+   "name": "Quái thú",
+   "kind": "origin",
+   "breakpoints": [
+    3,
+    6
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.2,
+      0.45
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      10.0,
+      25.0
+     ]
+    }
+   ],
+   "text": "Quái thú được tăng máu và giáp."
+  },
+  {
+   "id": 16,
+   "name": "Vua Olympus",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      15.0
+     ]
+    }
+   ],
+   "text": "Zeus: cả đội tăng 15% sát thương phép."
+  },
+  {
+   "id": 17,
+   "name": "Toàn Phụ",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10.0
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      10.0
+     ]
+    }
+   ],
+   "text": "Odin: cả đội tăng 10% sát thương phép, +10 kháng phép."
+  },
+  {
+   "id": 18,
+   "name": "Thái Dương",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    }
+   ],
+   "text": "Ra: cả đội tăng 10% sát thương vật lý."
+  },
+  {
+   "id": 19,
+   "name": "Vá Trời",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      15.0
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      15.0
+     ]
+    }
+   ],
+   "text": "Nữ Oa: cả đội +15 giáp và kháng phép."
+  },
+  {
+   "id": 20,
+   "name": "Rồng Tiên",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.12
+     ]
+    }
+   ],
+   "text": "Lạc Long Quân: cả đội tăng 12% máu."
+  },
+  {
+   "id": 21,
+   "name": "Mẹ Hỗn Mang",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.4
+     ]
+    }
+   ],
+   "text": "Tiamat: tự tăng 40% máu."
+  },
+  {
+   "id": 22,
+   "name": "Gương Khói",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "members",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.4
+     ]
+    }
+   ],
+   "text": "Tezcatlipoca: tự tăng 40% sát thương vật lý."
+  },
+  {
+   "id": 23,
+   "name": "Đại Thần Mặt Trời",
+   "kind": "unique",
+   "breakpoints": [
+    1
+   ],
+   "scope": "team",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.08
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      8.0
+     ]
+    }
+   ],
+   "text": "Amaterasu: cả đội tăng 8% sát thương vật lý và phép."
+  }
+ ],
+ "items": [
+  {
+   "id": 0,
+   "name": "Kiếm",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": 1,
+   "name": "Cung",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": "Gậy",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": "Giáp",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "name": "Áo choàng",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "name": "Đai",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "name": "Nước mắt",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "name": "Găng",
+   "kind": "component",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "name": "Kiếm Tử Thần",
+   "kind": "combined",
+   "recipe": [
+    0,
+    0
+   ],
+   "group": "Sát thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.35
+     ]
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "name": "Diệt Khổng Lồ",
+   "kind": "combined",
+   "recipe": [
+    0,
+    1
+   ],
+   "group": "Sát thương theo máu",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "amp_big",
+     "mode": "add",
+     "values": [
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "Kiếm Súng",
+   "kind": "combined",
+   "recipe": [
+    0,
+    2
+   ],
+   "group": "Hút máu",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "vamp",
+     "mode": "add",
+     "values": [
+      0.22
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Áo Choàng Bóng Đêm",
+   "kind": "combined",
+   "recipe": [
+    0,
+    3
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "hp_below",
+     "period": 0.6,
+     "to": "self",
+     "do": "stealth",
+     "values": [
+      1.0
+     ]
+    },
+    {
+     "when": "hp_below",
+     "period": 0.6,
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Huyết Kiếm",
+   "kind": "combined",
+   "recipe": [
+    0,
+    4
+   ],
+   "group": "Hút máu",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "vamp",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "when": "hp_below",
+     "period": 0.4,
+     "to": "self",
+     "do": "shield",
+     "scale": "self_hp",
+     "values": [
+      0.25
+     ],
+     "duration": 5
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Găng Bạo Lực",
+   "kind": "combined",
+   "recipe": [
+    0,
+    5
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "when": "hp_below",
+     "period": 0.6,
+     "to": "self",
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.25
+     ]
+    },
+    {
+     "when": "hp_below",
+     "period": 0.6,
+     "to": "self",
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.35
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Thương Thần",
+   "kind": "combined",
+   "recipe": [
+    0,
+    6
+   ],
+   "group": "Năng lượng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_per_attack",
+     "mode": "add",
+     "values": [
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Vô Cực Kiếm",
+   "kind": "combined",
+   "recipe": [
+    0,
+    7
+   ],
+   "group": "Chí mạng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ability_crit",
+     "mode": "add",
+     "values": [
+      1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_dmg",
+     "mode": "add",
+     "values": [
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "Cuồng Cung",
+   "kind": "combined",
+   "recipe": [
+    1,
+    1
+   ],
+   "group": "Tốc đánh",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "when": "attack",
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.05
+     ],
+     "max_stacks": 99
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Nanh Rắn",
+   "kind": "combined",
+   "recipe": [
+    1,
+    2
+   ],
+   "group": "Tốc đánh",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "when": "cast",
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.6
+     ],
+     "duration": 5
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "name": "Ý Chí Titan",
+   "kind": "combined",
+   "recipe": [
+    1,
+    3
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "attack",
+     "to": "self",
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.02
+     ],
+     "max_stacks": 25,
+     "key": 7001
+    },
+    {
+     "when": "attack",
+     "to": "self",
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      2
+     ],
+     "max_stacks": 25,
+     "key": 7001
+    },
+    {
+     "when": "hit_taken",
+     "to": "self",
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.02
+     ],
+     "max_stacks": 25,
+     "key": 7001
+    },
+    {
+     "when": "hit_taken",
+     "to": "self",
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      2
+     ],
+     "max_stacks": 25,
+     "key": 7001
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "name": "Cung Bão",
+   "kind": "combined",
+   "recipe": [
+    1,
+    4
+   ],
+   "group": "Đánh lan",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "attack",
+     "to": "near_target_n",
+     "count": 1,
+     "do": "damage",
+     "dtype": "physical",
+     "scale": "ad",
+     "values": [
+      0.55
+     ]
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "name": "Tù Và Chiến",
+   "kind": "combined",
+   "recipe": [
+    1,
+    5
+   ],
+   "group": "Hỗ trợ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "when": "start",
+     "to": "row_allies",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ],
+     "key": 7002
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "name": "Dao Điện",
+   "kind": "combined",
+   "recipe": [
+    1,
+    6
+   ],
+   "group": "Xé kháng phép",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "when": "attack_n",
+     "period": 3,
+     "to": "nearest_n",
+     "count": 3,
+     "radius": 4,
+     "do": "damage",
+     "dtype": "magic",
+     "values": [
+      70
+     ]
+    },
+    {
+     "when": "attack_n",
+     "period": 3,
+     "to": "nearest_n",
+     "count": 3,
+     "radius": 4,
+     "do": "stat",
+     "stat": "mr",
+     "mode": "mul",
+     "values": [
+      -0.3
+     ],
+     "duration": 5,
+     "key": 7003
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "name": "Lời Thì Thầm",
+   "kind": "combined",
+   "recipe": [
+    1,
+    7
+   ],
+   "group": "Xé giáp",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "when": "crit",
+     "to": "target",
+     "do": "stat",
+     "stat": "armor",
+     "mode": "mul",
+     "values": [
+      -0.3
+     ],
+     "duration": 3,
+     "key": 7004
+    }
+   ]
+  },
+  {
+   "id": 23,
+   "name": "Mũ Phù Thủy",
+   "kind": "combined",
+   "recipe": [
+    2,
+    2
+   ],
+   "group": "Sát thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      50
+     ]
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "name": "Vương Miện Hộ Vệ",
+   "kind": "combined",
+   "recipe": [
+    2,
+    3
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "shield",
+     "scale": "self_hp",
+     "values": [
+      0.25
+     ],
+     "duration": 8
+    },
+    {
+     "when": "at_time",
+     "period": 8,
+     "to": "self",
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      30
+     ]
+    }
+   ]
+  },
+  {
+   "id": 25,
+   "name": "Ngọc Lôi",
+   "kind": "combined",
+   "recipe": [
+    2,
+    4
+   ],
+   "group": "Xé kháng phép",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 0.5,
+     "to": "enemies_r",
+     "radius": 2,
+     "do": "stat",
+     "stat": "mr",
+     "mode": "mul",
+     "values": [
+      -0.3
+     ],
+     "duration": 0.6,
+     "key": 7005
+    }
+   ]
+  },
+  {
+   "id": 26,
+   "name": "Bùa Dịch Hạch",
+   "kind": "combined",
+   "recipe": [
+    2,
+    5
+   ],
+   "group": "Vết thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "when": "cast",
+     "to": "target",
+     "do": "wound",
+     "values": [
+      10
+     ],
+     "duration": 10
+    },
+    {
+     "when": "cast",
+     "to": "target",
+     "do": "burn",
+     "scale": "target_hp",
+     "values": [
+      0.01
+     ],
+     "duration": 10
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "name": "Trượng Thiên Thần",
+   "kind": "combined",
+   "recipe": [
+    2,
+    6
+   ],
+   "group": "Sức mạnh phép theo thời gian",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 5,
+     "to": "self",
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      30
+     ],
+     "max_stacks": 99
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "name": "Găng Ngọc",
+   "kind": "combined",
+   "recipe": [
+    2,
+    7
+   ],
+   "group": "Chí mạng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      10
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ability_crit",
+     "mode": "add",
+     "values": [
+      1
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_dmg",
+     "mode": "add",
+     "values": [
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "name": "Áo Gai",
+   "kind": "combined",
+   "recipe": [
+    3,
+    3
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "dr",
+     "mode": "add",
+     "values": [
+      0.08
+     ]
+    },
+    {
+     "when": "hit_taken",
+     "period": 2,
+     "to": "enemies_r",
+     "radius": 1,
+     "do": "damage",
+     "dtype": "magic",
+     "values": [
+      80
+     ]
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "name": "Giáp Thạch Quỷ",
+   "kind": "combined",
+   "recipe": [
+    3,
+    4
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "hit_taken",
+     "to": "self",
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      2
+     ],
+     "max_stacks": 25,
+     "key": 7006
+    },
+    {
+     "when": "hit_taken",
+     "to": "self",
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      2
+     ],
+     "max_stacks": 25,
+     "key": 7006
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "name": "Áo Choàng Lửa",
+   "kind": "combined",
+   "recipe": [
+    3,
+    5
+   ],
+   "group": "Vết thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 2,
+     "to": "nearest_n",
+     "count": 1,
+     "radius": 2,
+     "do": "burn",
+     "scale": "target_hp",
+     "values": [
+      0.01
+     ],
+     "duration": 3
+    },
+    {
+     "when": "periodic",
+     "period": 2,
+     "to": "nearest_n",
+     "count": 1,
+     "radius": 2,
+     "do": "wound",
+     "values": [
+      3
+     ],
+     "duration": 3
+    }
+   ]
+  },
+  {
+   "id": 32,
+   "name": "Tim Băng",
+   "kind": "combined",
+   "recipe": [
+    3,
+    6
+   ],
+   "group": "Khống chế",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 0.5,
+     "to": "enemies_r",
+     "radius": 2,
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      -0.2
+     ],
+     "duration": 0.6,
+     "key": 7007
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "name": "Giáp Kiên Định",
+   "kind": "combined",
+   "recipe": [
+    3,
+    7
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "dr",
+     "mode": "add",
+     "values": [
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "id": 34,
+   "name": "Vuốt Rồng",
+   "kind": "combined",
+   "recipe": [
+    4,
+    4
+   ],
+   "group": "Hồi máu",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 2,
+     "to": "self",
+     "do": "heal",
+     "scale": "self_hp",
+     "values": [
+      0.05
+     ]
+    }
+   ]
+  },
+  {
+   "id": 35,
+   "name": "Khăn Hư Vô",
+   "kind": "combined",
+   "recipe": [
+    4,
+    5
+   ],
+   "group": "Xé giáp và kháng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "when": "start",
+     "to": "enemies_r",
+     "radius": 2,
+     "do": "stat",
+     "stat": "armor",
+     "mode": "mul",
+     "values": [
+      -0.3
+     ],
+     "duration": 10,
+     "key": 7008
+    },
+    {
+     "when": "start",
+     "to": "enemies_r",
+     "radius": 2,
+     "do": "stat",
+     "stat": "mr",
+     "mode": "mul",
+     "values": [
+      -0.3
+     ],
+     "duration": 10,
+     "key": 7008
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "name": "Mũ Thích Nghi",
+   "kind": "combined",
+   "recipe": [
+    4,
+    6
+   ],
+   "group": "Năng lượng theo thời gian",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 3,
+     "to": "self",
+     "do": "mana",
+     "values": [
+      10
+     ],
+     "cond": "back_rows"
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      30
+     ],
+     "cond": "front_rows"
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      30
+     ],
+     "cond": "front_rows"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "name": "Khăn Giải Thuật",
+   "kind": "combined",
+   "recipe": [
+    4,
+    7
+   ],
+   "group": "Miễn khống chế",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "cc_immune",
+     "values": [
+      14
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 1,
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.03
+     ],
+     "max_stacks": 14
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "name": "Giáp Máu",
+   "kind": "combined",
+   "recipe": [
+    5,
+    5
+   ],
+   "group": "Phòng thủ",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "mul",
+     "values": [
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "id": 39,
+   "name": "Ngọc Cứu Rỗi",
+   "kind": "combined",
+   "recipe": [
+    5,
+    6
+   ],
+   "group": "Hỗ trợ, hồi máu",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "when": "periodic",
+     "period": 5,
+     "to": "allies_r",
+     "radius": 1,
+     "do": "heal",
+     "scale": "target_missing_hp",
+     "values": [
+      0.1
+     ]
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "name": "Phá Khiên",
+   "kind": "combined",
+   "recipe": [
+    5,
+    7
+   ],
+   "group": "Sát thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "amp_shield",
+     "mode": "add",
+     "values": [
+      0.25
+     ]
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "name": "Ngọc Lam",
+   "kind": "combined",
+   "recipe": [
+    6,
+    6
+   ],
+   "group": "Năng lượng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mana_max",
+     "mode": "add",
+     "values": [
+      -10
+     ]
+    },
+    {
+     "when": "cast",
+     "to": "self",
+     "do": "mana",
+     "values": [
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "name": "Bàn Tay Công Lý",
+   "kind": "combined",
+   "recipe": [
+    6,
+    7
+   ],
+   "group": "Hút máu, sát thương",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "mana_start",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "vamp",
+     "mode": "add",
+     "values": [
+      0.15
+     ]
+    }
+   ]
+  },
+  {
+   "id": 43,
+   "name": "Găng Thợ Săn",
+   "kind": "combined",
+   "recipe": [
+    7,
+    7
+   ],
+   "group": "Chí mạng, năng lượng",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "crit_chance",
+     "mode": "add",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "when": "crit",
+     "to": "self",
+     "do": "mana",
+     "values": [
+      5
+     ]
+    }
+   ]
+  }
+ ],
+ "item_rules": {
+  "max_per_unit": 3,
+  "bench_slots": 10,
+  "remove_and_swap": true,
+  "note": "tháo / đổi đồ được; tách đồ ghép thành mảnh để mở rộng sau"
+ },
+ "pool_size_by_cost": {
+  "2": [
+   12,
+   10,
+   8,
+   5,
+   4
+  ],
+  "8": [
+   30,
+   25,
+   18,
+   10,
+   9
+  ]
+ },
+ "shop_odds": [
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   100,
+   0,
+   0,
+   0,
+   0
+  ],
+  [
+   75,
+   25,
+   0,
+   0,
+   0
+  ],
+  [
+   55,
+   30,
+   15,
+   0,
+   0
+  ],
+  [
+   45,
+   33,
+   20,
+   2,
+   0
+  ],
+  [
+   30,
+   40,
+   25,
+   5,
+   0
+  ],
+  [
+   19,
+   30,
+   35,
+   15,
+   1
+  ],
+  [
+   18,
+   25,
+   32,
+   22,
+   3
+  ],
+  [
+   10,
+   20,
+   25,
+   35,
+   10
+  ]
+ ],
+ "xp_to_next": [
+  2,
+  2,
+  6,
+  10,
+  20,
+  36,
+  48,
+  76
+ ],
+ "economy": {
+  "base_income": 5,
+  "interest_step": 10,
+  "interest_max": 5,
+  "streak_bonus": [
+   0,
+   0,
+   1,
+   1,
+   2,
+   3
+  ],
+  "roll_cost": 2,
+  "xp_cost": 4,
+  "xp_per_buy": 4,
+  "xp_per_round": 2,
+  "start_gold": 10
+ },
+ "rules": {
+  "start_hp": 100,
+  "max_rounds": 50,
+  "max_actions_per_round": 50
+ },
+ "stage_damage": [
+  [
+   1,
+   1
+  ],
+  [
+   6,
+   3
+  ],
+  [
+   11,
+   5
+  ],
+  [
+   16,
+   7
+  ],
+  [
+   21,
+   10
+  ],
+  [
+   26,
+   13
+  ],
+  [
+   30,
+   17
+  ],
+  [
+   34,
+   22
+  ]
+ ],
+ "unit_damage_scale": [
+  [
+   1,
+   0.5
+  ],
+  [
+   11,
+   0.6
+  ],
+  [
+   16,
+   0.75
+  ],
+  [
+   21,
+   0.9
+  ],
+  [
+   26,
+   1.0
+  ]
+ ],
+ "augments": [
+  {
+   "id": 0,
+   "name": "Tiền Cúng",
+   "tier": 1,
+   "group": "Kinh tế",
+   "text": "Nhận ngay 10 vàng.",
+   "econ": {
+    "gold_now": 10
+   }
+  },
+  {
+   "id": 1,
+   "name": "Lộc Đầu Năm",
+   "tier": 2,
+   "group": "Kinh tế",
+   "text": "Nhận ngay 20 vàng.",
+   "econ": {
+    "gold_now": 20
+   }
+  },
+  {
+   "id": 2,
+   "name": "Kho Báu Rồng",
+   "tier": 3,
+   "group": "Kinh tế",
+   "text": "Nhận ngay 35 vàng.",
+   "econ": {
+    "gold_now": 35
+   }
+  },
+  {
+   "id": 3,
+   "name": "Lương Bổng",
+   "tier": 1,
+   "group": "Kinh tế",
+   "text": "+1 vàng mỗi vòng.",
+   "econ": {
+    "gold_per_round": 1
+   }
+  },
+  {
+   "id": 4,
+   "name": "Thương Nhân",
+   "tier": 2,
+   "group": "Kinh tế",
+   "text": "+2 vàng mỗi vòng.",
+   "econ": {
+    "gold_per_round": 2
+   }
+  },
+  {
+   "id": 5,
+   "name": "Ngân Khố",
+   "tier": 2,
+   "group": "Kinh tế",
+   "text": "Lãi tối đa +2 (7 vàng).",
+   "econ": {
+    "interest_max": 2
+   }
+  },
+  {
+   "id": 6,
+   "name": "Học Giả",
+   "tier": 1,
+   "group": "Kinh tế",
+   "text": "+2 kinh nghiệm mỗi vòng.",
+   "econ": {
+    "xp_per_round": 2
+   }
+  },
+  {
+   "id": 7,
+   "name": "Thầy Bói",
+   "tier": 2,
+   "group": "Kinh tế",
+   "text": "1 lần làm mới shop miễn phí mỗi vòng.",
+   "econ": {
+    "free_rolls": 1
+   }
+  },
+  {
+   "id": 8,
+   "name": "Thần Tài",
+   "tier": 3,
+   "group": "Kinh tế",
+   "text": "Nhận ngay 10 vàng; 2 lần làm mới miễn phí mỗi vòng.",
+   "econ": {
+    "gold_now": 10,
+    "free_rolls": 2
+   }
+  },
+  {
+   "id": 9,
+   "name": "Thể Lực",
+   "tier": 1,
+   "group": "Chỉ số",
+   "text": "Cả đội +150 máu.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      150
+     ]
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "name": "Cuồng Phong",
+   "tier": 1,
+   "group": "Chỉ số",
+   "text": "Cả đội +12% tốc đánh.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "name": "Tiên Phong",
+   "tier": 1,
+   "group": "Chỉ số",
+   "text": "Quân đứng 2 hàng trước +30 giáp và kháng phép.",
+   "effects": [
+    {
+     "when": "start",
+     "to": "self",
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      30
+     ],
+     "cond": "front_rows"
+    },
+    {
+     "when": "start",
+     "to": "self",
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      30
+     ],
+     "cond": "front_rows"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "name": "Hậu Tập",
+   "tier": 1,
+   "group": "Chỉ số",
+   "text": "Quân đứng 2 hàng sau +20% tốc đánh.",
+   "effects": [
+    {
+     "when": "start",
+     "to": "self",
+     "do": "stat",
+     "stat": "as",
+     "mode": "mul",
+     "values": [
+      0.2
+     ],
+     "cond": "back_rows"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "name": "Sức Mạnh Thần",
+   "tier": 2,
+   "group": "Chỉ số",
+   "text": "Cả đội +15% công và +15 sức mạnh phép.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.15
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "name": "Thành Trì",
+   "tier": 2,
+   "group": "Chỉ số",
+   "text": "Cả đội +25 giáp và kháng phép.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "armor",
+     "mode": "add",
+     "values": [
+      25
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "mr",
+     "mode": "add",
+     "values": [
+      25
+     ]
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "name": "Khát Máu",
+   "tier": 2,
+   "group": "Chỉ số",
+   "text": "Cả đội hút máu 12%.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "vamp",
+     "mode": "add",
+     "values": [
+      0.12
+     ]
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "name": "Khởi Đầu Thuận Lợi",
+   "tier": 2,
+   "group": "Chỉ số",
+   "text": "Đầu trận cả đội nhận khiên 200 trong 8 giây.",
+   "effects": [
+    {
+     "when": "start",
+     "to": "self",
+     "do": "shield",
+     "values": [
+      200
+     ],
+     "duration": 8
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "name": "Ban Phước",
+   "tier": 3,
+   "group": "Chỉ số",
+   "text": "Cả đội +300 máu, +20% công, +20 sức mạnh phép.",
+   "effects": [
+    {
+     "do": "stat",
+     "stat": "hp",
+     "mode": "add",
+     "values": [
+      300
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ad",
+     "mode": "mul",
+     "values": [
+      0.2
+     ]
+    },
+    {
+     "do": "stat",
+     "stat": "ap",
+     "mode": "add",
+     "values": [
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": 18,
+   "name": "Túi Đồ",
+   "tier": 1,
+   "group": "Đồ",
+   "text": "Nhận 1 mảnh đồ ngẫu nhiên.",
+   "econ": {
+    "components": 1
+   }
+  },
+  {
+   "id": 19,
+   "name": "Rương Đồ",
+   "tier": 2,
+   "group": "Đồ",
+   "text": "Nhận 2 mảnh đồ ngẫu nhiên.",
+   "econ": {
+    "components": 2
+   }
+  },
+  {
+   "id": 20,
+   "name": "Kho Vũ Khí",
+   "tier": 3,
+   "group": "Đồ",
+   "text": "Nhận 1 đồ ghép ngẫu nhiên và 1 mảnh đồ.",
+   "econ": {
+    "components": 1,
+    "combined": 1
+   }
+  },
+  {
+   "id": 21,
+   "name": "Ấn Hộ vệ",
+   "tier": 2,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Hộ vệ: gắn lên tướng để tướng đó thêm hệ Hộ vệ.",
+   "econ": {
+    "emblem": "Hộ vệ"
+   }
+  },
+  {
+   "id": 22,
+   "name": "Ấn Đấu sĩ",
+   "tier": 2,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Đấu sĩ: gắn lên tướng để tướng đó thêm hệ Đấu sĩ.",
+   "econ": {
+    "emblem": "Đấu sĩ"
+   }
+  },
+  {
+   "id": 23,
+   "name": "Ấn Sát thủ",
+   "tier": 2,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Sát thủ: gắn lên tướng để tướng đó thêm hệ Sát thủ.",
+   "econ": {
+    "emblem": "Sát thủ"
+   }
+  },
+  {
+   "id": 24,
+   "name": "Ấn Xạ thủ",
+   "tier": 2,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Xạ thủ: gắn lên tướng để tướng đó thêm hệ Xạ thủ.",
+   "econ": {
+    "emblem": "Xạ thủ"
+   }
+  },
+  {
+   "id": 25,
+   "name": "Ấn Pháp sư",
+   "tier": 2,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Pháp sư: gắn lên tướng để tướng đó thêm hệ Pháp sư.",
+   "econ": {
+    "emblem": "Pháp sư"
+   }
+  },
+  {
+   "id": 26,
+   "name": "Tim Hy Lạp",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Hy Lạp.",
+   "trait_bonus": {
+    "Hy Lạp": 1
+   }
+  },
+  {
+   "id": 27,
+   "name": "Ấn Hy Lạp",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Hy Lạp và 5 vàng.",
+   "econ": {
+    "emblem": "Hy Lạp",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 28,
+   "name": "Tim Bắc Âu",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Bắc Âu.",
+   "trait_bonus": {
+    "Bắc Âu": 1
+   }
+  },
+  {
+   "id": 29,
+   "name": "Ấn Bắc Âu",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Bắc Âu và 5 vàng.",
+   "econ": {
+    "emblem": "Bắc Âu",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 30,
+   "name": "Tim Ai Cập",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Ai Cập.",
+   "trait_bonus": {
+    "Ai Cập": 1
+   }
+  },
+  {
+   "id": 31,
+   "name": "Ấn Ai Cập",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Ai Cập và 5 vàng.",
+   "econ": {
+    "emblem": "Ai Cập",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 32,
+   "name": "Tim Trung Hoa",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Trung Hoa.",
+   "trait_bonus": {
+    "Trung Hoa": 1
+   }
+  },
+  {
+   "id": 33,
+   "name": "Ấn Trung Hoa",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Trung Hoa và 5 vàng.",
+   "econ": {
+    "emblem": "Trung Hoa",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 34,
+   "name": "Tim Việt Nam",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Việt Nam.",
+   "trait_bonus": {
+    "Việt Nam": 1
+   }
+  },
+  {
+   "id": 35,
+   "name": "Ấn Việt Nam",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Việt Nam và 5 vàng.",
+   "econ": {
+    "emblem": "Việt Nam",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 36,
+   "name": "Tim Nhật Bản",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Nhật Bản.",
+   "trait_bonus": {
+    "Nhật Bản": 1
+   }
+  },
+  {
+   "id": 37,
+   "name": "Ấn Nhật Bản",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Nhật Bản và 5 vàng.",
+   "econ": {
+    "emblem": "Nhật Bản",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 38,
+   "name": "Tim Ấn Độ",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Ấn Độ.",
+   "trait_bonus": {
+    "Ấn Độ": 1
+   }
+  },
+  {
+   "id": 39,
+   "name": "Ấn Ấn Độ",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Ấn Độ và 5 vàng.",
+   "econ": {
+    "emblem": "Ấn Độ",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 40,
+   "name": "Tim Celt",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Celt.",
+   "trait_bonus": {
+    "Celt": 1
+   }
+  },
+  {
+   "id": 41,
+   "name": "Ấn Celt",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Celt và 5 vàng.",
+   "econ": {
+    "emblem": "Celt",
+    "gold_now": 5
+   }
+  },
+  {
+   "id": 42,
+   "name": "Tim Quái thú",
+   "tier": 1,
+   "group": "Tộc hệ",
+   "text": "+1 vào số đếm tộc Quái thú.",
+   "trait_bonus": {
+    "Quái thú": 1
+   }
+  },
+  {
+   "id": 43,
+   "name": "Ấn Quái thú",
+   "tier": 3,
+   "group": "Tộc hệ",
+   "text": "Nhận 1 ấn Quái thú và 5 vàng.",
+   "econ": {
+    "emblem": "Quái thú",
+    "gold_now": 5
+   }
+  }
+ ],
+ "monsters": [
+  {
+   "id": 59,
+   "name": "Quỷ Nhỏ",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 350,
+    "ad": 35,
+    "armor": 10,
+    "mr": 10,
+    "range": 1,
+    "as": 0.6
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 60,
+   "name": "Quỷ Ném Đá",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 280,
+    "ad": 30,
+    "armor": 5,
+    "mr": 5,
+    "range": 3,
+    "as": 0.6
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 61,
+   "name": "Người Đá",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 1300,
+    "ad": 70,
+    "armor": 40,
+    "mr": 30,
+    "range": 1,
+    "as": 0.5
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 62,
+   "name": "Sói Âm Phủ",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 900,
+    "ad": 85,
+    "armor": 25,
+    "mr": 25,
+    "range": 1,
+    "as": 0.8
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 63,
+   "name": "Sói Đầu Đàn",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 1600,
+    "ad": 120,
+    "armor": 35,
+    "mr": 35,
+    "range": 1,
+    "as": 0.8
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 64,
+   "name": "Chim Lửa",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 1100,
+    "ad": 110,
+    "armor": 20,
+    "mr": 40,
+    "range": 3,
+    "as": 0.7
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 65,
+   "name": "Rồng Già",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 9000,
+    "ad": 260,
+    "armor": 80,
+    "mr": 80,
+    "range": 2,
+    "as": 0.6
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  },
+  {
+   "id": 66,
+   "name": "Thủy Quái",
+   "cost": 0,
+   "role": "Quái",
+   "traits": [],
+   "stats": {
+    "ap": 100,
+    "crit_chance": 0.0,
+    "crit_dmg": 1.4,
+    "mana_start": 0,
+    "mana_max": 0,
+    "hp": 15000,
+    "ad": 380,
+    "armor": 100,
+    "mr": 100,
+    "range": 2,
+    "as": 0.6
+   },
+   "skill": {
+    "template": "none",
+    "name": "—",
+    "text": "Quái vật.",
+    "effects": []
+   }
+  }
+ ],
+ "game_v5": {
+  "start_hp": 100,
+  "start_gold": 0,
+  "stage1_income": 3,
+  "max_stage": 8,
+  "bench_slots": 9,
+  "item_bench": 10,
+  "max_items": 3,
+  "stage_damage": {
+   "1": 0,
+   "2": 2,
+   "3": 5,
+   "4": 8,
+   "5": 10,
+   "6": 12,
+   "7": 17,
+   "8": 20
+  },
+  "augment_rounds": [
+   "2-1",
+   "3-2",
+   "4-2"
+  ],
+  "augment_tier_patterns": [
+   [
+    1,
+    1,
+    2
+   ],
+   [
+    1,
+    2,
+    2
+   ],
+   [
+    2,
+    2,
+    2
+   ],
+   [
+    1,
+    2,
+    3
+   ],
+   [
+    2,
+    2,
+    3
+   ],
+   [
+    2,
+    3,
+    3
+   ],
+   [
+    1,
+    1,
+    3
+   ]
+  ],
+  "carousel_costs": {
+   "1": [
+    1
+   ],
+   "2": [
+    1,
+    2
+   ],
+   "3": [
+    2,
+    3
+   ],
+   "4": [
+    3,
+    4
+   ],
+   "5": [
+    3,
+    4,
+    5
+   ],
+   "6": [
+    3,
+    4,
+    5
+   ],
+   "7": [
+    4,
+    5
+   ],
+   "8": [
+    4,
+    5
+   ]
+  },
+  "loot": {
+   "note": "thắng quái nhận đủ phần rơi, thua nhận một nửa (ít nhất 1). Giai đoạn 1 mỗi vòng 1-2 quả (55% mảnh đồ, 30% 2-4 vàng, 15% tướng 1 tiền); từ giai đoạn 2: 2 mảnh đồ + 3 vàng, từ giai đoạn 4 thêm 1 mảnh. Bảo hiểm: hết giai đoạn 1 ai cũng có ít nhất 2 mảnh.",
+   "stage1_orbs": {
+    "1-2": 1,
+    "1-3": 1,
+    "1-4": 2
+   },
+   "later_components": 2,
+   "later_gold": 3,
+   "late_extra_stage": 4,
+   "stage1_min_components": 2
+  },
+  "pve": {
+   "1-2": [
+    [
+     "Quỷ Nhỏ",
+     1,
+     24
+    ],
+    [
+     "Quỷ Nhỏ",
+     1,
+     26
+    ]
+   ],
+   "1-3": [
+    [
+     "Quỷ Nhỏ",
+     1,
+     23
+    ],
+    [
+     "Quỷ Nhỏ",
+     1,
+     25
+    ],
+    [
+     "Quỷ Ném Đá",
+     1,
+     3
+    ]
+   ],
+   "1-4": [
+    [
+     "Quỷ Nhỏ",
+     1,
+     23
+    ],
+    [
+     "Quỷ Nhỏ",
+     1,
+     25
+    ],
+    [
+     "Quỷ Ném Đá",
+     1,
+     2
+    ],
+    [
+     "Quỷ Ném Đá",
+     1,
+     4
+    ]
+   ],
+   "2-7": [
+    [
+     "Người Đá",
+     1,
+     22
+    ],
+    [
+     "Người Đá",
+     1,
+     24
+    ],
+    [
+     "Người Đá",
+     1,
+     26
+    ]
+   ],
+   "3-7": [
+    [
+     "Sói Âm Phủ",
+     1,
+     21
+    ],
+    [
+     "Sói Âm Phủ",
+     1,
+     23
+    ],
+    [
+     "Sói Âm Phủ",
+     1,
+     25
+    ],
+    [
+     "Sói Âm Phủ",
+     1,
+     27
+    ],
+    [
+     "Sói Đầu Đàn",
+     1,
+     17
+    ]
+   ],
+   "4-7": [
+    [
+     "Chim Lửa",
+     1,
+     8
+    ],
+    [
+     "Chim Lửa",
+     1,
+     10
+    ],
+    [
+     "Chim Lửa",
+     1,
+     12
+    ],
+    [
+     "Chim Lửa",
+     1,
+     2
+    ],
+    [
+     "Chim Lửa",
+     1,
+     4
+    ]
+   ],
+   "5-7": [
+    [
+     "Rồng Già",
+     1,
+     17
+    ]
+   ],
+   "6-7": [
+    [
+     "Thủy Quái",
+     1,
+     17
+    ]
+   ],
+   "7-7": [
+    [
+     "Thủy Quái",
+     1,
+     17
+    ]
+   ]
+  },
+  "note": "Giai đoạn 1: 1-1 chọn tướng chung, 1-2..1-4 đánh quái. Từ giai đoạn 2: x-1..x-3 đấu người (lõi ở 2-1, 3-2, 4-2), x-4 chọn tướng chung, x-5, x-6 đấu người, x-7 đánh quái. Máu mất = sát thương giai đoạn + số quân địch còn sống."
+ }
+}

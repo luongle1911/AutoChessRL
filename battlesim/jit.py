@@ -16,3 +16,16 @@ except ImportError:  # pragma: no cover
         return lambda f: f
 
     prange = range
+
+
+# Trình mô phỏng nấc 2 (sim2.py) mới viết, chưa kiểm biên dịch Numba: mặc định chạy Python thường.
+# Đặt BATTLESIM_JIT2=1 để thử biên dịch (khi đã kiểm trên máy có Numba sẽ bật mặc định).
+import os as _os
+if HAS_NUMBA and _os.environ.get("BATTLESIM_JIT2") == "1":
+    njit2, prange2 = njit, prange
+else:
+    def njit2(*args, **kwargs):
+        if args and callable(args[0]) and not kwargs:
+            return args[0]
+        return lambda f: f
+    prange2 = range
